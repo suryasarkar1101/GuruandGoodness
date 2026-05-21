@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTML with Bootstrap, Font Awesome, and jQuery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fas fa-gem"></i> Guru and Goodness</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="text-center mb-4">
+      <h1 class="mb-3">Welcome to Guru and Goodness</h1>
+      <p class="lead">A simple page using Bootstrap, Font Awesome, and jQuery.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-lightbulb fa-3x mb-3 text-primary"></i>
+            <h5 class="card-title">Easy Setup</h5>
+            <p class="card-text">Use Bootstrap for layout, Font Awesome for icons, and jQuery for scripting.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-code fa-3x mb-3 text-success"></i>
+            <h5 class="card-title">Responsive</h5>
+            <p class="card-text">Create responsive designs with Bootstrap's grid and utility classes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-mouse-pointer fa-3x mb-3 text-danger"></i>
+            <h5 class="card-title">Interactive</h5>
+            <p class="card-text">Use jQuery to add interactivity quickly and easily.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5 text-center">
+      <button id="demoButton" class="btn btn-primary btn-lg"><i class="fas fa-hand-pointer"></i> Click Me</button>
+      <p id="demoText" class="mt-3 text-muted"></p>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function() {
+      $('#demoButton').on('click', function() {
+        $('#demoText').text('jQuery is working!');
+      });
+    });
+  </script>
+</body>
+</html>
