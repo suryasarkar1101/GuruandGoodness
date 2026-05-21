@@ -1,85 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basic HTML with Bootstrap, Font Awesome, and jQuery</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML with Bootstrap, Font Awesome, and jQuery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"  >
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/allmain.css">
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="fas fa-gem"></i> Guru and Goodness</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container py-5">
-    <div class="text-center mb-4">
-      <h1 class="mb-3">Welcome to Guru and Goodness</h1>
-      <p class="lead">A simple page using Bootstrap, Font Awesome, and jQuery.</p>
-    </div>
-
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body text-center">
-            <i class="fas fa-lightbulb fa-3x mb-3 text-primary"></i>
-            <h5 class="card-title">Easy Setup</h5>
-            <p class="card-text">Use Bootstrap for layout, Font Awesome for icons, and jQuery for scripting.</p>
-          </div>
+    <div class="header-wrapper">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="left-content">
+                <i class="fa-solid fa-spa"></i>
+                <span>Bringing Positivity, Wellness & Spiritual Balance</span>
+            </div>
+            <div class="right-content">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <div class="divider"></div>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <div class="divider"></div>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <div class="divider"></div>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body text-center">
-            <i class="fas fa-code fa-3x mb-3 text-success"></i>
-            <h5 class="card-title">Responsive</h5>
-            <p class="card-text">Create responsive designs with Bootstrap's grid and utility classes.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body text-center">
-            <i class="fas fa-mouse-pointer fa-3x mb-3 text-danger"></i>
-            <h5 class="card-title">Interactive</h5>
-            <p class="card-text">Use jQuery to add interactivity quickly and easily.</p>
-          </div>
-        </div>
-      </div>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- LEFT -->
+            <div class="logo-area">
+                <a href="#">
+                    <img src="assets/logo.png" alt="Guru and Goodness Logo" class="logo-img">
+                </a>
+            </div>
+            <!-- CENTER -->
+            <div class="nav-menu">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Shop</a>
+                <a href="#">Consultancy</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
     </div>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
 
-    <div class="mt-5 text-center">
-      <button id="demoButton" class="btn btn-primary btn-lg"><i class="fas fa-hand-pointer"></i> Click Me</button>
-      <p id="demoText" class="mt-3 text-muted"></p>
-    </div>
-  </main>
+        <!-- LEFT CONTENT -->
+        <div class="hero-content">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $(function() {
-      $('#demoButton').on('click', function() {
-        $('#demoText').text('jQuery is working!');
-      });
-    });
-  </script>
+            <div class="hero-title">
+                Ancient Wisdom for Modern Wellness
+            </div>
+
+            <div class="hero-divider">
+              <img src="assets/divider_below.png" alt="Divider" class="divider-img">
+            </div>
+
+            <p>
+                Spiritual products, healing crystals, vastu products
+                and organic wellness essentials for a balanced,
+                positive and harmonious life.
+            </p>
+
+            <!-- BUTTONS -->
+            <div class="hero-buttons">
+
+                <a href="#" class="hero-btn primary-btn">
+                    Explore Products →
+                </a>
+
+                <a href="#" class="hero-btn secondary-btn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp Us
+                </a>
+
+            </div>
+
+            <!-- FEATURES -->
+            <div class="hero-features">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <img src="assets/auth_product.png" alt="Authentic Products Icon" class="feature-img">
+                    </div>
+                    <span>Authentic Products</span>
+                </div>
+                <div class="divider"></div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <img src="assets/yogi.png" alt="Spiritual Guidance Icon" class="feature-img">
+                    </div>
+                    <span>Spiritual Guidance</span>
+                </div> 
+                <div class="divider"></div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <img src="assets/leaf_product.png" alt="Organic Wellness Icon" class="feature-img">
+                    </div>
+                    <span>Organic Wellness</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <main class="container py-5">
+        <div class="text-center mb-4">
+            <h1 class="mb-3">Welcome to Guru and Goodness</h1>
+            <p class="lead">A simple page using Bootstrap, Font Awesome, and jQuery.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-lightbulb fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Easy Setup</h5>
+                        <p class="card-text">Use Bootstrap for layout, Font Awesome for icons, and jQuery for scripting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-code fa-3x mb-3 text-success"></i>
+                        <h5 class="card-title">Responsive</h5>
+                        <p class="card-text">Create responsive designs with Bootstrap's grid and utility classes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mouse-pointer fa-3x mb-3 text-danger"></i>
+                        <h5 class="card-title">Interactive</h5>
+                        <p class="card-text">Use jQuery to add interactivity quickly and easily.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5 text-center">
+            <button id="demoButton" class="btn btn-primary btn-lg"><i class="fas fa-hand-pointer"></i> Click Me</button>
+            <p id="demoText" class="mt-3 text-muted"></p>
+        </div>
+        <!-- RIGHT -->
+        <div class="nav-buttons">
+            <a href="#" class="btn btn-outline">
+                <i class="fa-solid fa-bag-shopping"></i>
+                Explore Products
+            </a>
+
+            <a href="#" class="btn btn-green">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp Us
+            </a>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('#demoButton').on('click', function () {
+                $('#demoText').text('jQuery is working!');
+            });
+        });
+    </script>
 </body>
+
 </html>
