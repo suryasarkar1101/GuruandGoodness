@@ -204,17 +204,26 @@
                 </div>
 
             </div>
+            <div class="footer-divider-image mobile-divider">
+
+                <img src="assets/footer_divider2.png" alt="Divider">
+
+            </div>
             <!-- COLUMN 2 -->
-            <div class="footer-column footer-column-divider">
+            <div class="footer-column footer-column-divider footer-accordion-item">
                 <div class="footer-side-divider">
                     <img src="assets/footer-side-divider.png" alt="">
                 </div>
 
-                <div class="footer-title">
-                    QUICK LINKS
+                <div class="footer-accordion-header">
+                    <div class="footer-title">
+                        <img src="assets/lotus_logo.png" alt="">
+                        QUICK LINKS
+                    </div>
+                    <div class="footer-plus">+</div>
                 </div>
 
-                <div class="footer-links">
+                <div class="footer-links footer-accordion-content">
 
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -227,16 +236,20 @@
             </div>
 
             <!-- COLUMN 3 -->
-            <div class="footer-column footer-column-divider">
+            <div class="footer-column footer-column-divider footer-accordion-item">
                 <div class="footer-side-divider">
                     <img src="assets/footer-side-divider.png" alt="">
                 </div>
 
-                <div class="footer-title">
-                    CATEGORIES
+                <div class="footer-accordion-header">
+                    <div class="footer-title">
+                        <img src="assets/lotus_logo.png" alt="">
+                        CATEGORIES
+                    </div>
+                    <div class="footer-plus">+</div>
                 </div>
 
-                <div class="footer-links">
+                <div class="footer-links footer-accordion-content">
 
                     <a href="#">Spiritual Products</a>
                     <a href="#">Vastu Products</a>
@@ -250,16 +263,20 @@
 
 
             <!-- COLUMN 4 -->
-            <div class="footer-column footer-column-divider">
+            <div class="footer-column footer-column-divider footer-accordion-item active">
                 <div class="footer-side-divider">
                     <img src="assets/footer-side-divider.png" alt="">
                 </div>
 
-                <div class="footer-title">
-                    CONTACT
+                <div class="footer-accordion-header">
+                    <div class="footer-title">
+                        <img src="assets/lotus_logo.png" alt="">
+                        CONTACT
+                    </div>
+                    <div class="footer-plus">+</div>
                 </div>
 
-                <div class="footer-contact">
+                <div class="footer-contact footer-accordion-content">
 
                     <div class="contact-item">
                         <i class="fa-brands fa-whatsapp"></i>
@@ -311,7 +328,7 @@
             </div>
 
             <div>
-                Designed with positivity by Guru and Goodness
+                Designed by Guru and Goodness
             </div>
 
         </div>
@@ -325,6 +342,39 @@
             $('#demoButton').on('click', function () {
                 $('#demoText').text('jQuery is working!');
             });
+        });
+        const accordionItems =
+            document.querySelectorAll(
+                '.footer-accordion-item'
+            );
+
+        accordionItems.forEach(item => {
+
+            const header =
+                item.querySelector(
+                    '.footer-accordion-header'
+                );
+
+            header.addEventListener('click', () => {
+
+                /* CLOSE ALL */
+
+                accordionItems.forEach(otherItem => {
+
+                    if (otherItem !== item) {
+
+                        otherItem.classList.remove('active');
+
+                    }
+
+                });
+
+                /* TOGGLE CURRENT */
+
+                item.classList.toggle('active');
+
+            });
+
         });
     </script>
 </body>
