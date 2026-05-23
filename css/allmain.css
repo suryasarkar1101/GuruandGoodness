@@ -518,7 +518,7 @@
         .footer-links a,
         .contact-item,
         .footer-about {
-            font-size: 14.5px;
+            font-size: 13.5px;
         }
 
         .footer-about {
@@ -597,6 +597,9 @@
 
         .footer-column {
             padding: 0px 10px;
+        }
+        .footer-contact{
+            gap: 8px;
         }
 
     }
