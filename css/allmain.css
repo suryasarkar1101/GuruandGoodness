@@ -511,19 +511,20 @@
         }
 
         .footer-title {
-            font-size: 22px;
+            font-size: 18px;
             margin-bottom: 15px;
         }
 
         .footer-links a,
         .contact-item,
         .footer-about {
-            font-size: 13.5px;
+            font-size: 11.5px;
         }
 
         .footer-about {
             text-align: center;
             margin-bottom: 15px;
+            font-size: 10px;
         }
 
         .footer-bottom {
@@ -537,6 +538,12 @@
             margin-bottom: 10px;
         }
 
+        .footer-socials a {
+            width: 40px;
+            height: 40px;
+            font-size: 19px;
+        }
+
         .btn {
             width: 100%;
             justify-content: center;
@@ -544,10 +551,14 @@
 
         .footer-plus {
             color: #f0b54b;
-            font-size: 42px;
+            font-size: 35px;
             line-height: 1;
             transition: 0.5s;
             display: block;
+        }
+
+        .footer-title img {
+            width: 28px;
         }
 
         .footer-accordion-content {
@@ -565,8 +576,8 @@
         }
 
         .footer-title::after {
-            left: 38px;
-            bottom: -10px;
+            left: 35px;
+            bottom: -5px;
         }
 
         .footer-bg {
@@ -597,9 +608,15 @@
 
         .footer-column {
             padding: 0px 10px;
+            margin-bottom: 0px;
         }
-        .footer-contact{
+
+        .footer-contact {
             gap: 8px;
+        }
+        .contact-item i{
+            font-size: 15px;
+            margin-top: 1px;
         }
 
     }
@@ -620,7 +637,8 @@
         .footer-bottom {
             justify-content: center;
         }
-        .top-bar{
+
+        .top-bar {
             justify-content: center;
         }
 

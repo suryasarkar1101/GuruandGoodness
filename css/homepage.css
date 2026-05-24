@@ -837,7 +837,311 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
     width: 110%;
 }
 
+.gg-faith-section {
+    width: 100%;
+}
+
+.gg-faith-wrapper {
+    width: 100%;
+    background: linear-gradient(90deg, #8b0d0d 0%, #a20f0f 45%, #8b0d0d 100%);
+    padding: 20px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* LEFT */
+.gg-left {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex: 1;
+}
+
+.gg-icon-circle {
+    min-width: 90px;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #f7b733;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f7b733;
+    font-size: 36px;
+    flex-shrink: 0;
+}
+
+.gg-icon {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.gg-text-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #f7c948;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.gg-text-content p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+/* DIVIDER */
+.gg-divider {
+    width: 2px;
+    height: 90px;
+    background: rgba(255, 196, 0, 0.35);
+}
+
+/* RIGHT */
+.gg-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.gg-whatsapp-icon {
+    width: 85px;
+    height: 85px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #25D366;
+    font-size: 48px;
+    flex-shrink: 0;
+}
+
+.gg-contact-content h4 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.gg-contact-content p {
+    color: #f7c948;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+/* BUTTON */
+.gg-chat-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #f7b733;
+    color: #2b1d00;
+    padding: 12px 26px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.gg-chat-btn i {
+    font-size: 22px;
+}
+
+.gg-chat-btn:hover {
+    background: #ffd166;
+    color: #000000;
+}
+
+.gg-testimonial-section {
+    width: 100%;
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #f9f1e4 0%, #f7eddc 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* CONTAINER */
+.gg-testimonial-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* FLOATING QUOTES */
+.gg-floating-quote {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d49a3a;
+    font-size: 28px;
+    backdrop-filter: blur(8px);
+}
+
+.gg-quote-left {
+    left: 80px;
+    top: 120px;
+}
+
+.gg-quote-right {
+    right: 80px;
+    top: 120px;
+}
+
+.gg-testimonial-container p {
+    max-width: 650px;
+    text-align: center;
+    margin: auto;
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Poppins', serif;
+}
+
+/* GRID */
+.gg-testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 50px;
+    padding: 20px 30px;
+}
+
+/* CARD */
+.gg-card {
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(212, 160, 95, 0.4);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+    position: relative;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.gg-card:hover {
+    transform: translateY(-6px);
+}
+
+/* USER */
+.gg-user {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.gg-user img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.gg-user h4 {
+    color: #3b1b10;
+    font-size: 18px;
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-family: 'Poppins', serif;
+}
+
+.gg-user span {
+    display: block;
+    color: #555;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+/* STARS */
+.gg-stars {
+    display: flex;
+    gap: 4px;
+}
+
+.gg-stars i {
+    color: #d49a3a;
+    font-size: 15px;
+}
+
+/* TEXT */
+.gg-card p {
+    color: #343434;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* BOTTOM QUOTE */
+.gg-bottom-quote {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.gg-bottom-quote i {
+    color: #d49a3a;
+    font-size: 28px;
+}
+
+/* STATS */
+.gg-stats {
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(212, 160, 95, 0.25);
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+
+.gg-stat-item {
+    padding: 18px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border-right: 1.5px solid rgba(212, 160, 95, 0.2);
+}
+
+.gg-stat-item:last-child {
+    border-right: none;
+}
+
+.gg-stat-item i {
+    color: #d49a3a;
+    font-size: 30px;
+}
+
+.gg-stat-item h5 {
+    color: #2b2b2b;
+    font-size: 22px;
+    margin-bottom: 0dvb;
+    font-weight: 600;
+    font-family: 'Poppins', serif;
+}
+
+.gg-stat-item p {
+    color: #666;
+    font-size: 15px;
+    text-align: left;
+}
+
 @media(max-width:1200px) {
+
     .modern-card {
         max-width: 300px;
         flex: 0 0 auto;
@@ -993,6 +1297,7 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
         font-size: 15px;
         justify-content: center;
     }
+
     .about-feature-icon {
         min-width: 60px;
         max-width: 60px;
@@ -1000,10 +1305,107 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
         max-height: 60px;
         margin-bottom: 0px;
     }
-    .about-guru-section{
+
+    .about-guru-section {
         padding: 20px;
     }
 
+    .gg-text-content h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .gg-text-content p {
+        font-size: 14px;
+    }
+
+    .gg-contact-content p {
+        margin-bottom: 5px;
+    }
+
+
+    .gg-contact-content h4 {
+        font-size: 20px;
+    }
+
+    .gg-contact-content p {
+        font-size: 15px;
+    }
+
+    .gg-left {
+        gap: 10px;
+    }
+
+    .gg-right {
+        gap: 10px;
+    }
+
+    .gg-faith-wrapper {
+        padding: 12px 9px;
+        gap: 15px;
+    }
+
+    .gg-icon-circle,
+    .gg-whatsapp-icon {
+        min-width: 65px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .gg-whatsapp-icon {
+        font-size: 38px;
+    }
+
+    .gg-chat-btn {
+        padding: 6px 10px;
+    }
+
+    .gg-chat-btn i {
+        font-size: 20px;
+    }
+
+    .gg-chat-btn span {
+        font-size: 12px;
+    }
+
+    .gg-testimonial-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+    }
+
+    .gg-testimonial-section {
+        padding: 15px 0px;
+        padding-bottom: 0px;
+    }
+
+    .gg-stats {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .gg-card p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .gg-stars i {
+        font-size: 13px;
+    }
+
+    .gg-user h4 {
+        font-size: 14px;
+    }
+
+    .gg-user span {
+        font-size: 10px;
+    }
+
+    .gg-user img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media(max-width:768px) {
@@ -1038,6 +1440,7 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
 
     .hero-buttons {
         margin-bottom: 15px;
+        gap: 10px;
     }
 
     .hero-btn {
@@ -1155,6 +1558,40 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
         min-width: 140px;
     }
 
+    .gg-chat-btn i {
+        display: none;
+    }
+
+    .gg-chat-btn span {
+        font-size: 12px;
+    }
+
+    .gg-chat-btn {
+        width: 50px;
+        text-align: center;
+    }
+
+    .gg-testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gg-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .gg-stat-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(212, 160, 95, 0.2);
+    }
+
+    .gg-stat-item:last-child {
+        border-bottom: none;
+    }
+
+    .gg-floating-quote {
+        display: none;
+    }
+
 }
 
 @media(max-width:480px) {
@@ -1181,9 +1618,11 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
     }
 
     .about-subtitle {
-        font-size: 10px;
+        font-size: 9px;
         gap: 2px;
         margin-bottom: 5px;
+        justify-content: end;
+        padding-right: 15px;
     }
 
     .about-divider {
@@ -1193,21 +1632,83 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
     .about-title {
         font-size: 20px;
         margin-bottom: 2.5px;
+        padding: 0px 15px;
+        text-align: right;
     }
 
 
     .about-description {
         font-size: 8px;
         padding: 0px 15px;
-        padding-left: 75px;
+        padding-left: 80px;
     }
 
     .about-description p {
         margin-bottom: 2px;
+        text-align: end;
     }
 
-}
+    .gg-faith-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 12px;
+    }
 
+    .gg-divider {
+        width: 100%;
+        height: 2px;
+    }
+
+    .gg-left {
+        flex-direction: column;
+    }
+
+    .gg-right {
+        flex-direction: column;
+    }
+
+    .gg-chat-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .gg-chat-btn span {
+        display: block;
+    }
+
+    .gg-chat-btn i {
+        display: block;
+    }
+
+    .gg-card {
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .gg-card p {
+        font-size: 14px;
+    }
+
+    .gg-user h4 {
+        font-size: 16px;
+    }
+
+    .gg-stat-item h5 {
+        font-size: 15px;
+    }
+
+    .gg-stat-item p {
+        font-size: 13px;
+    }
+
+    .gg-stat-item i {
+        font-size: 24px;
+    }
+
+    .gg-stat-item {
+        padding: 10px;
+    }
+}
 
 /* MAIN POPUP */
 @keyframes heroPopup {
