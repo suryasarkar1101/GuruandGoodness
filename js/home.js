@@ -33,7 +33,7 @@ const cardSlider =
 let cardScrollAmount = 0;
 function autoScrollCards() {
     if (window.innerWidth <= 1200) {
-        cardScrollAmount += 340;
+        cardScrollAmount += 320;
         if (
             cardScrollAmount >=
             cardSlider.scrollWidth -
@@ -49,3 +49,40 @@ function autoScrollCards() {
 
 }
 setInterval(autoScrollCards, 3000);
+
+const productSlider = document.querySelector('.products-slider');
+if (window.innerWidth < 992) {
+    let autoScroll;
+    const startAutoScroll = () => {
+        autoScroll = setInterval(() => {
+            const cardWidth =
+                productSlider.querySelector('.product-card').offsetWidth + 18;
+            if (
+                productSlider.scrollLeft + productSlider.clientWidth
+                >=
+                productSlider.scrollWidth - 5
+            ) {
+
+                productSlider.scrollTo({
+                    left: 0,
+                    behavior: 'smooth'
+                });
+
+            } else {
+                productSlider.scrollBy({
+                    left: cardWidth,
+                    behavior: 'smooth'
+                });
+            }
+        }, 3000);
+
+    };
+    startAutoScroll();
+    productSlider.addEventListener('touchstart', () => {
+        clearInterval(autoScroll);
+    });
+    productSlider.addEventListener('touchend', () => {
+        clearInterval(autoScroll);
+        startAutoScroll();
+    });
+}
