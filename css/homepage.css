@@ -1406,6 +1406,10 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
         width: 40px;
         height: 40px;
     }
+
+    .gg-floating-quote {
+        display: none;
+    }
 }
 
 @media(max-width:768px) {
@@ -1588,8 +1592,25 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
         border-bottom: none;
     }
 
-    .gg-floating-quote {
+    .gg-testimonial-grid {
+        display: flex;
+        overflow-x: auto;
+        gap: 18px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+    .gg-testimonial-grid::-webkit-scrollbar {
         display: none;
+    }
+
+    .gg-card {
+        max-width: 280px;
+        flex: 0 0 85%;
+        scroll-snap-align: center;
     }
 
 }
