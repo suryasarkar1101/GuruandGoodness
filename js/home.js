@@ -1,18 +1,6 @@
 
-const menuToggle = document.getElementById("menuToggle");
-const mobileMenu = document.getElementById("mobileMenu");
-
-menuToggle.addEventListener("click", () => {
-
-    menuToggle.classList.toggle("active");
-    mobileMenu.classList.toggle("show");
-
-});
-
 /* CLOSE WHEN CLICK OUTSIDE */
-
 document.addEventListener("click", (e) => {
-
     if (
         !menuToggle.contains(e.target) &&
         !mobileMenu.contains(e.target)
