@@ -6,6 +6,9 @@ async function loadComponent(id, file) {
         setActiveMenu();
         initMobileMenu();
     }
+    if(id === "footer"){
+        initFooter()
+    }
 }
 function setActiveMenu() {
     let currentPath = window.location.pathname;
@@ -16,20 +19,24 @@ function setActiveMenu() {
     const desktopLinks = document.querySelectorAll(".nav-menu a");
     // Mobile Menu
     const mobileLinks = document.querySelectorAll(".mobile-menu-link");
-    [...desktopLinks, ...mobileLinks].forEach(link => {
-        let linkPath = new URL(link.href).pathname;
-        if (linkPath.endsWith("index.html")) {
-            linkPath = linkPath.replace("index.html", "");
-        }
-        if (
-            currentPath === linkPath ||
-            currentPath.startsWith(linkPath)
-        ) {
-
-            link.classList.add("active");
-            link.classList.add("active-link");
-
-        }
+    const menus = [
+        { links: desktopLinks, activeClass: "active" },
+        { links: mobileLinks, activeClass: "active-link" }
+    ];
+    menus.forEach(menu => {
+        // We convert the collection to a true array using [...]
+        [...menu.links].forEach(link => {
+            let linkPath = new URL(link.href).pathname;
+            if (linkPath.endsWith("index.html")) {
+                linkPath = linkPath.replace("index.html", "");
+            }
+            if (
+                currentPath === linkPath ||
+                (linkPath !== "/" && currentPath.startsWith(linkPath))
+            ) {
+                link.classList.add("active", menu.activeClass);
+            }
+        });
     });
 }
 function initMobileMenu() {
@@ -42,6 +49,28 @@ function initMobileMenu() {
     });
 }
 
-loadComponent("mobileMenu", "components/mobile_menu.html");
-loadComponent("header", "components/header.html");
-loadComponent("footer", "components/footer.html");
+function initFooter() {
+    const accordionItems = document.querySelectorAll(
+        ".footer-accordion-item"
+    );
+    accordionItems.forEach((item) => {
+        const header = item.querySelector(
+            ".footer-accordion-header"
+        );
+        if (!header) return;
+        header.addEventListener("click", () => {
+            accordionItems.forEach((otherItem) => {
+
+                if (otherItem !== item) {
+                    otherItem.classList.remove("active");
+                }
+
+            });
+            item.classList.toggle("active");
+        });
+    });
+}
+
+loadComponent("mobileMenu", "/components/mobile_menu.html");
+loadComponent("header", "/components/header.html");
+loadComponent("footer", "/components/footer.html");

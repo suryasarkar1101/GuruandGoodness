@@ -10,37 +10,6 @@ document.addEventListener("click", (e) => {
     }
 
 });
-// ===============================
-// FOOTER ACCORDION
-// ===============================
-const accordionItems = document.querySelectorAll(
-    ".footer-accordion-item"
-);
-
-accordionItems.forEach((item) => {
-
-    const header = item.querySelector(
-        ".footer-accordion-header"
-    );
-
-    if (!header) return;
-
-    header.addEventListener("click", () => {
-
-        accordionItems.forEach((otherItem) => {
-
-            if (otherItem !== item) {
-                otherItem.classList.remove("active");
-            }
-
-        });
-
-        item.classList.toggle("active");
-
-    });
-
-});
-
 
 // ===============================
 // COMMON AUTO SLIDER FUNCTION

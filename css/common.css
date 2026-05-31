@@ -1,0 +1,219 @@
+.hero-title {
+    font-size: 45px;
+    line-height: 1.05;
+    font-weight: 500;
+    color: #6b0f0f;
+    font-family: Georgia, serif;
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+/* DIVIDER */
+
+.hero-divider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.hero-divider .divider-img {
+    width: 180px;
+    margin: auto;
+}
+
+.small-divider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.small-divider img {
+    width: 150px;
+    margin: auto;
+}
+
+/* CARD */
+.gg-card {
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(212, 160, 95, 0.4);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+    position: relative;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.gg-card:hover {
+    transform: translateY(-6px);
+}
+
+/* USER */
+.gg-user {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.gg-user img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.gg-user h4 {
+    color: #3b1b10;
+    font-size: 18px;
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-family: 'Poppins', serif;
+}
+
+.gg-user span {
+    display: block;
+    color: #555;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+/* STARS */
+.gg-stars {
+    display: flex;
+    gap: 4px;
+}
+
+.gg-stars i {
+    color: #d49a3a;
+    font-size: 15px;
+}
+
+/* TEXT */
+.gg-card p {
+    color: #343434;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* BOTTOM QUOTE */
+.gg-bottom-quote {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.gg-bottom-quote i {
+    color: #d49a3a;
+    font-size: 28px;
+}
+
+/* STATS */
+.gg-stats {
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(212, 160, 95, 0.25);
+    border-radius: 24px;
+    display: grid;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+.gg-stat-item {
+    padding: 18px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border-right: 1.5px solid rgba(212, 160, 95, 0.2);
+}
+
+.gg-stat-item:last-child {
+    border-right: none;
+}
+
+.gg-stat-item i {
+    color: #d49a3a;
+    font-size: 30px;
+}
+
+.gg-stat-item h5 {
+    color: #2b2b2b;
+    font-size: 22px;
+    margin-bottom: 0dvb;
+    font-weight: 600;
+    font-family: 'Poppins', serif;
+}
+
+.gg-stat-item p {
+    color: #666;
+    font-size: 15px;
+    text-align: left;
+}
+
+@media(max-width:1200px) {
+    .gg-stats {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .gg-card p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .gg-stars i {
+        font-size: 13px;
+    }
+
+    .gg-user h4 {
+        font-size: 14px;
+    }
+
+    .gg-user span {
+        font-size: 10px;
+    }
+
+    .gg-user img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(max-width:768px) {
+    .hero-title {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .hero-divider {
+        margin-bottom: 10px;
+    }
+
+    .hero-divider .divider-img {
+        width: 150px;
+    }
+
+    .gg-card {
+        max-width: 280px;
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+    }
+}
+
+@media(max-width:480px) {}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
