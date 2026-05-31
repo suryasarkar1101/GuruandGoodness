@@ -1,12 +1,16 @@
 async function loadComponent(id, file) {
     const response = await fetch(file);
-    const html = await response.text();
+    let html = await response.text();
+    html = html.replaceAll(
+        "{{BASE_PATH}}",
+        BASE_PATH || ""
+    );
     document.getElementById(id).innerHTML = html;
     if (id === "header") {
         setActiveMenu();
         initMobileMenu();
     }
-    if(id === "footer"){
+    if (id === "footer") {
         initFooter()
     }
 }
@@ -48,7 +52,6 @@ function initMobileMenu() {
 
     });
 }
-
 function initFooter() {
     const accordionItems = document.querySelectorAll(
         ".footer-accordion-item"
