@@ -150,11 +150,7 @@
     .footer-bg {
         position: absolute;
         inset: 0;
-        background:
-            linear-gradient(rgba(0, 0, 0, 0.40),
-                rgba(0, 0, 0, 0.50)),
-            url("../assets/footer-bg.png");
-
+        background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.50)), url("../assets/footer-bg.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -693,7 +689,7 @@
         .mobile-menu-overlay.show {
             display: flex;
             opacity: 1;
-        }        
+        }
 
         .mobile-menu-panel {
             position: relative;

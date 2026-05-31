@@ -71,6 +71,6 @@ function initFooter() {
     });
 }
 
-loadComponent("mobileMenu", "../components/mobile_menu.html");
-loadComponent("header", "../components/header.html");
-loadComponent("footer", "../components/footer.html");
+loadComponent("mobileMenu", `${BASE_PATH}components/mobile_menu.html`);
+loadComponent("header", `${BASE_PATH}components/header.html`);
+loadComponent("footer", `${BASE_PATH}components/footer.html`);
