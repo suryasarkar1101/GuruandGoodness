@@ -9,6 +9,11 @@
     opacity: 0;
 }
 
+/* TITLE */
+.hero-title span {
+    color: #8f1d12;
+}
+
 /* DIVIDER */
 
 .hero-divider {
