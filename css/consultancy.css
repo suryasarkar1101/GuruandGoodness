@@ -495,6 +495,8 @@
     display: flex;
     justify-content: center;
     gap: 40px;
+    position: relative;
+    z-index: 2;
 }
 
 .feature-item {
@@ -635,12 +637,6 @@
 
     .consultancy-hero {
         min-height: auto;
-        background:
-            linear-gradient(180deg,
-                rgba(251, 247, 240, .95) 0%,
-                rgba(251, 247, 240, .85) 40%,
-                rgba(251, 247, 240, .70) 100%),
-            url("../images/consultancy-hero.jpg");
         background-position: center top;
         padding-bottom: 50px;
     }
@@ -673,10 +669,6 @@
         font-size: 20px;
     }
 
-    .hero-buttons {
-        flex-direction: column;
-    }
-
     .hero-features {
         gap: 20px;
         justify-content: space-between;
@@ -689,10 +681,6 @@
 
     .consultation-services {
         padding: 70px 0 150px;
-    }
-
-    .section-heading {
-        margin-bottom: 40px;
     }
 
     .section-heading h2 {
@@ -713,13 +701,13 @@
     }
 
     .consultation-card {
-        padding: 35px 25px;
+        padding: 20px 15px;
         border-radius: 24px;
     }
 
     .service-icon {
-        width: 110px;
-        height: 110px;
+        width: 90px;
+        height: 90px;
         margin-bottom: 20px;
     }
 
@@ -729,34 +717,19 @@
     }
 
     .service-icon img {
-        width: 70px;
+        width: 90px;
     }
 
     .consultation-card h3 {
         font-size: 1.7rem;
     }
 
-    .top-leaves {
-        width: 120px;
+    .full-step {
+        padding: 10px;
     }
 
-    .left-mandala {
-        width: 120px;
-    }
-
-    .bottom-crystal {
-        width: 90px;
-        left: 10px;
-    }
-
-    .bottom-books {
-        width: 140px;
-        right: 10px;
-    }
-
-    .bottom-wave {
-        width: 280px;
-        bottom: 55px;
+    .step-card h3 {
+        font-size: 18px;
     }
 
     .consultancy-section {
@@ -774,20 +747,8 @@
         border-radius: 25px;
     }
 
-    .section-heading h3 {
-        font-size: 28px;
-    }
-
-    .section-heading h2 {
-        font-size: 38px;
-    }
-
     .divider span {
         width: 70px;
-    }
-
-    .consultancy-image {
-        order: -1;
     }
 
     .consultancy-image img {
@@ -796,59 +757,129 @@
 
     .whatsapp-card {
         position: relative;
-        width: 100%;
         left: auto;
         bottom: auto;
         transform: none;
         margin-top: 20px;
+        margin: auto;
     }
 
-    .consultancy-features {
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 0 20px;
+    .steps-line {
+        display: none;
+    }
+
+    .step-card p {
+        min-width: 100%;
+        font-size: 14px;
+    }
+
+    .step-card::before {
+        display: none;
     }
 
     .feature-item img {
         width: 60px;
     }
+
+    .herobtn-secondary {
+        padding: 9px 14px;
+        font-size: 14px;
+        gap: 4px;
+        color: #fffdf8;
+        background-color: #b18426;
+    }
 }
 
 @media(max-width:768px) {
+    .consultancy-overlay {
+        background: radial-gradient(circle at left center, rgba(255, 255, 255, 1), transparent 100%);
+    }
+
+    .consultancy-hero {
+        padding: 10px 15px;
+        min-height: auto;
+        padding-top: 55px;
+    }
+
+    .hero-text {
+        font-size: 12px;
+        line-height: 1.2;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        font-weight: 500;
+    }
+
+    .hero-buttons {
+        margin-top: 15px;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-features {
+        margin-bottom: 8px;
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    .hero-feature-item {
+        font-size: 12px;
+    }
+
+    .hero-feature-item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .herobtn-primary {
+        padding: 9px 14px;
+        font-size: 14px;
+        gap: 4px;
+    }
+
+    .consultation-services {
+        padding: 20px 0 100px;
+    }
+
+    .consultation-services .section-heading {
+        margin-bottom: 10px;
+    }
+
+    .consultation-text {
+        font-size: 15px;
+    }
+
+    .consultation-slider {
+        padding: 20px 10px;
+        margin-bottom: 90px
+    }
+
+    .consultation-slider::before,
+    .consultation-slider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 70px;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .consultation-card {
+        width: 300px;
+    }
 
     .consultation-steps {
-        padding: 70px 0;
+        padding: 20px 10px;
     }
 
-    .steps-heading h2 {
-        font-size: 42px;
+    .full-step {
+        padding: 10px 20px;
     }
 
-    .steps-heading p {
-        font-size: 16px;
-    }
-
-    .heading-divider span {
-        width: 70px;
-    }
-
-    .phone-showcase {
-        margin: 50px 0;
-    }
-
-    .phone-frame img {
-        width: 220px;
-    }
-
-    .energy-glow {
-        width: 280px;
-        height: 280px;
-    }
-
-    .steps-line {
-        display: none;
+    .consultancy-container {
+        padding: 0px;
+        gap: 10px;
     }
 
     .steps-grid {
@@ -857,8 +888,36 @@
         margin-top: 20px;
     }
 
-    .step-card::before {
+    .consultancy-image {
+        order: -1;
+        z-index: 2;
+    }
+
+    .gg-lotus-bottom-left,
+    .gg-lotus-bottom-right,
+    .gg-leaf-right {
         display: none;
+    }
+
+    .consultancy-form-card {
+        padding: 15px 10px;
+        border-radius: 0px;
+    }
+
+    .consultancy-features {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .consultancy-section {
+        padding-bottom: 15px;
+    }
+
+    .feature-item span {
+        min-width: 100%;
     }
 
     .step-icon {
@@ -867,7 +926,7 @@
     }
 
     .step-icon img {
-        width: 48px;
+        width: 100px;
     }
 
     .step-card h3 {
@@ -885,7 +944,7 @@
     }
 
     .cta-overlay {
-        padding: 35px 20px;
+        padding: 20px 15px;
     }
 
     .cta-content h2 {
@@ -905,7 +964,7 @@
     }
 
     .cta-content p {
-        font-size: 17px;
+        font-size: 14px;
         line-height: 1.6;
     }
 
@@ -913,14 +972,25 @@
         flex-direction: column;
         align-items: center;
         gap: 14px;
+        margin-top: 15px;
     }
 
     .cta-btn {
         width: 100%;
-        max-width: 320px;
-        height: 56px;
-        font-size: 17px;
+        max-width: 300px;
+        height: 50px;
+        font-size: 16px;
     }
+
 }
 
-@media(max-width:480px) {}
+@media(max-width:480px) {
+    .whatsapp-card {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .consultancy-features {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}

@@ -1013,6 +1013,15 @@
         text-align: center;
     }
 
+    .contact-card {
+        background: #fffdf8;
+        border: 1px solid #efe3cf;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        transition: .35s;
+        box-shadow: 0 7px 20px rgba(0, 0, 0, .08);
+    }
 
 }
 
