@@ -38,18 +38,6 @@
     max-width: 500px
 }
 
-/* DESCRIPTION */
-.about-highlight-description {
-    font-size: 18px;
-    color: #3f3f3f;
-    max-width: 720px;
-    margin-bottom: 18px;
-    animation: fadeUp 1s ease forwards;
-    animation-delay: 0.5s;
-    opacity: 0;
-    margin-top: 10px;
-}
-
 .about-highlight-buttons {
     display: flex;
     align-items: center;
@@ -908,11 +896,6 @@
         padding: 10px 15px;
         min-height: auto;
         padding-top: 55px;
-    }
-
-    .about-highlight-description {
-        font-size: 14px;
-        line-height: 1.2;
     }
 
     .about-highlight-buttons {

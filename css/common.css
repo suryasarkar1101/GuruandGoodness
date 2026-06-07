@@ -15,6 +15,37 @@
     color: #8f1d12;
 }
 
+.golden-title {
+    color: #b18426 !important;
+}
+
+.section-tag {
+    font-size: 0.85rem;
+    color: #c47d41;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    animation: fadeUp 1s ease forwards;
+}
+
+.section-tag img {
+    width: 40px;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #3f3f3f;
+    max-width: 720px;
+    margin-bottom: 18px;
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    margin-top: 10px;
+}
+
 /* DIVIDER */
 
 .hero-divider {
@@ -232,6 +263,11 @@
 }
 
 @media(max-width:1200px) {
+    .hero-description {
+        font-size: 17px;
+        max-width: 100%;
+    }
+
     .gg-stats {
         width: 100%;
         border-radius: 0px;
@@ -261,10 +297,21 @@
 }
 
 @media(max-width:768px) {
+    .section-tag {
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
     .hero-title {
         font-size: 28px;
         text-align: center;
         margin-bottom: 10px;
+    }
+
+    .hero-description {
+        font-size: 15px;
     }
 
     .hero-divider {
