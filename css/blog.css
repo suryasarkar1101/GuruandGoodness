@@ -25,6 +25,12 @@
     pointer-events: none;
 }
 
+.knowledge-content {
+    position: relative;
+    z-index: 2;
+    max-width: 520px;
+}
+
 /* BUTTONS */
 .knowledge-buttons {
     display: flex;
@@ -36,7 +42,7 @@
     opacity: 0;
 }
 
-.btn-primary,
+.herobtn-primary,
 .btn-outline {
     border: none;
     padding: 11px 15px;
@@ -51,7 +57,7 @@
     transition: transform .35s ease, box-shadow .35s ease, background .35s ease;
 }
 
-.btn-primary {
+.herobtn-primary {
     background: #9f0f0f;
     color: #fff;
 }
@@ -70,17 +76,17 @@
     box-shadow: 0 12px 30px rgba(200, 145, 54, .25);
 }
 
-.btn-primary:hover {
+.herobtn-primary:hover {
     transform: translateY(-4px);
     box-shadow: 0 18px 40px rgba(159, 15, 15, .28);
 }
 
-.btn-primary i,
+.herobtn-primary i,
 .btn-outline i {
     transition: .35s ease;
 }
 
-.btn-primary:hover i,
+.herobtn-primary:hover i,
 .btn-outline:hover i {
     transform: translateX(6px);
 }
@@ -100,7 +106,6 @@
 }
 
 .feature img {
-    width: 70px;
     margin-bottom: 12px;
     background: #f7efe3;
     width: 70px;
@@ -492,7 +497,7 @@
     z-index: 2;
 }
 
-.hero-content .hero-divider .divider-img {
+.hero-left .hero-divider .divider-img {
     margin: 0px;
 }
 
@@ -610,8 +615,17 @@
 }
 
 @media(max-width:1200px) {
+
+    .btn-outline {
+        padding: 9px 14px;
+        font-size: 14px;
+        gap: 4px;
+        color: #fffdf8;
+        background-color: #b18426;
+    }
+
     .knowledge-topics-section {
-        padding: 70px 20px;
+        padding: 50px 20px;
     }
 
     .knowledge-header h2 {
@@ -623,8 +637,9 @@
     }
 
     .topics-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 25px;
+        justify-content: center;
     }
 
     .topic-card {
@@ -652,8 +667,12 @@
         width: 180px;
     }
 
+    .articles-container {
+        padding: 0px;
+    }
+
     .articles-section {
-        padding: 70px 20px;
+        padding: 50px 20px;
     }
 
     .articles-header h2 {
@@ -665,7 +684,7 @@
     }
 
     .articles-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
 
@@ -707,9 +726,28 @@
         font-size: 17px;
         line-height: 1.5;
     }
+
+    .article-category {
+        transform: translateY(0);
+    }
+
+
+    #catagory-topic .topics-grid {
+        display: grid;
+    }
+
+    #catagory-topic .topic-card {
+        width: 100%;
+    }
 }
 
 @media(max-width:768px) {
+    .knowledge-section {
+        padding: 10px 15px;
+        min-height: auto;
+        padding-top: 55px;
+    }
+
     .cta-title {
         font-size: 25px;
         line-height: 1.2;
@@ -752,12 +790,112 @@
     }
 
     .article-title {
-        font-size: 28px;
+        font-size: 24px;
+        margin-top: 10px;
     }
 
     .article-body {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    
+    .hero-left .hero-divider .divider-img {
+        margin: auto;
     }
 }
 
-@media(max-width:480px) {}
+@media(max-width:480px) {
+    .knowledge-content {
+        max-width: 100%;
+    }
+
+    .hero-left {
+        max-width: 100%;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .knowledge-buttons {
+        margin-top: 15px;
+        gap: 8px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .herobtn-primary,
+    .btn-outline {
+        padding: 9px 14px;
+        font-size: 14px;
+        gap: 3px;
+    }
+
+    .knowledge-features {
+        background: rgba(255, 255, 255, 0.55);
+        border: 1px solid rgba(224, 205, 180, 0.45);
+        gap: 15px;
+        animation: featureMarquee 22s linear infinite;
+        padding: 10px 0px;
+    }
+
+    .feature {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .feature img {
+        min-width: 50px;
+        min-height: 50px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0px;
+    }
+
+    .feature-title {
+        font-size: 14px;
+    }
+
+    .feature-description {
+        font-size: 12px;
+    }
+
+    .stat-card {
+        width: 30%;
+        padding: 10px 8px;
+    }
+
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .stat-icon i {
+        font-size: 28px;
+    }
+
+    .stat-card h3 {
+        font-size: 16px;
+    }
+
+    .stat-card p {
+        font-size: 13px;
+    }
+
+
+}
+
+@keyframes featureMarquee {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
