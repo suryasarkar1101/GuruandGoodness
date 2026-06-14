@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-base="../">
+
+<head>
+    <title>Shop | Guru and Goodness</title>
+    <link rel="stylesheet" href="../css/shop.css">
+    <script>
+        const BASE_PATH = document.documentElement.dataset.base || "./";
+    </script>
+    <script src="../js/head.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header-wrapper" id="header">
+
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenu">
+
+    </div>
+    <section class="shop-hero">
+        <div class="shop-hero-overlay"></div>
+        <div class="shop-hero-content">
+            <div class="hero-title" id="shop-title">
+                <span>Explore Products for a </span><span class="golden-title">Balanced Life</span>
+            </div>
+            <div class="hero-divider">
+                <img src="../assets/divider_below.png" alt="Divider" class="divider-img">
+            </div>
+            <div class="hero-description" id="shop-descrption">
+                Discover a thoughtfully curated collection of spiritual products,
+                Vastu essentials, healing crystals, and organic wellness items
+                designed to support harmony, positivity, and everyday well-being.
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-category-section">
+        <div class="shop-category-nav">
+            <a href="?category=all" class="shop-category-card">
+                <img src="../assets/all_product.png" alt="">
+                <span>All Products</span>
+            </a>
+            <a href="?category=spiritual" class="shop-category-card">
+                <img src="../assets/spiritual_product.png" alt="">
+                <span>Spiritual Products</span>
+            </a>
+            <a href="?category=vastu" class="shop-category-card">
+                <img src="../assets/vastu_product.png" alt="">
+                <span>Vastu Products</span>
+            </a>
+            <a href="?category=crystals" class="shop-category-card">
+                <img src="../assets/healing_crystal.png" alt="">
+                <span>Healing Crystals</span>
+            </a>
+            <a href="?category=wellness" class="shop-category-card">
+                <img src="../assets/organic product.png" alt="">
+                <span>Organic Wellness</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="shop-products-section">
+        <div class="shop-filter-bar">
+            <div class="filter-left">
+                <select id="productCategoryFilter">
+                    <option value="all">All Products</option>
+                    <option value="spiritual"> Spiritual Products </option>
+                    <option value="vastu"> Vastu Products </option>
+                    <option value="crystals"> Healing Crystals </option>
+                    <option value="wellness"> Organic Wellness </option>
+                </select>
+                <!-- <select>
+                    <option>Price Range</option>
+                </select> -->
+            </div>
+            <div class="filter-tabs">
+                <button class="active">🔥 Popular Products</button>
+                <button>🔮 New Arrivals</button>
+                <button>⭐ Bestsellers</button>
+            </div>
+            <div class="filter-right">
+                <select>
+                    <option>Sort By</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card new-card">
+                <div class="badge">
+                    NEW ARRIVALS
+                </div>
+                <div class="product-image">
+                    <img src="../assets/product/images/product1.png" alt="">
+                </div>
+                <a href="../product/?product_id=1">
+                    <div class="product-title">
+                        Healing Crystal Bracelet
+                    </div>
+                    <div class="product-desc">
+                        Promotes healing, calmness & positive energy.
+                    </div>
+                    <div class="product-price">
+                        <span class="sale-price">₹1,199</span>
+                        <span class="real-price">₹1,899</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </a>
+                <a href="#" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
+                </a>
+            </div>
+            <div class="product-card bestseller-card">
+                <div class="badge">
+                    BEST SELLER
+                </div>
+                <div class="product-image">
+                    <img src="../assets/product/images/product2.png" alt="">
+                </div>
+                <a href="../product/?product_id=2">
+                    <div class="product-title">
+                        Rudraksha Mala
+                    </div>
+                    <div class="product-desc">
+                        Enhances spiritual growth, focus & inner peace.
+                    </div>
+                    <div class="product-price">
+                        <span class="sale-price">₹1,199</span>
+                        <span class="real-price">₹1,899</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </a>
+                <a href="#" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
+                </a>
+            </div>
+            <!-- Card -->
+            <div class="product-card popular-card">
+                <div class="badge">
+                    POPULAR
+                </div>
+                <div class="product-image">
+                    <img src="../assets/product/images/product3.png" alt="">
+                </div>
+                <a href="../product/?product_id=3">
+                    <div class="product-title">
+                        Vastu Energy Pyramid
+                    </div>
+                    <div class="product-desc">
+                        Balances energy, removes negativity &
+                        attracts prosperity.
+                    </div>
+                    <div class="product-price">
+                        <span class="sale-price">₹999</span>
+                        <span class="real-price">₹1,199</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </a>
+                <a href="#" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
+                </a>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../assets/product/images/product4.png" alt="">
+                </div>
+                <a href="../product/?product_id=4">
+                    <div class="product-title">
+                        Organic Wellness Kit
+                    </div>
+                    <div class="product-desc">
+                        Ayurvedic essentials for a healthy mind,
+                        body & soul.
+                    </div>
+                    <div class="product-price">
+                        <span class="sale-price">₹1,199</span>
+                        <span class="real-price">₹1,899</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </a>
+                <a href="#" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
+                </a>
+            </div>
+            <div class="product-card bestseller-card">
+                <div class="badge">
+                    BEST SELLER
+                </div>
+                <div class="product-image">
+                    <img src="../assets/product/images/product5.png" alt="">
+
+                </div>
+                <a href="../product/?product_id=5">
+                    <div class="product-title">
+                        Spiritual Combos Pack
+                    </div>
+                    <div class="product-desc">
+                        Complete spiritual wellness collection for gifting.
+                    </div>
+                    <div class="product-price">
+                        <span class="sale-price">₹2,199</span>
+                        <span class="real-price">₹2,899</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </a>
+                <a href="#" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
+                </a>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../assets/product/images/product6.png" alt="">
+                </div>
+                <a href="../product/?product_id=6">
+                    <div class="product-title">
+                        Meditation Accessories
+                    </div>
+                    <div class="product-desc">
+                        Premium meditation tools for inner peace &
+                        mindfulness. Premium meditation tools for inner peace &
+                        mindfulness.Premium meditation tools for inner peace &
+                        mindfulness.
+                    </div>
+                    <div class="product-price">
+                        <span class="sale-price">₹799</span>
+                        <span class="real-price">₹899</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </a>
+                <a href="#" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="gg-faith-section">
+        <div class="gg-faith-wrapper">
+            <!-- LEFT SIDE -->
+            <div class="gg-left">
+                <div class="gg-icon-circle">
+                    <img src="../assets/lotus_logo.png" class="gg-icon">
+                </div>
+                <div class="gg-text-content">
+                    <h2>Guided by Faith. Driven by Purpose.</h2>
+                    <p>
+                        At Guru and Goodness, our mission is simple – to help you
+                        live a balanced, blessed and meaningful life.
+                    </p>
+                </div>
+            </div>
+            <!-- DIVIDER -->
+            <div class="gg-divider"></div>
+            <!-- RIGHT SIDE -->
+            <div class="gg-right">
+                <div class="gg-whatsapp-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="gg-contact-content">
+                    <h4>Have Questions?</h4>
+                    <p>We're here on WhatsApp</p>
+                </div>
+                <a href="#" class="gg-chat-btn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>CHAT WITH US</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+            <div class="cta-title">
+                Ready to Begin Your
+                <br>
+                Wellness Journey?
+            </div>
+            <div class="cta-text">
+                Explore products, ask questions, or connect
+                for guidance directly through WhatsApp.
+            </div>
+            <a href="#" class="cta-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer-section" id="footer">
+
+    </footer>
+
+    <script src="../js/component.js"></script>
+    <script src="../js/shop_hero.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const category = params.get("category") || "all";
+        const current = heroData[category] || heroData.all;
+        document.getElementById("shop-title").innerHTML = current.title;
+        document.getElementById("shop-descrption").textContent = current.description;
+        document.title = `${current.brTitle} | Guru and Goodness`;
+
+        document.querySelectorAll(".shop-category-card")
+            .forEach(card => {
+                const url = new URL(card.href);
+                const cardCategory = url.searchParams.get("category");
+                if (cardCategory === category)
+                    card.classList.add("active");
+            });
+
+        const categoryFilter = document.getElementById("productCategoryFilter");
+        categoryFilter.value = category;
+        categoryFilter.addEventListener(
+            "change",
+            function () {
+                const url = new URL(window.location);
+                url.searchParams.set("category", this.value);
+                window.location.href = url.toString();
+            }
+        );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

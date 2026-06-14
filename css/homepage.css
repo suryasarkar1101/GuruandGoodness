@@ -495,6 +495,10 @@
     box-shadow: 0 20px 50px rgba(168, 121, 60, 0.4);
 }
 
+.product-card a {
+    text-decoration: none;
+}
+
 /* BADGE */
 
 .bestseller-card .badge {
@@ -1239,9 +1243,10 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
     .hero-content {
         max-width: 375px;
     }
+
     .hero-content p {
         font-size: 15px;
-    }    
+    }
 
     .hero-buttons {
         margin-bottom: 15px;
