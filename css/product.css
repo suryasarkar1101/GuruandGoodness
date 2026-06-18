@@ -1,0 +1,988 @@
+.gg-product-details {
+    padding: 50px 80px;
+    background: #faf8f3;
+    padding-top: 85px;
+    margin-top: -35px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-decor-left2 {
+    left: -20px;
+    top: 235px;
+    width: 120px;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.about-decor-right {
+    right: -110px;
+    top: 80px;
+    width: 300px;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.gg-product-container {
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 650px 1fr;
+    gap: 40px;
+    z-index: 10;
+}
+
+.gg-product-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.gg-product-thumbnails {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.gg-product-thumb {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.gg-product-thumb.active {
+    border-color: #d58c28;
+}
+
+.gg-product-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gg-product-main-image {
+    flex: 1;
+    position: relative;
+}
+
+.gg-product-main-image img {
+    width: 100%;
+    border-radius: 24px;
+    display: block;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.gg-image-zoom {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+
+.gg-product-title-row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.breadcrumb-my {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.breadcrumb-my a {
+    color: #555;
+    text-decoration: none;
+}
+
+.breadcrumb-my span:last-child {
+    color: #9f1616;
+    font-weight: 600;
+}
+
+.gg-product-name {
+    font-size: 42px;
+    color: #9f1616;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.gg-product-badge {
+    background: linear-gradient(135deg, #b93e20, #df7b2d);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gg-product-rating-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.gg-stars {
+    color: #f7a11b;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.gg-rating-score,
+.gg-review-count,
+.gg-sold-count {
+    font-size: 15px;
+    color: #666;
+}
+
+.gg-divider {
+    color: #d5c7b4;
+    font-size: 14px;
+}
+
+.gg-price-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.gg-current-price {
+    font-size: 38px;
+    color: #c31d1d;
+    font-weight: 700;
+}
+
+.gg-old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 20px;
+}
+
+.gg-discount-badge {
+    background: #fde7dd;
+    color: #e25f25;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.gg-tax-text {
+    font-size: 14px;
+    color: #8a7d70;
+    margin: 0;
+}
+
+.gg-product-description {
+    width: 80%;
+    margin-top: 8px;
+    color: #666;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.gg-product-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.gg-benefit-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #fff;
+    border: 1px solid #eadfce;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.gg-benefit-tag:hover {
+    border-color: #d89a3a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+}
+
+.gg-benefit-tag img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.gg-benefit-tag span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b5b4f;
+    white-space: nowrap;
+}
+
+.gg-product-actions {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.gg-qty {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5d7c1;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+.gg-qty button {
+    width: 45px;
+    height: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#qtyValue {
+    width: 50px;
+    text-align: center;
+}
+
+.gg-whatsapp-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1ba94c;
+    color: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    max-width: max-content;
+    gap: 12px;
+    padding: 10px 40px;
+    font-weight: 600;
+}
+
+.gg-whatsapp-btn i {
+    font-size: 24px;
+}
+
+.gg-product-features {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gg-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6b5b4f;
+    max-width: calc(25% - 10px);
+}
+
+.gg-feature-item img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.gg-benefits-section {
+    padding: 30px 90px;
+}
+
+.gg-benefits-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.gg-benefits-arrow {
+    color: #d59a3d;
+    font-size: 20px;
+}
+
+.gg-benefits-header .benefits-title {
+    font-size: 25px;
+    font-weight: 500;
+    color: #2b2118;
+    font-family: Georgia, serif;
+}
+
+.gg-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.gg-benefit-card {
+    background: #fff;
+    border: 1px solid #f0dfc6;
+    border-radius: 18px;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    transition: .3s;
+}
+
+.gg-benefit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+}
+
+.gg-benefit-icon {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    background: #fffdf8;
+    border: 1px solid #f0dfc6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gg-benefit-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.gg-benefit-content h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #473528;
+    margin-bottom: 4px;
+}
+
+.gg-benefit-content p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #7b6b5d;
+}
+
+.gg-significance-section {
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, rgba(18, 25, 8, .92) 0%, rgba(35, 35, 15, .75) 35%, rgba(0, 0, 0, .15) 70%, rgba(0, 0, 0, 0) 100%), url('../assets/spiritual-significance-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.gg-significance-content {
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+.gg-significance-left {
+    max-width: 35%;
+}
+
+.gg-significance-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+}
+
+.gg-significance-description {
+    font-size: 17px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, .88);
+    margin-bottom: 24px;
+}
+
+.gg-significance-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.gg-significance-tag {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 215, 100, .35);
+    background: rgba(255, 180, 60, .12);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    backdrop-filter: blur(6px);
+}
+
+.gg-product-specification-section {
+    padding: 30px 90px;
+}
+
+.gg-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.gg-section-heading .benefits-title {
+    font-size: 25px;
+    font-weight: 500;
+    color: #2b2118;
+    font-family: Georgia, serif;
+}
+
+.gg-specification-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.gg-specification-card,
+.gg-product-extra-card {
+    background: #fff;
+    border: 1px solid #eadfce;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.gg-specification-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gg-spec-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    border-bottom: 1px solid #eee3d5;
+    border-right: 1px solid #eee3d5;
+}
+
+.gg-spec-item:nth-last-child(-n+2) {
+    border-bottom: none;
+}
+
+.gg-spec-label {
+    padding: 10px 12px;
+    font-weight: 600;
+    color: #5c432f;
+    background: #faf7f2;
+    font-size: 15px;
+}
+
+.gg-spec-value {
+    padding: 10px;
+    color: #6c6258;
+    font-size: 15px;
+}
+
+.gg-product-extra-card {
+    padding: 0px
+}
+
+.shop-products-section {
+    padding: 40px 120px;
+    background: #faf8f3;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+    justify-content: center;
+}
+
+/* CARD */
+
+.product-card {
+    position: relative;
+    padding: 14px;
+    border-radius: 28px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .42);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, .7);
+    transition: .5s ease;
+    box-shadow: 0 10px 40px rgba(168, 121, 60, 0.2), inset 0 1px 1px rgba(255, 255, 255, .6);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(168, 121, 60, 0.4);
+}
+
+.product-card a {
+    text-decoration: none;
+}
+
+/* BADGE */
+
+.product-card .badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 600;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(185, 62, 32, .3);
+    text-wrap: balance;
+    line-height: 1.3;
+}
+
+.bestseller-card .badge {
+    background: linear-gradient(135deg, #b93e20, #df7b2d);
+    color: #fff;
+}
+
+.new-card .badge {
+    background: linear-gradient(135deg, #0f7a2c, #39b85a);
+    color: #fff;
+}
+
+.popular-card .badge {
+    background: linear-gradient(135deg, #b86a00, #e9a31a);
+    color: #fff;
+}
+
+/* IMAGE */
+
+.product-image {
+    overflow: hidden;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    background: #f7efe3;
+    padding: 5px;
+}
+
+.product-image img {
+    height: 200px;
+    width: 100%;
+    object-fit: scale-down;
+    transition: transform .7s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.08);
+}
+
+/* TITLE */
+
+.product-title {
+    font-family: 'Poppins', serif;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    color: #6b1d14;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* DESCRIPTION */
+.product-desc {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 5px;
+    min-height: 46px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+/* SALE PRICE */
+
+.sale-price {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -.5px;
+}
+
+/* REAL PRICE */
+
+.real-price {
+    font-size: 16px;
+    color: #8e8e8e;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.gg-testimonial-section {
+    width: 100%;
+    padding: 50px 90px;
+    background: linear-gradient(180deg, #f9f1e4 0%, #f7eddc 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* GRID */
+.gg-testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 50px;
+    padding: 10px 40px;
+}
+
+/* Founder Card */
+
+.founder-note-card {
+    background: #fffdf9;
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    gap: 18px;
+    height: 100%;
+    align-items: center;
+}
+
+.founder-image img {
+    width: 100px;
+    height: 110px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.founder-card-title {
+    font-size: 20px;
+    color: #4b2b1c;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.founder-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 2px;
+}
+
+.founder-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #8b1e1e;
+}
+
+.founder-role {
+    font-size: 14px;
+    color: #777;
+}
+
+@media(max-width:1100px) {
+    .gg-product-details {
+        padding: 40px 70px;
+        padding-top: 75px;
+    }
+
+    .gg-product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gg-product-thumb {
+        flex-shrink: 0;
+    }
+
+    .gg-product-name {
+        font-size: 30px;
+    }
+
+    .gg-benefits-section {
+        padding: 20px 40px;
+    }
+
+    .gg-benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gg-significance-left {
+        max-width: 55%;
+    }
+
+    .gg-product-specification-section {
+        padding: 20px 40px;
+    }
+
+    .gg-specification-layout {
+        grid-template-columns: 1.7fr 1fr;
+    }
+
+    .shop-products-section,
+    .gg-testimonial-section {
+        padding: 20px 40px;
+    }
+
+    .gg-testimonial-grid {
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .gg-product-features {
+        gap: 12px;
+        justify-content: space-between;
+    }
+
+    .gg-feature-item {
+        width: calc(50% - 10px);
+        font-size: 15px;
+        gap: 12px;
+    }
+
+    .gg-feature-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .gg-product-benefits {
+        gap: 8px;
+    }
+
+    .gg-benefit-tag {
+        flex: 1 1 calc(25% - 16px);
+        justify-content: center;
+        padding: 10px 12px;
+    }
+
+    .gg-benefit-tag span {
+        font-size: 12px;
+    }
+
+    .gg-significance-section {
+        background-position: 70% center;
+    }
+
+    .gg-significance-content {
+        min-height: auto;
+        padding: 35px 24px;
+    }
+
+    .gg-significance-left {
+        max-width: 70%;
+    }
+
+    .gg-significance-title {
+        font-size: 30px;
+    }
+
+    .gg-significance-description {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .gg-significance-tags {
+        gap: 8px;
+    }
+
+    .gg-significance-tag {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    .gg-specification-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .gg-specification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gg-spec-item {
+        grid-template-columns: 120px 1fr;
+        border-right: none;
+    }
+
+}
+
+@media (max-width:480px) {
+    .gg-product-details {
+        padding: 20px 5px;
+        padding-top: 40px;
+    }
+
+    .gg-product-container {
+        gap: 20px;
+    }
+
+    .gg-product-gallery {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .gg-product-gallery>* {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .gg-product-thumbnails {
+        flex-direction: row;
+        overflow: auto;
+        padding: 10px 0px;
+    }
+
+    .gg-product-main-image img {
+        box-shadow: none;
+        border: 2px solid #9f1616;
+    }
+
+    .gg-product-thumb {
+        width: 70px;
+        height: 70px;
+    }
+
+    .gg-image-zoom {
+        display: none;
+    }
+
+    .gg-product-content {
+        padding: 2px 10px;
+    }
+
+    .breadcrumb-my {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .gg-product-title-row {
+        margin-bottom: 7px;
+    }
+
+    .gg-product-name {
+        display: inline-block;
+    }
+
+    .gg-whatsapp-btn {
+        padding: 10px 20px;
+    }
+
+    .gg-product-description {
+        width: 100%;
+    }
+
+    .gg-product-features {
+        gap: 8px;
+    }
+
+    .gg-feature-item {
+        gap: 6px;
+        max-width: calc(50% - 1px);
+        font-size: 12px;
+    }
+
+    .gg-feature-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .gg-product-badge {
+        padding: 5px 10px;
+        font-size: 12.5px;
+    }
+
+    .gg-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gg-benefit-card {
+        padding: 14px;
+    }
+
+    .gg-benefits-section,
+    .gg-significance-content,
+    .gg-product-specification-section,
+    .shop-products-section,
+    .gg-testimonial-section {
+        padding: 20px 20px;
+    }
+
+    .gg-significance-title {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .gg-significance-description {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .gg-significance-tag {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+
+    .gg-significance-tags {
+        gap: 6px;
+    }
+
+    .gg-significance-left {
+        max-width: 80%;
+    }
+
+    .gg-card {
+        max-width: 100% !important;
+    }
+
+    .gg-testimonial-grid {
+        margin-bottom: 15px;
+        grid-template-columns: 1fr;
+    }
+
+    .gg-product-actions {
+        justify-content: center;
+    }
+}
