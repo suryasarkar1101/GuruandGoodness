@@ -1,150 +1,100 @@
-const track = document.querySelector(".testimonial-track");
-const cards = document.querySelectorAll(".gg-card");
-const prevBtn = document.querySelector(".testimonial-prev");
-const nextBtn = document.querySelector(".testimonial-next");
-const dotsWrap = document.querySelector(".testimonial-dots");
+fetch("../data/customer-reviews.json")
+    .then(response => response.json())
+    .then(reviews => {
+        let container = document.getElementById("reviewContainer");
+        let aboutReviews = reviews
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 10);
+        aboutReviews.forEach(review => {
+            container.innerHTML += `
+        <div class="gg-card">
+            <div class="gg-user">
+                <img src="${review.image}" alt="${review.name}">
+                <div>
+                    <h4>${review.name}</h4>
+                    <span>${review.location}</span>
 
-let current = 0;
-
-function getVisibleCards() {
-    if (window.innerWidth <= 767) return 1;
-    if (window.innerWidth <= 991) return 2;
-    return 4;
-}
-
-function getMaxSlide() {
-    return cards.length - getVisibleCards();
-}
-
-function createDots() {
-    dotsWrap.innerHTML = "";
-    const totalDots = getMaxSlide() + 1;
-    for (let i = 0; i < totalDots; i++) {
-        const dot = document.createElement("span");
-        dot.classList.add("testimonial-dot");
-        if (i === current) dot.classList.add("active");
-        dot.addEventListener("click", () => {
-            current = i;
-            updateSlider();
+                    <div class="gg-stars">
+                        ${"<i class='fa-solid fa-star'></i>".repeat(review.rating)}
+                    </div>
+                </div>
+            </div>
+            <p>${review.review}</p>
+            <div class="gg-bottom-quote">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+        </div>`;
         });
-        dotsWrap.appendChild(dot);
-    }
-}
-
-function updateSlider() {
-    const card = cards[0];
-    const gap = 40;
-    const move = current * (card.offsetWidth + gap);
-    track.style.transform = `translateX(-${move}px)`;
-    document.querySelectorAll(".testimonial-dot").forEach((dot, index) => {
-        dot.classList.toggle(
-            "active",
-            index === current
-        );
+        initTestimonialSlider();
     });
-}
 
-nextBtn.addEventListener("click", () => {
-    if (current < getMaxSlide()) {
+function initTestimonialSlider() {
+
+    const track = document.querySelector(".testimonial-track");
+    const cards = document.querySelectorAll(".gg-card");
+    const prevBtn = document.querySelector(".testimonial-prev");
+    const nextBtn = document.querySelector(".testimonial-next");
+    const dotsWrap = document.querySelector(".testimonial-dots");
+
+    if (!track || cards.length === 0) return;
+    let current = 0;
+    function getVisibleCards() {
+        if (window.innerWidth <= 767) return 1;
+        if (window.innerWidth <= 991) return 2;
+        return 4;
+    }
+    function getMaxSlide() {
+        return cards.length - getVisibleCards();
+    }
+    function createDots() {
+        dotsWrap.innerHTML = "";
+        for (let i = 0; i <= getMaxSlide(); i++) {
+            let dot = document.createElement("span");
+            dot.classList.add("testimonial-dot");
+            if (i === current)
+                dot.classList.add("active");
+            dot.onclick = () => {
+                current = i;
+                updateSlider();
+            };
+            dotsWrap.appendChild(dot);
+        }
+    }
+
+    function updateSlider() {
+        let move = current * (cards[0].offsetWidth + 40);
+        track.style.transform = `translateX(-${move}px)`;
+        document.querySelectorAll(".testimonial-dot")
+            .forEach((dot, index) => {
+                dot.classList.toggle("active", index === current);
+            });
+    }
+
+    nextBtn.onclick = () => {
         current++;
-    } else {
-        current = 0;
-    }
-    updateSlider();
-});
-
-prevBtn.addEventListener("click", () => {
-    if (current > 0) {
+        if (current > getMaxSlide())
+            current = 0;
+        updateSlider();
+    };
+    prevBtn.onclick = () => {
         current--;
-    } else {
-        current = getMaxSlide();
-    }
-    updateSlider();
-});
+        if (current < 0)
+            current = getMaxSlide();
+        updateSlider();
+    };
 
-window.addEventListener("resize", () => {
-    if (current > getMaxSlide()) {
-        current = getMaxSlide();
-    }
+    window.addEventListener("resize", () => {
+        if (current > getMaxSlide())
+            current = getMaxSlide();
+        createDots();
+        updateSlider();
+    });
     createDots();
     updateSlider();
-});
-
-createDots();
-updateSlider();
-
-setInterval(() => {
-    if (current < getMaxSlide()) {
+    setInterval(() => {
         current++;
-    } else {
-        current = 0;
-    }
-    updateSlider();
-}, 5000);
-
-function createAutoSlider({
-    sliderSelector,
-    cardSelector,
-    gap = 0,
-    interval = 3000,
-    mobileWidth = 1200
-}) {
-    const slider = document.querySelector(sliderSelector);
-
-    if (
-        !slider ||
-        window.innerWidth > mobileWidth
-    ) return;
-
-    let scrollAmount = 0;
-    let autoSlide;
-
-    function startSlider() {
-
-        autoSlide = setInterval(() => {
-
-            const card = slider.querySelector(cardSelector);
-            if (!card) return;
-            const cardWidth = card.offsetWidth;
-            scrollAmount += cardWidth;
-            // Reset slider
-            if (
-                scrollAmount >=
-                slider.scrollWidth -
-                slider.clientWidth
-            ) {
-                scrollAmount = 0;
-            } else {
-                scrollAmount = scrollAmount + gap;
-            }
-            slider.scrollTo({
-                left: scrollAmount,
-                behavior: "smooth"
-            });
-        }, interval);
-    }
-    startSlider();
-    // Pause on touch
-    slider.addEventListener(
-        "touchstart",
-        () => {
-            clearInterval(autoSlide);
-        }
-    );
-    // Restart on touch end
-    slider.addEventListener(
-        "touchend",
-        () => {
-            clearInterval(autoSlide);
-            startSlider();
-        }
-    );
+        if (current > getMaxSlide())
+            current = 0;
+        updateSlider();
+    }, 5000);
 }
-
-createAutoSlider({
-    sliderSelector: ".about-features",
-    cardSelector: ".about-feature-card",
-    gap: 20,
-    interval: 3000,
-    mobileWidth: 1200
-});
