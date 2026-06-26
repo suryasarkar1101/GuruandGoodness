@@ -1,5 +1,9 @@
 function loadReviews(type, count, productId = null) {
-    fetch("../data/customer-reviews.json")
+    const basePath = window.location.pathname.includes("/GuruandGoodness/")
+        ? "/GuruandGoodness/"
+        : "/";
+
+    fetch(basePath + "data/customer-reviews.json")
         .then(response => response.json())
         .then(reviews => {
             let container = document.getElementById("reviewContainer");
@@ -8,7 +12,7 @@ function loadReviews(type, count, productId = null) {
             if (type === "home") {
                 selectedReviews = reviews
                     .filter(review => review.featured);
-            }           
+            }
             // Product Details page
             if (type === "product") {
                 selectedReviews = reviews

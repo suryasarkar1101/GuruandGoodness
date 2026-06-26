@@ -85,7 +85,7 @@
     "location": "কলকাতা, ভারত",
     "rating": 5,
     "review": "পণ্যটি সত্যিই খুব সুন্দর। কোয়ালিটি এবং ফিনিশিং দেখে খুব ভালো লেগেছে। পরিষেবাও দ্রুত ও ভালো ছিল।",
-    "image": "../assets/users/user2.png",
+    "image": "../assets/users/user8.png",
     "featured": false,
     "productId": 1
   },
@@ -105,7 +105,7 @@
     "location": "দুর্গাপুর, ভারত",
     "rating": 4,
     "review": "পণ্যের মান খুব ভালো। ব্যবহার করার পর ভালো অভিজ্ঞতা হয়েছে। ভবিষ্যতে আবার কিনতে চাই।",
-    "image": "../assets/users/user3.png",
+    "image": "../assets/users/user6.png",
     "featured": false,
     "productId": 3
   }
