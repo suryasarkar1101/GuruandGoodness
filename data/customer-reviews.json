@@ -5,7 +5,7 @@
     "location": "কলকাতা, ভারত",
     "rating": 5,
     "review": "পণ্যের গুণমান খুবই ভালো। ব্যবহার করার পর ভালো অনুভূতি পাচ্ছি। পরিষেবাও অসাধারণ।",
-    "image": "../assets/users/user1.png",
+    "image": "assets/users/user1.png",
     "featured": true,
     "productId": 1
   },
@@ -15,7 +15,7 @@
     "location": "Mumbai, India",
     "rating": 4,
     "review": "The Rudraksha bracelet quality is amazing. The product looks premium and authentic. Highly recommended.",
-    "image": "../assets/users/user2.png",
+    "image": "assets/users/user2.png",
     "featured": true,
     "productId": 1
   },
@@ -25,7 +25,7 @@
     "location": "শিলিগুড়ি, ভারত",
     "rating": 5,
     "review": "আমি খুব সন্তুষ্ট। প্যাকেজিং সুন্দর ছিল এবং পণ্যটি অনেক ভালো মানের।",
-    "image": "../assets/users/user3.png",
+    "image": "assets/users/user3.png",
     "featured": true,
     "productId": 2
   },
@@ -35,7 +35,7 @@
     "location": "Delhi, India",
     "rating": 5,
     "review": "A beautiful product with excellent finishing. I loved the overall experience.",
-    "image": "../assets/users/user4.png",
+    "image": "assets/users/user4.png",
     "featured": true,
     "productId": 2
   },
@@ -45,7 +45,7 @@
     "location": "হাওড়া, ভারত",
     "rating": 4,
     "review": "ডেলিভারি খুব দ্রুত হয়েছে। পণ্যের মান এবং পরিষেবা দুটোই ভালো লেগেছে।",
-    "image": "../assets/users/user5.png",
+    "image": "assets/users/user5.png",
     "featured": true,
     "productId": 3
   },
@@ -55,7 +55,7 @@
     "location": "Bangalore, India",
     "rating": 5,
     "review": "The crystal product is beautiful and feels very positive. Great quality and service.",
-    "image": "../assets/users/user6.png",
+    "image": "assets/users/user6.png",
     "featured": false,
     "productId": 3
   },
@@ -65,7 +65,7 @@
     "location": "ভুবনেশ্বর, ভারত",
     "rating": 5,
     "review": "পণ্যটি দেখতে খুব সুন্দর এবং ব্যবহার করেও ভালো অভিজ্ঞতা হয়েছে। আবার কিনবো।",
-    "image": "../assets/users/user7.png",
+    "image": "assets/users/user7.png",
     "featured": false,
     "productId": 4
   },
@@ -75,7 +75,7 @@
     "location": "Pune, India",
     "rating": 4,
     "review": "Very satisfied with the purchase. Good quality product and smooth buying experience.",
-    "image": "../assets/users/user8.png",
+    "image": "assets/users/user8.png",
     "featured": false,
     "productId": 4
   },
@@ -85,7 +85,7 @@
     "location": "কলকাতা, ভারত",
     "rating": 5,
     "review": "পণ্যটি সত্যিই খুব সুন্দর। কোয়ালিটি এবং ফিনিশিং দেখে খুব ভালো লেগেছে। পরিষেবাও দ্রুত ও ভালো ছিল।",
-    "image": "../assets/users/user8.png",
+    "image": "assets/users/user8.png",
     "featured": false,
     "productId": 1
   },
@@ -95,7 +95,7 @@
     "location": "Ahmedabad, India",
     "rating": 5,
     "review": "Excellent quality and premium feel. The product was packed nicely and delivered on time. Very happy with my purchase.",
-    "image": "../assets/users/user5.png",
+    "image": "assets/users/user5.png",
     "featured": false,
     "productId": 2
   },
@@ -105,7 +105,7 @@
     "location": "দুর্গাপুর, ভারত",
     "rating": 4,
     "review": "পণ্যের মান খুব ভালো। ব্যবহার করার পর ভালো অভিজ্ঞতা হয়েছে। ভবিষ্যতে আবার কিনতে চাই।",
-    "image": "../assets/users/user6.png",
+    "image": "assets/users/user6.png",
     "featured": false,
     "productId": 3
   }

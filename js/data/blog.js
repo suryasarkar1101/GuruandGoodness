@@ -98,7 +98,7 @@ async function loadArticleHero() {
     document.querySelector(".author-meta span").textContent = postDate.toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" });
     document.querySelector(".author-read-time").textContent = article.readTime;
     const articleHeroImage = document.querySelector(".article-hero-image");
-    articleHeroImage.style.backgroundImage = `url(${article.image})`;
+    articleHeroImage.style.backgroundImage = `url(${basePath + article.image})`;
 
     const currentDate = new Date();
     const diffMs = currentDate - postDate;

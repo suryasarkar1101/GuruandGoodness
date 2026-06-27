@@ -12,7 +12,7 @@ fetch(basePath + "data/customer-reviews.json")
             container.innerHTML += `
         <div class="gg-card">
             <div class="gg-user">
-                <img src="${review.image}" alt="${review.name}">
+                <img src="${basePath + review.image}" alt="${review.name}">
                 <div>
                     <h4>${review.name}</h4>
                     <span>${review.location}</span>
