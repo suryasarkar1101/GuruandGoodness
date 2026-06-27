@@ -1,5 +1,45 @@
 [
     {
+        "id": 3,
+        "title": "Simple Vastu Tips to Create a Positive and Peaceful Home",
+        "smallTitle": "Positive Home Energy",
+        "slug": "simple-vastu-tips-to-create-positive-peaceful-home",
+        "categorySlug": "vastu-tips",
+        "category": "Vastu Tips",
+        "image": "assets/blog/vastu-positive-home.png",
+        "shortDescription": "Discover simple Vastu practices that can help create harmony, balance, and positive energy in your living space.",
+        "date": "2026-06-20T09:30:00",
+        "readTime": "7 Min Read",
+        "featured": true,
+        "tags": [
+            "Vastu",
+            "Home Energy",
+            "Positive Living"
+        ],
+        "intro": "<p>Our home is more than just a physical space—it is where we create memories, emotions, and energy. Vastu principles help us understand how our surroundings can influence our daily experiences.</p><p>By making small changes in the arrangement and environment of our home, we can invite more peace, balance, and positivity into our lives.</p>",
+        "content": "../data/articles/simple-vastu-tips-positive-home.html"
+    },
+    {
+        "id": 2,
+        "title": "The Power of Gratitude: A Simple Path to Spiritual Happiness",
+        "smallTitle": "Power of Gratitude",
+        "slug": "power-of-gratitude-simple-path-to-spiritual-happiness",
+        "categorySlug": "spiritual-wisdom",
+        "category": "Spiritual Wisdom",
+        "image": "assets/blog/gratitude-spiritual.png",
+        "shortDescription": "Learn how practicing gratitude daily can transform your mindset, attract positivity, and create a deeper connection with your inner self.",
+        "date": "2026-06-18T09:30:00",
+        "readTime": "6 Min Read",
+        "featured": true,
+        "tags": [
+            "Gratitude",
+            "Positive Energy",
+            "Spiritual Growth"
+        ],
+        "intro": "<p>Gratitude is one of the simplest yet most powerful spiritual practices. By appreciating the blessings around us, we shift our focus from what we lack to the abundance already present in our life.</p><p>A grateful heart creates peace, positivity, and a deeper connection with ourselves and the world around us.</p>",
+        "content": "../data/articles/power-of-gratitude.html"
+    },
+    {
         "id": 1,
         "title": "How Daily Meditation Creates Lasting Inner Peace",
         "smallTitle": "Daily Meditation",
