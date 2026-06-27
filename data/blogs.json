@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "How Daily Meditation Creates Lasting Inner Peace",
+        "smallTitle": "Daily Meditation",
+        "slug": "daily-meditation-creates-lasting-inner-peace",
+        "categorySlug": "spiritual-wisdom",
+        "category": "Spiritual Wisdom",
+        "image": "../assets/blog/meditation-banner.png",
+        "shortDescription": "Discover how a simple daily meditation practice can improve mindfulness, emotional balance, focus, and overall well-being.",
+        "date": "2026-06-12T09:30:00",
+        "readTime": "8 Min Read",
+        "featured": true,
+        "tags": [
+            "Meditation",
+            "Spiritual Growth",
+            "Mindfulness"
+        ],
+        "intro": "<p>Meditation is more than a practice—it's a way of reconnecting with your true self. In today's fast-paced world, taking a few moments each day to pause, breathe, and be present can create a profound shift in how you think, feel, and experience life.</p>\n<p>Whether you're seeking mental clarity, emotional balance, spiritual growth, or simply a moment of calm, meditation offers a path toward lasting inner peace.</p>",
+        "content": "../data/articles/daily-meditation.html"
+    }
+]
