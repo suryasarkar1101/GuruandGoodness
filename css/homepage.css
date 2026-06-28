@@ -1327,7 +1327,7 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
     }
 
     .product-image img {
-        max-height: 220px;
+        max-height: max-content;
     }
 
     .top-label-wrap .line {
@@ -1441,10 +1441,6 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
 
     .section-title {
         font-size: 38px;
-    }
-
-    .product-image img {
-       max-height: 200px;
     }
 
     .product-card {

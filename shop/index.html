@@ -156,85 +156,93 @@
     <script src="../js/shop_hero.js"></script>
     <script src="../js/data/product.js"></script>
     <script>
-        const params = new URLSearchParams(window.location.search);
-        const category = params.get("category") || "all";
-        const current = heroData[category] || heroData.all;
-        document.getElementById("shop-title").innerHTML = current.title;
-        document.getElementById("shop-descrption").textContent = current.description;
-        document.title = `${current.brTitle} | Guru and Goodness`;
+        document.addEventListener(
+            "DOMContentLoaded",
+            () => {
+                const params = new URLSearchParams(window.location.search);
+                const category = params.get("category") || "all";
+                const current = heroData[category] || heroData.all;
+                document.getElementById("shop-title").innerHTML = current.title;
+                document.getElementById("shop-descrption").textContent = current.description;
+                document.title = `${current.brTitle} | Guru and Goodness`;
 
-        document.querySelectorAll(".shop-category-card")
-            .forEach(card => {
-                const url = new URL(card.href);
-                const cardCategory = url.searchParams.get("category");
-                if (cardCategory === category)
-                    card.classList.add("active");
-            });
+                document.querySelectorAll(".shop-category-card")
+                    .forEach(card => {
+                        const url = new URL(card.href);
+                        const cardCategory = url.searchParams.get("category");
+                        if (cardCategory === category)
+                            card.classList.add("active");
+                    });
 
-        const categoryFilter = document.getElementById("productCategoryFilter");
-        categoryFilter.value = category;
-        categoryFilter.addEventListener("change", function () {
-            const url = new URL(window.location);
-            url.searchParams.set("category", this.value);
-            window.location.href = url.toString();
-        });
+                const categoryFilter = document.getElementById("productCategoryFilter");
+                categoryFilter.value = category;
+                categoryFilter.addEventListener("change", function () {
+                    const url = new URL(window.location);
+                    url.searchParams.set("category", this.value);
+                    window.location.assign(url);
+                });
 
-        document.querySelectorAll(".filter-tabs button").forEach(button => {
-            button.addEventListener("click", () => {
-                const type = button.dataset.filter;
-                let isActive = button.classList.contains("active");
-                document.querySelectorAll(".filter-tabs button").forEach(btn => btn.classList.remove("active"));
-                if (isActive) {
+                document.querySelectorAll(".filter-tabs button").forEach(button => {
+                    button.addEventListener("click", () => {
+                        const type = button.dataset.filter;
+                        let isActive = button.classList.contains("active");
+                        document.querySelectorAll(".filter-tabs button").forEach(btn => btn.classList.remove("active"));
+                        if (isActive) {
+                            document.getElementById("productContainer").innerHTML = "";
+                            loadProducts("productContainer", category !== "all" ? product => product.categorySlug === category : null);
+                            return;
+                        }
+                        button.classList.add("active");
+                        let filter = null;
+                        if (type === "popular") {
+                            filter = product => product.badge === "POPULAR";
+                        }
+                        else if (type === "new") {
+                            filter = product => product.badge === "NEW ARRIVALS";
+                        }
+                        else if (type === "best") {
+                            filter = product => product.badge === "BEST SELLER";
+                        }
+                        document.getElementById("productContainer").innerHTML = "";
+                        let filteredProducts = productsData;
+                        if (category !== "all") {
+                            filteredProducts = filteredProducts.filter(product => product.categorySlug === category);
+                        }
+                        if (filter) {
+                            filteredProducts = filteredProducts.filter(filter);
+                        }
+                        renderProducts("productContainer", filteredProducts);
+                    });
+                });
+
+                document.getElementById("sortProducts").addEventListener("change", function () {
+                    let products = [...productsData];
+                    if (category !== "all") {
+                        products = products.filter(
+                            product => product.categorySlug === category
+                        );
+                    }
+                    if (this.value === "az") {
+                        products.sort(
+                            (a, b) => a.name.localeCompare(b.name)
+                        );
+                    }
+                    else if (this.value === "za") {
+                        products.sort(
+                            (a, b) => b.name.localeCompare(a.name)
+                        );
+                    }
+                    else if (this.value === "rating") {
+                        products.sort(
+                            (a, b) => b.rating - a.rating
+                        );
+                    }
                     document.getElementById("productContainer").innerHTML = "";
-                    loadProducts("productContainer", category !== "all" ? product => product.categorySlug === category : null);
-                    return;
-                }
-                button.classList.add("active");
-                let filter = null;
-                if (type === "popular") {
-                    filter = product => product.badge === "POPULAR";
-                }
-                else if (type === "new") {
-                    filter = product => product.badge === "NEW ARRIVALS";
-                }
-                else if (type === "best") {
-                    filter = product => product.badge === "BEST SELLER";
-                }
-                document.getElementById("productContainer").innerHTML = "";
-                let filteredProducts = productsData;
-                if (category !== "all") {
-                    filteredProducts = filteredProducts.filter(product => product.categorySlug === category);
-                }
-                if (filter) {
-                    filteredProducts = filteredProducts.filter(filter);
-                }
-                renderProducts("productContainer", filteredProducts);
+                    renderProducts("productContainer", products);
+                });
+
+                loadProducts("productContainer", category !== "all" ? product => product.categorySlug === category : null);
             });
-        });
-
-        document.getElementById("sortProducts").addEventListener("change", function () {
-            let products = [...productsData];
-            if (category !== "all") {
-                products = products.filter(product => product.categorySlug === category);
-            }
-
-            else if (this.value === "az") {
-                products.sort((a, b) => a.title.localeCompare(b.title));
-            }
-
-            else if (this.value === "za") {
-                products.sort((a, b) => b.title.localeCompare(a.title));
-            }
-
-            else if (this.value === "rating") {
-                products.sort((a, b) => b.rating - a.rating);
-            }
-
-            document.getElementById("productContainer").innerHTML = "";
-            renderProducts("productContainer", filteredProducts);
-        });
-
-        loadProducts("productContainer", category !== "all" ? product => product.categorySlug === category : null);
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

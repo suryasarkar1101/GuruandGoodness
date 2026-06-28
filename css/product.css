@@ -913,6 +913,10 @@
         border-right: none;
     }
 
+    .product-image img {
+        max-height: max-content;
+    }
+
 }
 
 @media (max-width:480px) {

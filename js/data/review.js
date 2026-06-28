@@ -4,9 +4,15 @@ function loadReviews(type, count, productId = null) {
         : "/";
 
     fetch(basePath + "data/customer-reviews.json")
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Review data not found");
+            }
+            return response.json();
+        })
         .then(reviews => {
-            let container = document.getElementById("reviewContainer");
+            const container = document.getElementById("reviewContainer");
+            if (!container) return;
             let selectedReviews = [];
             // Home page
             if (type === "home") {
@@ -16,15 +22,16 @@ function loadReviews(type, count, productId = null) {
             // Product Details page
             if (type === "product") {
                 selectedReviews = reviews
-                    .filter(review => review.productId == productId);
+                    .filter(review => review.productId === productId);
             }
             // Random every 2 days
             selectedReviews = randomReviews(
                 selectedReviews,
                 count
             );
+            let html = "";
             selectedReviews.forEach(review => {
-                container.innerHTML += `
+                html += `
         <div class="gg-card">
             <div class="gg-user">
                 <img src="${basePath + review.image}" alt="${review.name}">
@@ -45,6 +52,7 @@ function loadReviews(type, count, productId = null) {
         </div>
         `;
             });
+            container.innerHTML = html;
         });
 }
 function randomReviews(reviews, count) {
@@ -52,8 +60,9 @@ function randomReviews(reviews, count) {
         new Date().getTime() /
         (1000 * 60 * 60 * 24 * 2)
     );
+    let seedValue = period;
     function seed() {
-        let x = Math.sin(period++) * 10000;
+        let x = Math.sin(seedValue++) * 10000;
         return x - Math.floor(x);
     }
     let data = [...reviews];

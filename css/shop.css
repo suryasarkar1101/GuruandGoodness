@@ -753,8 +753,13 @@
     .gg-chat-btn i {
         display: none;
     }
-    .shop-filter-bar{
+
+    .shop-filter-bar {
         margin-bottom: 20px;
+    }
+
+    .product-image img {
+        max-height: max-content;
     }
 }
 
@@ -789,10 +794,6 @@
 
     .gg-chat-btn i {
         display: block;
-    }
-
-    .product-image img {
-        max-height: 200px;
     }
 
     .product-card {

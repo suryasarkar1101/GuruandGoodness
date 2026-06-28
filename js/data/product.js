@@ -7,6 +7,9 @@ async function getProducts() {
         return productsData;
     }
     const response = await fetch(basePath + "data/allProduct.json");
+    if (!response.ok) {
+        throw new Error("Product JSON not found");
+    }
     productsData = await response.json();
     return productsData;
 }
@@ -15,10 +18,11 @@ async function loadProducts(containerId, filter = null, limit = null, fullCont =
     try {
         let newproductsData = await getProducts();
         if (filter) {
-            newproductsData = productsData.filter(filter);
+            newproductsData = newproductsData.filter(filter);
         }
+
         if (limit) {
-            newproductsData = productsData.slice(0, limit);
+            newproductsData = newproductsData.slice(0, limit);
         }
         const container = document.getElementById(containerId);
         if (!container) return;
@@ -31,6 +35,7 @@ async function loadProducts(containerId, filter = null, limit = null, fullCont =
 
 function renderProducts(containerId, products, fullCont = true) {
     const container = document.getElementById(containerId);
+    let html = "";
     products.forEach(product => {
         let cardClass = "";
         if (product.badge === "NEW ARRIVALS") {
@@ -74,21 +79,9 @@ function renderProducts(containerId, products, fullCont = true) {
                 </a>`: ``}                
             </div>
             `;
-        container.innerHTML += card;
+        html += card;
     });
-}
-
-function generateStars(rating) {
-    let stars = "";
-    for (let i = 1; i <= 5; i++) {
-        if (i <= rating) {
-            stars += `<i class="fa-solid fa-star"></i>`;
-        }
-        else {
-            stars += `<i class="fa-regular fa-star"></i>`;
-        }
-    }
-    return stars;
+    container.innerHTML = html;
 }
 
 async function loadProduct() {
@@ -120,7 +113,10 @@ async function loadProduct() {
         div.className = "gg-product-thumb";
         if (index === 0)
             div.classList.add("active");
-        div.innerHTML = `<img src="${basePath + img}">`;
+
+        const image = document.createElement("img");
+        image.src = basePath + img;
+        div.appendChild(image);
         div.onclick = () => {
             document.querySelectorAll('.gg-product-thumb').forEach(el => el.classList.remove('active'));
             div.classList.add("active");
@@ -133,7 +129,7 @@ async function loadProduct() {
     const rating = Number(product.rating);
     document.getElementById("gg-rating").textContent = `(${rating})`;
     document.getElementById("gg-reviews").textContent = product.reviews;
-    document.getElementById("gg-stars").innerHTML = generateStars(Math.floor(rating));
+    document.getElementById("gg-stars").innerHTML = generateStars(product.rating);
     document.querySelectorAll("#gg-benefits span").forEach((item, index) => { item.textContent = product.quickBenefits[index]; });
     document.querySelectorAll("#gg-benefits-grid .gg-benefit-card").forEach((card, index) => {
         card.querySelector("h3").textContent = product.benefitCards[index].title;
@@ -146,13 +142,24 @@ async function loadProduct() {
     updateWishlist();
 }
 
-function updateWishlist() {
-    let isWishlisted = wishlist.includes(product.id);
-    if (isWishlisted) {
-        wishlistIcon.classList.replace("far", "fas");
-        wishlistBtn.classList.add("active");
-    } else {
-        wishlistIcon.classList.replace("fas", "far");
-        wishlistBtn.classList.remove("active");
+function generateStars(rating) {
+    let stars = "";
+    for (let i = 1; i <= 5; i++) {
+        if (rating >= i) {
+            stars += `<i class="fa-solid fa-star"></i>`;
+        } 
+        else if (rating >= i - 0.25) {
+            stars += `<i class="fa-solid fa-star-half-stroke"></i>`;
+        } 
+        else {
+            stars += `<i class="fa-regular fa-star"></i>`;
+        }
     }
+    return stars;
+}
+
+function updateWishlist() {
+    if (!product) return;
+    const savedWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    const isWishlisted = savedWishlist.includes(product.id);
 }

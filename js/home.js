@@ -1,16 +1,4 @@
 
-/* CLOSE WHEN CLICK OUTSIDE */
-document.addEventListener("click", (e) => {
-    if (
-        !menuToggle.contains(e.target) &&
-        !mobileMenu.contains(e.target)
-    ) {
-        menuToggle.classList.remove("active");
-        mobileMenu.classList.remove("show");
-    }
-
-});
-
 // ===============================
 // COMMON AUTO SLIDER FUNCTION
 // ===============================
@@ -36,34 +24,17 @@ function createAutoSlider({
     function startSlider() {
 
         autoSlide = setInterval(() => {
-
-            const card = slider.querySelector(
-                cardSelector
-            );
-
+            const card = slider.querySelector(cardSelector);
             if (!card) return;
-
-            const cardWidth =
-                card.offsetWidth;
-
+            const cardWidth = card.offsetWidth;
             scrollAmount += cardWidth;
-
             // Reset slider
-            if (
-                scrollAmount >=
-                slider.scrollWidth -
-                slider.clientWidth
-            ) {
-
+            if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+                slider.scrollTo({ left: 0, behavior: "smooth" });
                 scrollAmount = 0;
-
+                return;
             }
-
-            slider.scrollTo({
-                left: scrollAmount + gap,
-                behavior: "smooth"
-            });
-
+            slider.scrollTo({ left: scrollAmount + gap, behavior: "smooth" });
         }, interval);
 
     }
