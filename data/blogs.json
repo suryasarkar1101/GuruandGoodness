@@ -1,5 +1,65 @@
 [
     {
+        "id": 6,
+        "title": "Simple Habits for a Positive Lifestyle and Happier Everyday Living",
+        "smallTitle": "Positive Lifestyle",
+        "slug": "simple-habits-for-positive-lifestyle-happier-everyday-living",
+        "categorySlug": "lifestyle-positivity",
+        "category": "Lifestyle & Positivity",
+        "image": "assets/blog/positive-lifestyle-habits.png",
+        "shortDescription": "Discover simple daily habits that can improve your mindset, bring more positivity, and create a balanced and joyful lifestyle.",
+        "date": "2026-06-26T09:30:00",
+        "readTime": "6 Min Read",
+        "featured": false,
+        "tags": [
+            "Positive Thinking",
+            "Healthy Habits",
+            "Mindful Living"
+        ],
+        "intro": "<p>A positive lifestyle is built through small everyday choices. The way we think, organize our surroundings, and spend our time can deeply influence our happiness and inner peace.</p><p>By practicing mindful habits and focusing on gratitude, balance, and self-care, we can create a more fulfilling and joyful life.</p>",
+        "content": "../data/articles/simple-positive-lifestyle-habits.html"
+    },
+    {
+        "id": 5,
+        "title": "Understanding Crystals: A Beginner's Guide to Natural Energy and Balance",
+        "smallTitle": "Crystal Guides",
+        "slug": "understanding-crystals-beginners-guide-natural-energy-balance",
+        "categorySlug": "crystal-guides",
+        "category": "Crystal Guides",
+        "image": "assets/blog/crystal-beginners-guide.png",
+        "shortDescription": "Learn how crystals are used for mindfulness, meditation, energy practices, and creating a balanced spiritual lifestyle.",
+        "date": "2026-06-24T09:30:00",
+        "readTime": "8 Min Read",
+        "featured": true,
+        "tags": [
+            "Crystals",
+            "Energy Healing",
+            "Spiritual Wellness"
+        ],
+        "intro": "<p>Crystals have been valued for centuries for their natural beauty and spiritual significance. Many people use crystals as part of meditation, mindfulness, and personal wellness practices.</p><p>Understanding different crystals and their meanings can help you choose pieces that connect with your personal journey and intentions.</p>",
+        "content": "../data/articles/understanding-crystals-beginners-guide.html"
+    },
+    {
+        "id": 4,
+        "title": "The Benefits of Choosing an Organic Lifestyle for Better Wellness",
+        "smallTitle": "Organic Wellness",
+        "slug": "benefits-of-choosing-organic-lifestyle-for-better-wellness",
+        "categorySlug": "organic-wellness",
+        "category": "Organic Wellness",
+        "image": "assets/blog/organic-wellness-lifestyle.png",
+        "shortDescription": "Explore how natural choices, mindful living, and organic practices can support a healthier body, peaceful mind, and balanced lifestyle.",
+        "date": "2026-06-22T09:30:00",
+        "readTime": "7 Min Read",
+        "featured": true,
+        "tags": [
+            "Organic Living",
+            "Natural Wellness",
+            "Healthy Lifestyle"
+        ],
+        "intro": "<p>Organic wellness is about creating a balanced connection between our body, mind, and the natural world. Choosing natural products and mindful habits can help us build a healthier and more peaceful lifestyle.</p><p>Small daily choices inspired by nature can bring positive changes to our overall well-being and inner harmony.</p>",
+        "content": "../data/articles/organic-wellness-lifestyle.html"
+    },
+    {
         "id": 3,
         "title": "Simple Vastu Tips to Create a Positive and Peaceful Home",
         "smallTitle": "Positive Home Energy",
@@ -30,7 +90,7 @@
         "shortDescription": "Learn how practicing gratitude daily can transform your mindset, attract positivity, and create a deeper connection with your inner self.",
         "date": "2026-06-18T09:30:00",
         "readTime": "6 Min Read",
-        "featured": true,
+        "featured": false,
         "tags": [
             "Gratitude",
             "Positive Energy",

@@ -75,199 +75,22 @@
                 </select> -->
             </div>
             <div class="filter-tabs">
-                <button class="active">🔥 Popular Products</button>
-                <button>🔮 New Arrivals</button>
-                <button>⭐ Bestsellers</button>
+                <button data-filter="popular">🔥 Popular Products</button>
+                <button data-filter="new">🔮 New Arrivals</button>
+                <button data-filter="best">⭐ Bestsellers</button>
             </div>
             <div class="filter-right">
-                <select>
-                    <option>Sort By</option>
+                <select id="sortProducts">
+                    <option value="">Sort By</option>
+                    <option value="az">A to Z</option>
+                    <option value="za">Z to A</option>
+                    <option value="rating">Rating</option>
                 </select>
             </div>
         </div>
 
-        <div class="product-grid">
-            <div class="product-card new-card">
-                <div class="badge">
-                    NEW ARRIVALS
-                </div>
-                <div class="product-image">
-                    <img src="../assets/product/images/product1.png" alt="">
-                </div>
-                <a href="../product/?product_id=1">
-                    <div class="product-title">
-                        Healing Crystal Bracelet
-                    </div>
-                    <div class="product-desc">
-                        Promotes healing, calmness & positive energy.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹1,199</span>
-                        <span class="real-price">₹1,899</span>
-                    </div>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </a>
-                <a href="#" class="buy-btn">
-                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
-                </a>
-            </div>
-            <div class="product-card bestseller-card">
-                <div class="badge">
-                    BEST SELLER
-                </div>
-                <div class="product-image">
-                    <img src="../assets/product/images/product2.png" alt="">
-                </div>
-                <a href="../product/?product_id=2">
-                    <div class="product-title">
-                        Rudraksha Mala
-                    </div>
-                    <div class="product-desc">
-                        Enhances spiritual growth, focus & inner peace.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹1,199</span>
-                        <span class="real-price">₹1,899</span>
-                    </div>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </a>
-                <a href="#" class="buy-btn">
-                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
-                </a>
-            </div>
-            <!-- Card -->
-            <div class="product-card popular-card">
-                <div class="badge">
-                    POPULAR
-                </div>
-                <div class="product-image">
-                    <img src="../assets/product/images/product3.png" alt="">
-                </div>
-                <a href="../product/?product_id=3">
-                    <div class="product-title">
-                        Vastu Energy Pyramid
-                    </div>
-                    <div class="product-desc">
-                        Balances energy, removes negativity &
-                        attracts prosperity.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹999</span>
-                        <span class="real-price">₹1,199</span>
-                    </div>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </a>
-                <a href="#" class="buy-btn">
-                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
-                </a>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="../assets/product/images/product4.png" alt="">
-                </div>
-                <a href="../product/?product_id=4">
-                    <div class="product-title">
-                        Organic Wellness Kit
-                    </div>
-                    <div class="product-desc">
-                        Ayurvedic essentials for a healthy mind,
-                        body & soul.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹1,199</span>
-                        <span class="real-price">₹1,899</span>
-                    </div>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </a>
-                <a href="#" class="buy-btn">
-                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
-                </a>
-            </div>
-            <div class="product-card bestseller-card">
-                <div class="badge">
-                    BEST SELLER
-                </div>
-                <div class="product-image">
-                    <img src="../assets/product/images/product5.png" alt="">
+        <div class="product-grid" id="productContainer">
 
-                </div>
-                <a href="../product/?product_id=5">
-                    <div class="product-title">
-                        Spiritual Combos Pack
-                    </div>
-                    <div class="product-desc">
-                        Complete spiritual wellness collection for gifting.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹2,199</span>
-                        <span class="real-price">₹2,899</span>
-                    </div>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </a>
-                <a href="#" class="buy-btn">
-                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
-                </a>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="../assets/product/images/product6.png" alt="">
-                </div>
-                <a href="../product/?product_id=6">
-                    <div class="product-title">
-                        Meditation Accessories
-                    </div>
-                    <div class="product-desc">
-                        Premium meditation tools for inner peace &
-                        mindfulness. Premium meditation tools for inner peace &
-                        mindfulness.Premium meditation tools for inner peace &
-                        mindfulness.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹799</span>
-                        <span class="real-price">₹899</span>
-                    </div>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </a>
-                <a href="#" class="buy-btn">
-                    <i class="fa-brands fa-whatsapp"></i>Chat to Buy
-                </a>
-            </div>
         </div>
 
     </section>
@@ -331,6 +154,7 @@
 
     <script src="../js/component.js"></script>
     <script src="../js/shop_hero.js"></script>
+    <script src="../js/data/product.js"></script>
     <script>
         const params = new URLSearchParams(window.location.search);
         const category = params.get("category") || "all";
@@ -349,14 +173,68 @@
 
         const categoryFilter = document.getElementById("productCategoryFilter");
         categoryFilter.value = category;
-        categoryFilter.addEventListener(
-            "change",
-            function () {
-                const url = new URL(window.location);
-                url.searchParams.set("category", this.value);
-                window.location.href = url.toString();
+        categoryFilter.addEventListener("change", function () {
+            const url = new URL(window.location);
+            url.searchParams.set("category", this.value);
+            window.location.href = url.toString();
+        });
+
+        document.querySelectorAll(".filter-tabs button").forEach(button => {
+            button.addEventListener("click", () => {
+                const type = button.dataset.filter;
+                let isActive = button.classList.contains("active");
+                document.querySelectorAll(".filter-tabs button").forEach(btn => btn.classList.remove("active"));
+                if (isActive) {
+                    document.getElementById("productContainer").innerHTML = "";
+                    loadProducts("productContainer", category !== "all" ? product => product.categorySlug === category : null);
+                    return;
+                }
+                button.classList.add("active");
+                let filter = null;
+                if (type === "popular") {
+                    filter = product => product.badge === "POPULAR";
+                }
+                else if (type === "new") {
+                    filter = product => product.badge === "NEW ARRIVALS";
+                }
+                else if (type === "best") {
+                    filter = product => product.badge === "BEST SELLER";
+                }
+                document.getElementById("productContainer").innerHTML = "";
+                let filteredProducts = productsData;
+                if (category !== "all") {
+                    filteredProducts = filteredProducts.filter(product => product.categorySlug === category);
+                }
+                if (filter) {
+                    filteredProducts = filteredProducts.filter(filter);
+                }
+                renderProducts("productContainer", filteredProducts);
+            });
+        });
+
+        document.getElementById("sortProducts").addEventListener("change", function () {
+            let products = [...productsData];
+            if (category !== "all") {
+                products = products.filter(product => product.categorySlug === category);
             }
-        );
+
+            else if (this.value === "az") {
+                products.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
+            else if (this.value === "za") {
+                products.sort((a, b) => b.title.localeCompare(a.title));
+            }
+
+            else if (this.value === "rating") {
+                products.sort((a, b) => b.rating - a.rating);
+            }
+
+            document.getElementById("productContainer").innerHTML = "";
+            renderProducts("productContainer", filteredProducts);
+        });
+
+        loadProducts("productContainer", category !== "all" ? product => product.categorySlug === category : null);
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

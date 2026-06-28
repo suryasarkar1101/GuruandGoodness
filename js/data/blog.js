@@ -1,8 +1,6 @@
 let blogsData = [];
 let currentArticleIndex = 6;
-const basePath = window.location.pathname.includes("/GuruandGoodness/")
-    ? "/GuruandGoodness/"
-    : "/";
+const basePath = window.location.pathname.includes("/GuruandGoodness/") ? "/GuruandGoodness/" : "/";
 
 async function getBlogs() {
     if (blogsData.length > 0) {

@@ -501,15 +501,13 @@
 
 /* BADGE */
 
-.bestseller-card .badge {
+.product-card .badge {
     position: absolute;
     top: 8px;
     right: 8px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #b93e20, #df7b2d);
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -522,6 +520,21 @@
     line-height: 1.3;
 }
 
+.bestseller-card .badge {
+    background: linear-gradient(135deg, #b93e20, #df7b2d);
+    color: #fff;
+}
+
+.new-card .badge {
+    background: linear-gradient(135deg, #0f7a2c, #39b85a);
+    color: #fff;
+}
+
+.popular-card .badge {
+    background: linear-gradient(135deg, #b86a00, #e9a31a);
+    color: #fff;
+}
+
 /* IMAGE */
 
 .product-image {
@@ -529,11 +542,10 @@
     border-radius: 18px;
     margin-bottom: 18px;
     background: #f7efe3;
-    padding: 5px;
 }
 
 .product-image img {
-    height: 250px;
+    max-height: 250px;
     width: 100%;
     object-fit: scale-down;
     transition: transform .7s ease;
@@ -1315,7 +1327,7 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
     }
 
     .product-image img {
-        height: 220px;
+        max-height: 220px;
     }
 
     .top-label-wrap .line {
@@ -1432,7 +1444,7 @@ ABOUT SECTION BACKGROUND IMAGE USING DIV
     }
 
     .product-image img {
-        height: 200px;
+       max-height: 200px;
     }
 
     .product-card {

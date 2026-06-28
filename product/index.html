@@ -41,27 +41,20 @@
                     <a href="../">Home</a>
                     <span>›</span>
                     <span id="gg-category">
-                        Spiritual Products
+
                     </span>
                 </div>
 
                 <div class="gg-product-title-row">
                     <div id="gg-product-name" class="gg-product-name">
-                    </div>                    
+                    </div>
                 </div>
 
                 <div class="gg-product-rating-row">
-                    <div class="gg-stars">
-                        ★★★★☆
-                    </div>
-                    <span class="gg-rating-score">
-                        (4.8)
-                    </span>
+                    <div class="gg-stars" id="gg-stars"></div>
+                    <span class="gg-rating-score" id="gg-rating"></span>
                     <span class="gg-divider">|</span>
-                    <span class="gg-review-count">
-                        128 reviews
-                    </span>
-
+                    <span class="gg-review-count" id="gg-reviews"> </span>
                 </div>
 
                 <div class="gg-price-area">
@@ -79,22 +72,23 @@
                 <p class="gg-product-description" id="gg-description">
                 </p>
 
-                <div class="gg-product-benefits">
+                <div class="gg-product-benefits" id="gg-benefits">
+
                     <div class="gg-benefit-tag">
                         <img src="../assets/focus.png" alt="">
-                        <span>Enhances Focus</span>
+                        <span></span>
                     </div>
                     <div class="gg-benefit-tag">
                         <img src="../assets/stress.png" alt="">
-                        <span>Reduces Stress</span>
+                        <span></span>
                     </div>
                     <div class="gg-benefit-tag">
                         <img src="../assets/peace.png" alt="">
-                        <span>Brings Peace</span>
+                        <span></span>
                     </div>
                     <div class="gg-benefit-tag">
                         <img src="../assets/protection.png" alt="">
-                        <span>Spiritual Protection</span>
+                        <span></span>
                     </div>
                 </div>
 
@@ -111,10 +105,10 @@
                         </button>
                     </div>
 
-                    <a id="whatsappBtn" href="#" class="gg-whatsapp-btn">
+                    <div id="whatsappBtn" class="gg-whatsapp-btn">
                         <i class="fab fa-whatsapp"></i>
                         Chat to Buy
-                    </a>
+                    </div>
                 </div>
 
                 <div class="gg-product-features">
@@ -147,52 +141,58 @@
             <div class="benefits-title">Benefits</div>
         </div>
 
-        <div class="gg-benefits-grid">
+        <div class="gg-benefits-grid" id="gg-benefits-grid">
+
             <div class="gg-benefit-card">
                 <div class="gg-benefit-icon">
-                    <img src="../assets/spiritual-healing.png" alt="">
+                    <img src="../assets/spiritual-healing.png">
                 </div>
                 <div class="gg-benefit-content">
-                    <h3>Spiritual Healing</h3>
-                    <p>Helps remove negative energy.</p>
+                    <h3></h3>
+                    <p></p>
                 </div>
             </div>
+
             <div class="gg-benefit-card">
                 <div class="gg-benefit-icon">
-                    <img src="../assets/peace.png" alt="">
+                    <img src="../assets/peace.png">
                 </div>
                 <div class="gg-benefit-content">
-                    <h3>Positive Energy</h3>
-                    <p>Attracts positivity and abundance.</p>
+                    <h3></h3>
+                    <p></p>
                 </div>
             </div>
+
             <div class="gg-benefit-card">
                 <div class="gg-benefit-icon">
-                    <img src="../assets/meditation-support.png" alt="">
+                    <img src="../assets/meditation-support.png">
                 </div>
                 <div class="gg-benefit-content">
-                    <h3>Meditation Support</h3>
-                    <p>Enhances focus and concentration.</p>
+                    <h3></h3>
+                    <p></p>
                 </div>
             </div>
+
             <div class="gg-benefit-card">
                 <div class="gg-benefit-icon">
-                    <img src="../assets/stress.png" alt="">
+                    <img src="../assets/stress.png">
                 </div>
                 <div class="gg-benefit-content">
-                    <h3>Emotional Balance</h3>
-                    <p>Promotes calmness and stability.</p>
+                    <h3></h3>
+                    <p></p>
                 </div>
             </div>
+
             <div class="gg-benefit-card">
                 <div class="gg-benefit-icon">
-                    <img src="../assets/protection.png" alt="">
+                    <img src="../assets/protection.png">
                 </div>
                 <div class="gg-benefit-content">
-                    <h3>Natural Protection</h3>
-                    <p>Shields from negativity.</p>
+                    <h3></h3>
+                    <p></p>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -229,17 +229,13 @@
                     </div>
                     <div class="founder-content">
                         <div class="founder-card-title">Founder’s Note</div>
-                        <p>
-                            At Guru and Goodness, we ensure every product is authentic,
-                            pure, and crafted with divine intention.
-                        </p>
+                        <p id="gg-founder-note"></p>
                         <div class="founder-name">
-                            – Ananya Sharma
+                            – Astro Swarna Santra
                             <span class="founder-role">
-                               (Founder)
+                                (Founder)
                             </span>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -253,114 +249,8 @@
             </span>
             <div class="benefits-title">Related Products</div>
         </div>
-        <div class="product-grid">
-            <div class="product-card new-card">
-                <a href="../product/?product_id=1">
-                    <div class="badge">
-                        NEW ARRIVALS
-                    </div>
-                    <div class="product-image">
-                        <img src="../assets/product/images/product1.png" alt="">
-                    </div>
+        <div class="product-grid" id="releatedProducts">
 
-                    <div class="product-title">
-                        Healing Crystal Bracelet
-                    </div>
-                    <div class="product-desc">
-                        Promotes healing, calmness &amp; positive energy.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹1,199</span>
-                        <span class="real-price">₹1,899</span>
-                    </div>
-                </a>
-            </div>
-            <div class="product-card bestseller-card">
-                <a href="../product/?product_id=2">
-                    <div class="badge">
-                        BEST SELLER
-                    </div>
-                    <div class="product-image">
-                        <img src="../assets/product/images/product2.png" alt="">
-                    </div>
-
-                    <div class="product-title">
-                        Rudraksha Mala
-                    </div>
-                    <div class="product-desc">
-                        Enhances spiritual growth, focus &amp; inner peace.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹1,199</span>
-                        <span class="real-price">₹1,899</span>
-                    </div>
-                </a>
-
-            </div>
-            <!-- Card -->
-            <div class="product-card popular-card">
-                <a href="../product/?product_id=3">
-                    <div class="badge">
-                        POPULAR
-                    </div>
-                    <div class="product-image">
-                        <img src="../assets/product/images/product3.png" alt="">
-                    </div>
-                    <div class="product-title">
-                        Vastu Energy Pyramid
-                    </div>
-                    <div class="product-desc">
-                        Balances energy, removes negativity &amp;
-                        attracts prosperity.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹999</span>
-                        <span class="real-price">₹1,199</span>
-                    </div>
-                </a>
-            </div>
-            <div class="product-card bestseller-card">
-                <a href="../product/?product_id=5">
-                    <div class="badge">
-                        BEST SELLER
-                    </div>
-                    <div class="product-image">
-                        <img src="../assets/product/images/product5.png" alt="">
-
-                    </div>
-                    <div class="product-title">
-                        Spiritual Combos Pack
-                    </div>
-                    <div class="product-desc">
-                        Complete spiritual wellness collection for gifting.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹2,199</span>
-                        <span class="real-price">₹2,899</span>
-                    </div>
-                </a>
-            </div>
-            <div class="product-card bestseller-card">
-                <a href="../product/?product_id=5">
-                    <div class="badge">
-                        BEST SELLER
-                    </div>
-                    <div class="product-image">
-                        <img src="../assets/product/images/product5.png" alt="">
-
-                    </div>
-                    <div class="product-title">
-                        Spiritual Combos Pack
-                    </div>
-                    <div class="product-desc">
-                        Complete spiritual wellness collection for gifting.
-                    </div>
-                    <div class="product-price">
-                        <span class="sale-price">₹2,199</span>
-                        <span class="real-price">₹2,899</span>
-                    </div>
-                </a>
-            </div>
         </div>
     </section>
     <section class="gg-testimonial-section">
@@ -371,7 +261,7 @@
             <div class="benefits-title">Customer Reviews</div>
         </div>
         <div class="gg-testimonial-grid" id="reviewContainer">
-           
+
         </div>
     </section>
 
@@ -379,69 +269,22 @@
     <footer class="footer-section" id="footer">
 
     </footer>
-    <script src="../js/product-details.js"></script>
+
     <script src="../js/component.js"></script>
+    <script src="../js/data/review.js"></script>
+    <script src="../js/data/product.js"></script>
     <script>
-        const params = new URLSearchParams(window.location.search);
-        const productId = params.get("product_id") || 1;
-        const product = products[productId];
-        document.title = product.name + " | Guru and Goodness";
-        document.getElementById("gg-product-name").innerHTML = `${product.name} <span class="gg-product-badge">${product.badge}</span>`;
-        document.getElementById("gg-price").textContent = product.price;
-        document.getElementById("gg-old-price").textContent = product.oldPrice;
-        document.getElementById("gg-discount").textContent = product.discount;
-        document.getElementById("gg-description").textContent = product.description;
-        document.getElementById("gg-main-image").src = product.images[0];
-        document.querySelector('.gg-significance-title').textContent = product.significanceTitle;
-        document.querySelector('.gg-significance-description').textContent = product.significanceDescription;
-        const tagsContainer = document.getElementById("gg-significance-tags");
-        tagsContainer.innerHTML = "";
-        product.tags.forEach(tag => {
-            tagsContainer.innerHTML += `
-                <span class="gg-significance-tag">
-                    ${tag}
-                </span>
-            `;
+        const whatsappNumber = "91XXXXXXXXXX";
+        document.getElementById("whatsappBtn").addEventListener("click", () => {
+            const message = `Hi, I want to buy ${product.name}`;
+            const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
         });
-        const specContainer = document.getElementById('gg-specification-table');
-        specContainer.innerHTML =
-            `<div class="gg-specification-grid">
-        ${product.specifications.map(item => `
-<div class="gg-spec-item">
-    <div class="gg-spec-label">
-        ${item.label}
-    </div>
-    <div class="gg-spec-value">
-        ${item.value}
-    </div>
-</div>
-`).join('')
-            }
-</div>`;
-        const thumbs = document.getElementById("gg-thumbnails");
-        product.images.forEach(
-            (img, index) => {
-                const div = document.createElement("div");
-                div.className = "gg-product-thumb";
-                if (index === 0) {
-                    div.classList.add("active");
-                }
-                div.innerHTML = `<img src="${img}">`;
-                div.onclick = () => {
-                    document.querySelectorAll('.gg-product-thumb').forEach(el => el.classList.remove('active'));
-                    div.classList.add('active');
-                    document.getElementById('gg-main-image').src = img;
-                };
-                thumbs.appendChild(div);
-            });
-        document.getElementById('whatsappBtn').href = `https://wa.me/91XXXXXXXXXX?text=Hi, I want to buy ${product.name}`;
+        loadProduct();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/data/review.js"></script>
-    <script>
-        loadReviews("product", 3, 1);
-    </script>
+
 </body>
 
 </html>

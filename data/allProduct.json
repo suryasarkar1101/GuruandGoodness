@@ -1,0 +1,789 @@
+[
+    {
+        "id": 8,
+        "name": "Wellness Gift Box",
+        "slug": "wellness-gift-box",
+        "category": "Organic Wellness",
+        "categorySlug": "organic-wellness",
+        "featured": true,
+        "shortDescription": "A thoughtfully curated wellness gift box designed for relaxation, self-care and positive living.",
+        "price": "₹1,799",
+        "oldPrice": "₹2,499",
+        "discount": "28% OFF",
+        "badge": "",
+        "rating": 4.8,
+        "reviews": "88 Reviews",
+        "description": "Premium wellness gift box containing carefully selected products to support relaxation, mindfulness and a healthy lifestyle. Perfect for gifting and self-care.",
+        "images": [
+            "../assets/product/wellness-gift-box-1.png",
+            "../assets/product/wellness-gift-box-2.png",
+            "../assets/product/wellness-gift-box-3.png",
+            "../assets/product/wellness-gift-box-4.png",
+            "../assets/product/wellness-gift-box-5.png"
+        ],
+        "quickBenefits": [
+            "Promotes Self Care",
+            "Relaxing Experience",
+            "Mindful Living",
+            "Perfect Gift"
+        ],
+        "benefitCards": [
+            {
+                "title": "Self Care",
+                "description": "Encourages relaxation and personal wellness routines."
+            },
+            {
+                "title": "Mindful Lifestyle",
+                "description": "Supports peaceful and balanced daily habits."
+            },
+            {
+                "title": "Relaxation Support",
+                "description": "Helps create a calming wellness experience."
+            },
+            {
+                "title": "Thoughtful Gifting",
+                "description": "A meaningful gift for loved ones and special occasions."
+            },
+            {
+                "title": "Positive Living",
+                "description": "Brings wellness and positivity into everyday life."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Contents",
+                "value": "Curated Wellness Products"
+            },
+            {
+                "label": "Usage",
+                "value": "Self Care / Gifting"
+            },
+            {
+                "label": "Theme",
+                "value": "Wellness & Relaxation"
+            },
+            {
+                "label": "Packaging",
+                "value": "Premium Gift Box"
+            },
+            {
+                "label": "Occasion",
+                "value": "Festivals / Birthdays / Special Moments"
+            },
+            {
+                "label": "Origin",
+                "value": "India"
+            }
+        ],
+        "significanceTitle": "Wellness Significance",
+        "significanceDescription": "A wellness gift box represents care, balance and mindful living by bringing together products that support relaxation and positivity.",
+        "tags": [
+            "Wellness",
+            "Self Care",
+            "Gift",
+            "Relaxation",
+            "Positive Living"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and crafted with divine intention."
+    },
+    {
+        "id": 7,
+        "name": "Natural Incense",
+        "slug": "natural-incense",
+        "category": "Organic Wellness",
+        "categorySlug": "organic-wellness",
+        "featured": true,
+        "shortDescription": "Natural incense crafted to create a peaceful atmosphere with calming fragrance and positive energy.",
+        "price": "₹499",
+        "oldPrice": "₹799",
+        "discount": "38% OFF",
+        "badge": "POPULAR",
+        "rating": 4.6,
+        "reviews": "76 Reviews",
+        "description": "Premium natural incense made with quality ingredients to enhance meditation, relaxation and spiritual practices. Creates a refreshing and peaceful environment.",
+        "images": [
+            "../assets/product/natural-incense-1.png",
+            "../assets/product/natural-incense-2.png",
+            "../assets/product/natural-incense-3.png",
+            "../assets/product/natural-incense-4.png"
+        ],
+        "quickBenefits": [
+            "Calming Fragrance",
+            "Enhances Meditation",
+            "Creates Peace",
+            "Natural Wellness"
+        ],
+        "benefitCards": [
+            {
+                "title": "Relaxing Aroma",
+                "description": "Creates a soothing and peaceful atmosphere."
+            },
+            {
+                "title": "Meditation Support",
+                "description": "Helps improve focus during meditation and prayers."
+            },
+            {
+                "title": "Positive Environment",
+                "description": "Brings freshness and uplifting energy."
+            },
+            {
+                "title": "Natural Wellness",
+                "description": "Made for a mindful and calming lifestyle."
+            },
+            {
+                "title": "Spiritual Practice",
+                "description": "Ideal for rituals, yoga and daily practices."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Material",
+                "value": "Natural Herbal Ingredients"
+            },
+            {
+                "label": "Usage",
+                "value": "Meditation / Prayer / Relaxation"
+            },
+            {
+                "label": "Fragrance",
+                "value": "Natural Aroma"
+            },
+            {
+                "label": "Quantity",
+                "value": "Premium Pack"
+            },
+            {
+                "label": "Packaging",
+                "value": "Eco Friendly Packaging"
+            },
+            {
+                "label": "Origin",
+                "value": "India"
+            }
+        ],
+        "significanceTitle": "Wellness Significance",
+        "significanceDescription": "Natural incense helps create a peaceful environment and supports relaxation, meditation and mindful living.",
+        "tags": [
+            "Wellness",
+            "Meditation",
+            "Aroma",
+            "Relaxation",
+            "Natural"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and crafted with divine intention."
+    },
+    {
+        "id": 6,
+        "name": "Rose Quartz Crystal",
+        "slug": "rose-quartz-crystal",
+        "category": "Healing Crystals",
+        "categorySlug": "healing-crystals",
+        "featured": true,
+        "shortDescription": "A loving crystal known for emotional healing, harmony and positive relationships.",
+        "price": "₹999",
+        "oldPrice": "₹1,499",
+        "discount": "33% OFF",
+        "badge": "POPULAR",
+        "rating": 4.7,
+        "reviews": "92 Reviews",
+        "description": "Natural Rose Quartz Crystal known for promoting love, emotional balance, self-care and peaceful energy. Perfect for meditation, home spaces and personal healing practices.",
+        "images": [
+            "../assets/product/rose-quartz-1.png",
+            "../assets/product/rose-quartz-2.png",
+            "../assets/product/rose-quartz-3.png",
+            "../assets/product/rose-quartz-4.png",
+            "../assets/product/rose-quartz-5.png"
+        ],
+        "quickBenefits": [
+            "Promotes Love",
+            "Emotional Healing",
+            "Brings Harmony",
+            "Positive Energy"
+        ],
+        "benefitCards": [
+            {
+                "title": "Emotional Healing",
+                "description": "Supports emotional balance and inner calmness."
+            },
+            {
+                "title": "Love & Harmony",
+                "description": "Associated with love, compassion and harmony."
+            },
+            {
+                "title": "Self Care",
+                "description": "Encourages positivity and self-love practices."
+            },
+            {
+                "title": "Peaceful Energy",
+                "description": "Creates a gentle and calming atmosphere."
+            },
+            {
+                "title": "Heart Chakra",
+                "description": "Supports heart energy and emotional connection."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Material",
+                "value": "Natural Rose Quartz Crystal"
+            },
+            {
+                "label": "Color",
+                "value": "Soft Pink"
+            },
+            {
+                "label": "Usage",
+                "value": "Meditation / Home Decor / Healing"
+            },
+            {
+                "label": "Form",
+                "value": "Natural Crystal"
+            },
+            {
+                "label": "Packaging",
+                "value": "Premium Gift Box"
+            },
+            {
+                "label": "Origin",
+                "value": "Natural Stone"
+            }
+        ],
+        "significanceTitle": "Crystal Significance",
+        "significanceDescription": "Rose Quartz is known as a stone of love and harmony, representing emotional healing, compassion and positive relationships.",
+        "tags": [
+            "Love",
+            "Healing",
+            "Harmony",
+            "Heart Chakra",
+            "Positive Energy"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and crafted with divine intention."
+    },
+    {
+        "id": 5,
+        "name": "Amethyst Crystal",
+        "slug": "amethyst-crystal",
+        "category": "Healing Crystals",
+        "categorySlug": "healing-crystals",
+        "featured": true,
+        "shortDescription": "A calming crystal known for peace, clarity, meditation and positive energy.",
+        "price": "₹899",
+        "oldPrice": "₹1,399",
+        "discount": "36% OFF",
+        "badge": "BEST SELLER",
+        "rating": 4.8,
+        "reviews": "105 Reviews",
+        "description": "Authentic Amethyst Crystal that supports meditation, inner peace, emotional balance and positive energy. Ideal for spiritual practices and home spaces.",
+        "images": [
+            "../assets/product/amethyst-crystal-1.png",
+            "../assets/product/amethyst-crystal-2.png",
+            "../assets/product/amethyst-crystal-3.png",
+            "../assets/product/amethyst-crystal-4.png"
+        ],
+        "quickBenefits": [
+            "Promotes Calmness",
+            "Enhances Meditation",
+            "Supports Focus",
+            "Positive Energy"
+        ],
+        "benefitCards": [
+            {
+                "title": "Inner Peace",
+                "description": "Helps create a calm and peaceful environment."
+            },
+            {
+                "title": "Meditation Support",
+                "description": "Enhances focus and mindfulness during meditation."
+            },
+            {
+                "title": "Emotional Balance",
+                "description": "Supports relaxation and emotional stability."
+            },
+            {
+                "title": "Positive Energy",
+                "description": "Attracts peaceful and uplifting vibrations."
+            },
+            {
+                "title": "Spiritual Growth",
+                "description": "Supports self-awareness and spiritual practices."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Material",
+                "value": "Natural Amethyst Crystal"
+            },
+            {
+                "label": "Color",
+                "value": "Purple"
+            },
+            {
+                "label": "Usage",
+                "value": "Meditation / Home Decor / Healing"
+            },
+            {
+                "label": "Form",
+                "value": "Natural Crystal"
+            },
+            {
+                "label": "Packaging",
+                "value": "Premium Gift Box"
+            },
+            {
+                "label": "Origin",
+                "value": "Natural Stone"
+            }
+        ],
+        "significanceTitle": "Crystal Significance",
+        "significanceDescription": "Amethyst is a popular spiritual crystal associated with calmness, meditation, clarity and positive energy.",
+        "tags": [
+            "Healing",
+            "Meditation",
+            "Peace",
+            "Clarity",
+            "Positive Energy"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and crafted with divine intention."
+    },
+    {
+        "id": 4,
+        "name": "Seven Chakra Vastu Set",
+        "slug": "seven-chakra-vastu-set",
+        "category": "Vastu Products",
+        "categorySlug": "vastu",
+        "featured": true,
+        "shortDescription": "A powerful chakra set designed to balance energy, harmony and positivity in your space.",
+        "price": "₹1,599",
+        "oldPrice": "₹2,499",
+        "discount": "36% OFF",
+        "badge": "POPULAR",
+        "rating": 4.7,
+        "reviews": "98 Reviews",
+        "description": "Seven Chakra Vastu Set designed to balance the seven energy centers and create a peaceful, positive and harmonious environment at home or workplace.",
+        "images": [
+            "../assets/product/seven-chakra-vastu-1.png",
+            "../assets/product/seven-chakra-vastu-2.png",
+            "../assets/product/seven-chakra-vastu-3.png",
+            "../assets/product/seven-chakra-vastu-4.png"
+        ],
+        "quickBenefits": [
+            "Balances Chakras",
+            "Enhances Positive Energy",
+            "Promotes Harmony",
+            "Supports Meditation"
+        ],
+        "benefitCards": [
+            {
+                "title": "Chakra Balance",
+                "description": "Helps align and balance the seven energy centers."
+            },
+            {
+                "title": "Positive Vibrations",
+                "description": "Creates a peaceful and uplifting environment."
+            },
+            {
+                "title": "Meditation Support",
+                "description": "Supports focus and mindfulness practices."
+            },
+            {
+                "title": "Energy Protection",
+                "description": "Helps maintain positive energy around your space."
+            },
+            {
+                "title": "Spiritual Growth",
+                "description": "Encourages inner balance and personal growth."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Material",
+                "value": "Natural Crystals"
+            },
+            {
+                "label": "Chakras",
+                "value": "Seven Chakra Energy Stones"
+            },
+            {
+                "label": "Usage",
+                "value": "Home / Office / Meditation Space"
+            },
+            {
+                "label": "Purpose",
+                "value": "Energy Balancing & Vastu"
+            },
+            {
+                "label": "Packaging",
+                "value": "Premium Gift Box"
+            },
+            {
+                "label": "Origin",
+                "value": "India"
+            }
+        ],
+        "significanceTitle": "Chakra Significance",
+        "significanceDescription": "Seven Chakra Vastu Set represents the balance of energy centers and helps create a peaceful, positive and harmonious atmosphere.",
+        "tags": [
+            "Chakra",
+            "Vastu",
+            "Healing",
+            "Meditation",
+            "Positive Energy"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and crafted with divine intention."
+    },
+    {
+        "id": 3,
+        "name": "Vastu Pyramid",
+        "slug": "vastu-pyramid",
+        "category": "Vastu Products",
+        "categorySlug": "vastu",
+        "featured": true,
+        "shortDescription": "A powerful vastu tool designed to balance energy and create harmony in your space.",
+        "price": "₹1,299",
+        "oldPrice": "₹1,999",
+        "discount": "35% OFF",
+        "badge": "BEST SELLER",
+        "rating": 4.8,
+        "reviews": "112 Reviews",
+        "description": "Premium vastu pyramid designed to balance positive energies, improve harmony and create a peaceful environment at home or workplace.",
+        "images": [
+            "../assets/product/vastu-pyramid-1.png",
+            "../assets/product/vastu-pyramid-2.png",
+            "../assets/product/vastu-pyramid-3.png",
+            "../assets/product/vastu-pyramid-4.png",
+            "../assets/product/vastu-pyramid-5.png"
+        ],
+        "quickBenefits": [
+            "Balances Energy",
+            "Improves Harmony",
+            "Removes Negativity",
+            "Enhances Positivity"
+        ],
+        "benefitCards": [
+            {
+                "title": "Energy Balance",
+                "description": "Helps balance the energy flow in your surroundings."
+            },
+            {
+                "title": "Positive Environment",
+                "description": "Creates a peaceful and positive atmosphere."
+            },
+            {
+                "title": "Vastu Support",
+                "description": "Used as a vastu remedy for improving space energy."
+            },
+            {
+                "title": "Mental Peace",
+                "description": "Supports calmness and a harmonious environment."
+            },
+            {
+                "title": "Spiritual Protection",
+                "description": "Helps protect against negative vibrations."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Material",
+                "value": "Premium Crystal / Metal Finish"
+            },
+            {
+                "label": "Usage",
+                "value": "Home / Office / Meditation Space"
+            },
+            {
+                "label": "Purpose",
+                "value": "Vastu Energy Balance"
+            },
+            {
+                "label": "Design",
+                "value": "Traditional Pyramid Structure"
+            },
+            {
+                "label": "Packaging",
+                "value": "Premium Gift Box"
+            },
+            {
+                "label": "Origin",
+                "value": "India"
+            }
+        ],
+        "significanceTitle": "Vastu Significance",
+        "significanceDescription": "Vastu pyramid is used to harmonize space energies and create a balanced, peaceful and positive environment.",
+        "tags": [
+            "Vastu",
+            "Energy Balance",
+            "Protection",
+            "Harmony",
+            "Positive Energy"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and crafted with divine intention."
+    },
+    {
+        "id": 2,
+        "name": "Sacred Meditation Diya",
+        "slug": "sacred-meditation-diya",
+        "category": "Spiritual Products",
+        "categorySlug": "spiritual",
+        "featured": true,
+        "shortDescription": "A traditional diya for meditation, prayers and creating a peaceful spiritual atmosphere.",
+        "price": "₹799",
+        "oldPrice": "₹1,199",
+        "discount": "33% OFF",
+        "badge": "NEW ARRIVALS",
+        "rating": 4.6,
+        "reviews": "84 Reviews",
+        "description": "Beautifully crafted sacred meditation diya designed for daily prayers, meditation and spiritual rituals. Creates a calm environment filled with positive energy.",
+        "images": [
+            "../assets/product/meditation-diya-1.png",
+            "../assets/product/meditation-diya-2.png",
+            "../assets/product/meditation-diya-3.png",
+            "../assets/product/meditation-diya-4.png"
+        ],
+        "quickBenefits": [
+            "Peaceful Environment",
+            "Enhances Meditation",
+            "Removes Negative Energy",
+            "Brings Positivity"
+        ],
+        "benefitCards": [
+            {
+                "title": "Positive Energy",
+                "description": "Helps create a positive and uplifting spiritual space."
+            },
+            {
+                "title": "Meditation Aid",
+                "description": "Supports focus and mindfulness during meditation."
+            },
+            {
+                "title": "Divine Ambience",
+                "description": "Creates a peaceful atmosphere for prayers and rituals."
+            },
+            {
+                "title": "Traditional Ritual",
+                "description": "Perfect for daily puja and spiritual practices."
+            },
+            {
+                "title": "Inner Calm",
+                "description": "Encourages relaxation and mental peace."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Material",
+                "value": "Premium Metal / Brass Finish"
+            },
+            {
+                "label": "Usage",
+                "value": "Meditation / Prayer / Home Decor"
+            },
+            {
+                "label": "Design",
+                "value": "Traditional Spiritual Design"
+            },
+            {
+                "label": "Gender",
+                "value": "Unisex"
+            },
+            {
+                "label": "Packaging",
+                "value": "Premium Gift Box"
+            },
+            {
+                "label": "Origin",
+                "value": "India"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance",
+        "significanceDescription": "Lighting a diya symbolizes removing darkness and inviting positivity, peace and divine energy into your surroundings.",
+        "tags": [
+            "Meditation",
+            "Prayer",
+            "Positive Energy",
+            "Spiritual Decor",
+            "Peace"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and crafted with divine intention."
+    },
+    {
+        "id": 1,
+        "name": "Rudraksha Bracelet",
+        "slug": "rudraksha-bracelet",
+        "category": "Spiritual Products",
+        "categorySlug": "spiritual",
+        "featured": true,
+        "shortDescription": "Brings peace, protection, positive energy and spiritual growth.",
+        "price": "₹1,499",
+        "oldPrice": "₹2,499",
+        "discount": "40% OFF",
+        "badge": "BEST SELLER",
+        "rating": 4.8,
+        "reviews": "128 Reviews",
+        "description": "Authentic 5 Mukhi Rudraksha bracelet that brings peace, protection, positive energy and spiritual growth.",
+        "images": [
+            "../assets/product/rudraksha-1.png",
+            "../assets/product/rudraksha-2.png",
+            "../assets/product/rudraksha-3.png",
+            "../assets/product/rudraksha-4.png",
+            "../assets/product/rudraksha-5.png"
+        ],
+        "quickBenefits": [
+            "Enhances Focus",
+            "Reduces Stress",
+            "Brings Peace",
+            "Spiritual Protection"
+        ],
+        "benefitCards": [
+            {
+                "title": "Spiritual Healing",
+                "description": "Helps remove negative energy."
+            },
+            {
+                "title": "Positive Energy",
+                "description": "Attracts positivity and abundance."
+            },
+            {
+                "title": "Meditation Support",
+                "description": "Enhances focus and concentration."
+            },
+            {
+                "title": "Emotional Balance",
+                "description": "Promotes calmness and stability."
+            },
+            {
+                "title": "Natural Protection",
+                "description": "Shields from negativity."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Material",
+                "value": "5 Mukhi Rudraksha"
+            },
+            {
+                "label": "Thread",
+                "value": "Stretchable (Premium Elastic)"
+            },
+            {
+                "label": "Origin",
+                "value": "Nepal"
+            },
+            {
+                "label": "Gender",
+                "value": "Unisex"
+            },
+            {
+                "label": "Bead Size",
+                "value": "8mm"
+            },
+            {
+                "label": "Packaging",
+                "value": "Premium Gift Box"
+            },
+            {
+                "label": "Weight",
+                "value": "Approx. 20g"
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Wear / Meditation"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance",
+        "significanceDescription": "Rudraksha is a sacred bead blessed by Lord Shiva. It is known to bring peace, improve concentration, reduce stress, and protect the wearer from negative energies.",
+        "tags": [
+            "Peace",
+            "Protection",
+            "Healing",
+            "Wisdom",
+            "Divine Blessings"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and crafted with divine intention."
+    },
+    {
+        "id": 0,
+        "name": "Divine Spiritual Mala",
+        "slug": "divine-spiritual-mala",
+        "category": "Spiritual Products",
+        "categorySlug": "spiritual",
+        "featured": true,
+        "shortDescription": "A sacred mala designed for meditation, prayer, positivity and spiritual growth.",
+        "price": "₹999",
+        "oldPrice": "₹1,499",
+        "discount": "33% OFF",
+        "badge": "POPULAR",
+        "rating": 4.7,
+        "reviews": "96 Reviews",
+        "description": "Authentic spiritual mala crafted for meditation, chanting and daily spiritual practices. Helps enhance focus, inner peace and positive energy.",
+        "images": [
+            "../assets/product/spiritual-mala-1.png",
+            "../assets/product/spiritual-mala-2.png",
+            "../assets/product/spiritual-mala-3.png",
+            "../assets/product/spiritual-mala-4.png",
+            "../assets/product/spiritual-mala-5.png"
+        ],
+        "quickBenefits": [
+            "Enhances Meditation",
+            "Improves Focus",
+            "Brings Inner Peace",
+            "Positive Energy"
+        ],
+        "benefitCards": [
+            {
+                "title": "Meditation Support",
+                "description": "Helps improve concentration during meditation and prayers."
+            },
+            {
+                "title": "Spiritual Growth",
+                "description": "Supports mindfulness and personal spiritual journey."
+            },
+            {
+                "title": "Positive Vibes",
+                "description": "Attracts calmness and positive energy."
+            },
+            {
+                "title": "Mental Peace",
+                "description": "Promotes relaxation and emotional balance."
+            },
+            {
+                "title": "Sacred Practice",
+                "description": "Ideal for chanting, prayers and daily rituals."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Material",
+                "value": "Natural Sacred Beads"
+            },
+            {
+                "label": "Bead Count",
+                "value": "108 Beads"
+            },
+            {
+                "label": "Usage",
+                "value": "Meditation / Chanting / Prayer"
+            },
+            {
+                "label": "Gender",
+                "value": "Unisex"
+            },
+            {
+                "label": "Packaging",
+                "value": "Premium Gift Box"
+            },
+            {
+                "label": "Origin",
+                "value": "India"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance",
+        "significanceDescription": "A sacred mala is used for meditation, mantra chanting and spiritual practices. It helps bring focus, peace and a deeper connection with inner self.",
+        "tags": [
+            "Meditation",
+            "Peace",
+            "Prayer",
+            "Spirituality",
+            "Positive Energy"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and crafted with divine intention."
+    }
+]
