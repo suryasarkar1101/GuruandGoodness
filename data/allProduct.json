@@ -4,7 +4,7 @@
         "name": "Wellness Gift Box",
         "slug": "wellness-gift-box",
         "category": "Organic Wellness",
-        "categorySlug": "organic-wellness",
+        "categorySlug": "wellness",
         "featured": true,
         "shortDescription": "A thoughtfully curated wellness gift box designed for relaxation, self-care and positive living.",
         "price": "₹1,799",
@@ -15,11 +15,11 @@
         "reviews": "88 Reviews",
         "description": "Premium wellness gift box containing carefully selected products to support relaxation, mindfulness and a healthy lifestyle. Perfect for gifting and self-care.",
         "images": [
-            "../assets/product/wellness-gift-box-1.png",
-            "../assets/product/wellness-gift-box-2.png",
-            "../assets/product/wellness-gift-box-3.png",
-            "../assets/product/wellness-gift-box-4.png",
-            "../assets/product/wellness-gift-box-5.png"
+            "assets/product/wellness-gift-box-1.png",
+            "assets/product/wellness-gift-box-2.png",
+            "assets/product/wellness-gift-box-3.png",
+            "assets/product/wellness-gift-box-4.png",
+            "assets/product/wellness-gift-box-5.png"
         ],
         "quickBenefits": [
             "Promotes Self Care",
@@ -91,7 +91,7 @@
         "name": "Natural Incense",
         "slug": "natural-incense",
         "category": "Organic Wellness",
-        "categorySlug": "organic-wellness",
+        "categorySlug": "wellness",
         "featured": true,
         "shortDescription": "Natural incense crafted to create a peaceful atmosphere with calming fragrance and positive energy.",
         "price": "₹499",
@@ -102,10 +102,10 @@
         "reviews": "76 Reviews",
         "description": "Premium natural incense made with quality ingredients to enhance meditation, relaxation and spiritual practices. Creates a refreshing and peaceful environment.",
         "images": [
-            "../assets/product/natural-incense-1.png",
-            "../assets/product/natural-incense-2.png",
-            "../assets/product/natural-incense-3.png",
-            "../assets/product/natural-incense-4.png"
+            "assets/product/natural-incense-1.png",
+            "assets/product/natural-incense-2.png",
+            "assets/product/natural-incense-3.png",
+            "assets/product/natural-incense-4.png"
         ],
         "quickBenefits": [
             "Calming Fragrance",
@@ -177,7 +177,7 @@
         "name": "Rose Quartz Crystal",
         "slug": "rose-quartz-crystal",
         "category": "Healing Crystals",
-        "categorySlug": "healing-crystals",
+        "categorySlug": "crystals",
         "featured": true,
         "shortDescription": "A loving crystal known for emotional healing, harmony and positive relationships.",
         "price": "₹999",
@@ -188,11 +188,11 @@
         "reviews": "92 Reviews",
         "description": "Natural Rose Quartz Crystal known for promoting love, emotional balance, self-care and peaceful energy. Perfect for meditation, home spaces and personal healing practices.",
         "images": [
-            "../assets/product/rose-quartz-1.png",
-            "../assets/product/rose-quartz-2.png",
-            "../assets/product/rose-quartz-3.png",
-            "../assets/product/rose-quartz-4.png",
-            "../assets/product/rose-quartz-5.png"
+            "assets/product/rose-quartz-1.png",
+            "assets/product/rose-quartz-2.png",
+            "assets/product/rose-quartz-3.png",
+            "assets/product/rose-quartz-4.png",
+            "assets/product/rose-quartz-5.png"
         ],
         "quickBenefits": [
             "Promotes Love",
@@ -264,7 +264,7 @@
         "name": "Amethyst Crystal",
         "slug": "amethyst-crystal",
         "category": "Healing Crystals",
-        "categorySlug": "healing-crystals",
+        "categorySlug": "crystals",
         "featured": true,
         "shortDescription": "A calming crystal known for peace, clarity, meditation and positive energy.",
         "price": "₹899",
@@ -275,10 +275,10 @@
         "reviews": "105 Reviews",
         "description": "Authentic Amethyst Crystal that supports meditation, inner peace, emotional balance and positive energy. Ideal for spiritual practices and home spaces.",
         "images": [
-            "../assets/product/amethyst-crystal-1.png",
-            "../assets/product/amethyst-crystal-2.png",
-            "../assets/product/amethyst-crystal-3.png",
-            "../assets/product/amethyst-crystal-4.png"
+            "assets/product/amethyst-crystal-1.png",
+            "assets/product/amethyst-crystal-2.png",
+            "assets/product/amethyst-crystal-3.png",
+            "assets/product/amethyst-crystal-4.png"
         ],
         "quickBenefits": [
             "Promotes Calmness",
@@ -361,10 +361,10 @@
         "reviews": "98 Reviews",
         "description": "Seven Chakra Vastu Set designed to balance the seven energy centers and create a peaceful, positive and harmonious environment at home or workplace.",
         "images": [
-            "../assets/product/seven-chakra-vastu-1.png",
-            "../assets/product/seven-chakra-vastu-2.png",
-            "../assets/product/seven-chakra-vastu-3.png",
-            "../assets/product/seven-chakra-vastu-4.png"
+            "assets/product/seven-chakra-vastu-1.png",
+            "assets/product/seven-chakra-vastu-2.png",
+            "assets/product/seven-chakra-vastu-3.png",
+            "assets/product/seven-chakra-vastu-4.png"
         ],
         "quickBenefits": [
             "Balances Chakras",
@@ -447,11 +447,11 @@
         "reviews": "112 Reviews",
         "description": "Premium vastu pyramid designed to balance positive energies, improve harmony and create a peaceful environment at home or workplace.",
         "images": [
-            "../assets/product/vastu-pyramid-1.png",
-            "../assets/product/vastu-pyramid-2.png",
-            "../assets/product/vastu-pyramid-3.png",
-            "../assets/product/vastu-pyramid-4.png",
-            "../assets/product/vastu-pyramid-5.png"
+            "assets/product/vastu-pyramid-1.png",
+            "assets/product/vastu-pyramid-2.png",
+            "assets/product/vastu-pyramid-3.png",
+            "assets/product/vastu-pyramid-4.png",
+            "assets/product/vastu-pyramid-5.png"
         ],
         "quickBenefits": [
             "Balances Energy",
@@ -534,10 +534,10 @@
         "reviews": "84 Reviews",
         "description": "Beautifully crafted sacred meditation diya designed for daily prayers, meditation and spiritual rituals. Creates a calm environment filled with positive energy.",
         "images": [
-            "../assets/product/meditation-diya-1.png",
-            "../assets/product/meditation-diya-2.png",
-            "../assets/product/meditation-diya-3.png",
-            "../assets/product/meditation-diya-4.png"
+            "assets/product/meditation-diya-1.png",
+            "assets/product/meditation-diya-2.png",
+            "assets/product/meditation-diya-3.png",
+            "assets/product/meditation-diya-4.png"
         ],
         "quickBenefits": [
             "Peaceful Environment",
@@ -620,11 +620,11 @@
         "reviews": "128 Reviews",
         "description": "Authentic 5 Mukhi Rudraksha bracelet that brings peace, protection, positive energy and spiritual growth.",
         "images": [
-            "../assets/product/rudraksha-1.png",
-            "../assets/product/rudraksha-2.png",
-            "../assets/product/rudraksha-3.png",
-            "../assets/product/rudraksha-4.png",
-            "../assets/product/rudraksha-5.png"
+            "assets/product/rudraksha-1.png",
+            "assets/product/rudraksha-2.png",
+            "assets/product/rudraksha-3.png",
+            "assets/product/rudraksha-4.png",
+            "assets/product/rudraksha-5.png"
         ],
         "quickBenefits": [
             "Enhances Focus",
@@ -715,11 +715,11 @@
         "reviews": "96 Reviews",
         "description": "Authentic spiritual mala crafted for meditation, chanting and daily spiritual practices. Helps enhance focus, inner peace and positive energy.",
         "images": [
-            "../assets/product/spiritual-mala-1.png",
-            "../assets/product/spiritual-mala-2.png",
-            "../assets/product/spiritual-mala-3.png",
-            "../assets/product/spiritual-mala-4.png",
-            "../assets/product/spiritual-mala-5.png"
+            "assets/product/spiritual-mala-1.png",
+            "assets/product/spiritual-mala-2.png",
+            "assets/product/spiritual-mala-3.png",
+            "assets/product/spiritual-mala-4.png",
+            "assets/product/spiritual-mala-5.png"
         ],
         "quickBenefits": [
             "Enhances Meditation",

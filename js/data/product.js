@@ -98,12 +98,12 @@ async function loadProduct() {
     product = products.find(item => item.slug === slug);
     if (!product) return;
     document.title = product.name + " | Guru and Goodness";
-    document.getElementById("gg-product-name").innerHTML = `${product.name} <span class="gg-product-badge">${product.badge}</span>`;
+    document.getElementById("gg-product-name").innerHTML = `${product.name} ${product.badge ? `<span class="gg-product-badge">${product.badge}</span>` : ``}`;
     document.getElementById("gg-price").textContent = product.price;
     document.getElementById("gg-old-price").textContent = product.oldPrice;
     document.getElementById("gg-discount").textContent = product.discount;
     document.getElementById("gg-description").textContent = product.description;
-    document.getElementById("gg-main-image").src = product.images[0];
+    document.getElementById("gg-main-image").src = basePath + product.images[0];
     document.querySelector('.gg-significance-title').textContent = product.significanceTitle;
     document.querySelector('.gg-significance-description').textContent = product.significanceDescription;
     const tagsContainer = document.getElementById("gg-significance-tags");
@@ -120,15 +120,15 @@ async function loadProduct() {
         div.className = "gg-product-thumb";
         if (index === 0)
             div.classList.add("active");
-        div.innerHTML = `<img src="${img}">`;
+        div.innerHTML = `<img src="${basePath + img}">`;
         div.onclick = () => {
             document.querySelectorAll('.gg-product-thumb').forEach(el => el.classList.remove('active'));
             div.classList.add("active");
-            document.getElementById('gg-main-image').src = img;
+            document.getElementById('gg-main-image').src = basePath + img;
         };
         thumbs.appendChild(div);
     });
-    
+
     document.getElementById("gg-category").textContent = product.category;
     const rating = Number(product.rating);
     document.getElementById("gg-rating").textContent = `(${rating})`;
@@ -143,4 +143,16 @@ async function loadProduct() {
 
     loadReviews("product", 3, product.id);
     loadProducts("releatedProducts", item => item.categorySlug === product.categorySlug && item.slug !== product.slug, 5, false);
+    updateWishlist();
+}
+
+function updateWishlist() {
+    let isWishlisted = wishlist.includes(product.id);
+    if (isWishlisted) {
+        wishlistIcon.classList.replace("far", "fas");
+        wishlistBtn.classList.add("active");
+    } else {
+        wishlistIcon.classList.replace("fas", "far");
+        wishlistBtn.classList.remove("active");
+    }
 }

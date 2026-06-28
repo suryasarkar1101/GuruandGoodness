@@ -93,18 +93,16 @@
                 </div>
 
                 <div class="gg-product-actions">
-                    <div class="gg-qty">
-                        <button id="qtyMinus">
-                            -
-                        </button>
-                        <span id="qtyValue">
-                            1
-                        </span>
-                        <button id="qtyPlus">
-                            +
+                    <div class="gg-product-top">
+                        <div class="gg-qty">
+                            <button id="qtyMinus">-</button>
+                            <span id="qtyValue">1</span>
+                            <button id="qtyPlus">+</button>
+                        </div>
+                        <button class="gg-wishlist-btn" id="wishlistBtn">
+                            <i class="far fa-heart"></i>
                         </button>
                     </div>
-
                     <div id="whatsappBtn" class="gg-whatsapp-btn">
                         <i class="fab fa-whatsapp"></i>
                         Chat to Buy
@@ -274,13 +272,51 @@
     <script src="../js/data/review.js"></script>
     <script src="../js/data/product.js"></script>
     <script>
+        const qtyMinus = document.getElementById("qtyMinus");
+        const qtyPlus = document.getElementById("qtyPlus");
+        const qtyValue = document.getElementById("qtyValue");
+        let quantity = 1;
+        const minQty = 1;
+        const maxQty = 10;
+        function updateQty() {
+            qtyValue.textContent = quantity;
+        }
+        qtyMinus.addEventListener("click", () => {
+            if (quantity > minQty) {
+                quantity--;
+                updateQty();
+            }
+        });
+        qtyPlus.addEventListener("click", () => {
+            if (quantity < maxQty) {
+                quantity++;
+                updateQty();
+            }
+        });
+        updateQty();
         const whatsappNumber = "91XXXXXXXXXX";
         document.getElementById("whatsappBtn").addEventListener("click", () => {
             const message = `Hi, I want to buy ${product.name}`;
             const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
             window.open(url, "_blank");
-        });
+        });                
         loadProduct();
+        const wishlistBtn = document.getElementById("wishlistBtn");
+        const wishlistIcon = wishlistBtn.querySelector("i");
+        let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+        
+        wishlistBtn.addEventListener("click", () => {
+            let isWishlisted = wishlist.includes(product.id);
+            if (isWishlisted) {
+                wishlist = wishlist.filter(id => id !== product.id);
+                isWishlisted = false;
+            } else {
+                wishlist.push(product.id);
+                isWishlisted = true;
+            }
+            localStorage.setItem("wishlist", JSON.stringify(wishlist));
+            updateWishlist();
+        });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

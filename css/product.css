@@ -245,49 +245,120 @@
 
 .gg-product-actions {
     display: flex;
+    flex-direction: column;
     gap: 15px;
     margin: 30px 0;
+    width: 300px;
 }
 
-.gg-qty {
+/* Top Row */
+.gg-product-top {
     display: flex;
-    align-items: center;
-    border: 1px solid #e5d7c1;
-    border-radius: 12px;
+    gap: 15px;
     justify-content: center;
 }
 
-.gg-qty button {
-    width: 45px;
-    height: 50px;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-#qtyValue {
-    width: 50px;
-    text-align: center;
-}
-
-.gg-whatsapp-btn {
+/* Quantity */
+.gg-qty {
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e5d7c1;
+    border-radius: 12px;
+    height: 58px;
+    overflow: hidden;
+    max-width: 150px;
+}
+
+.gg-qty button {
+    width: 55px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .3s;
+}
+
+.gg-qty button:hover {
+    background: #f8f4ed;
+}
+
+#qtyValue {
+    min-width: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Wishlist */
+.gg-wishlist-btn {
+    width: 58px;
+    height: 58px;
+    border: 1px solid #e5d7c1;
+    border-radius: 12px;
+    background: #fff;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
     justify-content: center;
+
+    font-size: 24px;
+    color: #333;
+
+    transition: .3s;
+}
+
+.gg-wishlist-btn:hover {
+    background: #f8f4ed;
+    color: #e63946;
+}
+
+
+.gg-wishlist-btn i {
+    transition: .3s;
+}
+
+.gg-wishlist-btn:hover i {
+    transform: scale(1.1);
+}
+
+.gg-wishlist-btn.active {
+    background: #fff5f5;
+    border-color: #ff4d6d;
+    color: #ff4d6d;
+}
+
+.gg-wishlist-btn.active i {
+    color: #ff4d6d;
+}
+
+/* WhatsApp Button */
+.gg-whatsapp-btn {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     background: #1ba94c;
     color: #fff;
     border-radius: 12px;
-    text-decoration: none;
-    max-width: max-content;
-    gap: 12px;
-    padding: 10px 40px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+
+    transition: .3s;
+}
+
+.gg-whatsapp-btn:hover {
+    background: #179444;
 }
 
 .gg-whatsapp-btn i {
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .gg-product-features {
