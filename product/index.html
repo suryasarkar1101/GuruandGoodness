@@ -122,9 +122,37 @@
                         <img src="../assets/package.png" alt="Packaging">
                         <span>Secure Packaging</span>
                     </div>
-                    <div class="gg-feature-item">
-                        <img src="../assets/return.png" alt="Return">
-                        <span>7 Days Easy Return</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gg-handcrafted-inner">
+        <div class="gg-handcrafted-content">
+
+            <div class="gg-handcrafted-info">
+                <div class="gg-info-item">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Order within</span>
+                    <div class="gg-countdown">
+                        <span id="gg-hours">05</span>
+                        :
+                        <span id="gg-minutes">42</span>
+                        :
+                        <span id="gg-seconds">18</span>
+                    </div>
+                </div>
+
+                <span class="gg-dot"></span>
+                <div class="gg-info-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Ships in <strong>5–7 Days</strong> </span>
+                </div>
+                <span class="gg-dot"></span>
+                <div class="gg-info-item">
+                    <div class="gg-handcrafted-text">
+                        Handcrafted fresh to order for premium quality.
                     </div>
                 </div>
             </div>
@@ -299,12 +327,12 @@
             const message = `Hi, I want to buy ${product.name}`;
             const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
             window.open(url, "_blank");
-        });                
+        });
         loadProduct();
         const wishlistBtn = document.getElementById("wishlistBtn");
         const wishlistIcon = wishlistBtn.querySelector("i");
         let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-        
+
         wishlistBtn.addEventListener("click", () => {
             let isWishlisted = wishlist.includes(product.id);
             if (isWishlisted) {
@@ -317,6 +345,36 @@
             localStorage.setItem("wishlist", JSON.stringify(wishlist));
             updateWishlist();
         });
+        const hoursEl = document.getElementById("gg-hours");
+        const minutesEl = document.getElementById("gg-minutes");
+        const secondsEl = document.getElementById("gg-seconds");
+
+        function updateCountdown() {
+
+            const now = new Date();
+
+            // Today's 8:00 PM
+            let target = new Date();
+            target.setHours(20, 0, 0, 0);
+
+            // If it's already past 8 PM, count to tomorrow's 8 PM
+            if (now >= target) {
+                target.setDate(target.getDate() + 1);
+            }
+
+            const diff = target - now;
+
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            hoursEl.textContent = String(hours).padStart(2, "0");
+            minutesEl.textContent = String(minutes).padStart(2, "0");
+            secondsEl.textContent = String(seconds).padStart(2, "0");
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
