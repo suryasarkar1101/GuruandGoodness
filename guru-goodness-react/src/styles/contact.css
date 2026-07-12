@@ -7,7 +7,7 @@
 .business-hours-bg {
     position: absolute;
     inset: 0;
-    background: url(../assets/business-hours-bg.png);
+    background: url(../assets/images/backgrounds/business-hours-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@
 .whatsapp-section {
     position: relative;
     min-height: 550px;
-    background: url("../assets/whatsapp-bg.png") center/cover no-repeat;
+    background: url("../assets/images/backgrounds/whatsapp-bg.png") center/cover no-repeat;
     z-index: 2;
     border-radius: 0px 0px 20px 20px;
     overflow: hidden;
@@ -258,7 +258,7 @@
 .contact-hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url("../assets/contact-hero-bg.png");
+    background-image: url("../assets/images/backgrounds/contact-hero-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -360,7 +360,7 @@
     top: 120px;
     width: 320px;
     height: 320px;
-    background: url("../assets/mandala.png");
+    background: url("../assets/images/backgrounds/mandala.png");
     background-size: contain;
     background-repeat: no-repeat;
     opacity: .35;
@@ -409,7 +409,7 @@
     width: 140px;
     height: 22px;
     margin: 10px auto 0;
-    background: url("../assets/lotus-divider.png") center/contain no-repeat;
+    background: url("../assets/images/backgrounds/lotus-divider.png") center/contain no-repeat;
 }
 
 .contact-cards {

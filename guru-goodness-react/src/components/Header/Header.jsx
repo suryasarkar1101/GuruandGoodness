@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo/logo.png";
 import { navLinks, socialLinks, topBar } from "./headerData";
 import MobileMenu from "./MobileMenu";
@@ -7,7 +8,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <>
+        <div className="header-wrapper" id="header">
             {/* Top Bar */}
             <div className="top-bar">
                 <div className="left-content">
@@ -17,6 +18,7 @@ const Header = () => {
 
                 <div className="right-content">
                     <div className="social-icons">
+
                         {socialLinks.map((social, index) => (
                             <div key={social.label} className="social-item">
                                 <a href={social.href} aria-label={social.label}>
@@ -48,14 +50,20 @@ const Header = () => {
                 {/* Center */}
                 <div className="nav-menu">
                     {navLinks.map((link) => (
-                        <a key={link.title} href={link.href}>
+                        <NavLink
+                            key={link.title}
+                            to={link.href}
+                            className={({ isActive }) =>
+                                isActive ? "active" : ""
+                            }
+                        >
                             {link.title}
-                        </a>
+                        </NavLink>
                     ))}
                 </div>
 
                 {/* Hamburger */}
-                <button className={`menu-toggle ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu"                >
+                <button className={`menu-toggle ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu" >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -65,7 +73,7 @@ const Header = () => {
                 isOpen={menuOpen}
                 onClose={() => setMenuOpen(false)}
             />
-        </>
+        </div>
     );
 };
 

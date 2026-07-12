@@ -6,7 +6,7 @@
     align-items: center;
     padding: 85px 7% 50px;
     margin-top: -35px;
-    background: linear-gradient(90deg, rgba(251, 247, 240, .98) 0%, rgba(251, 247, 240, .96) 30%, rgba(251, 247, 240, .80) 42%, rgba(251, 247, 240, .25) 58%, rgba(251, 247, 240, 0) 68%), url("../assets/consultancy_hero.png");
+    background: linear-gradient(90deg, rgba(251, 247, 240, .98) 0%, rgba(251, 247, 240, .96) 30%, rgba(251, 247, 240, .80) 42%, rgba(251, 247, 240, .25) 58%, rgba(251, 247, 240, 0) 68%), url("../assets/images/backgrounds/consultancy_hero.png");
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@
     position: relative;
     padding: 50px 0px;
     overflow: hidden;
-    background: linear-gradient(rgba(250, 246, 239, .10), rgba(250, 246, 239, .10)), url("../assets/consultation-bg.png");
+    background: linear-gradient(rgba(250, 246, 239, .10), rgba(250, 246, 239, .10)), url("../assets/images/backgrounds/consultation-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -548,7 +548,7 @@
 .cta-section {
     position: relative;
     min-height: 700px;
-    background-image: url("../assets/cta-bg_colcu.png");
+    background-image: url("../assets/images/backgrounds/cta-bg_colcu.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

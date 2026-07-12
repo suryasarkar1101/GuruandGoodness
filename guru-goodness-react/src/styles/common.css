@@ -152,7 +152,7 @@
     border-radius: 24px;
     display: grid;
     overflow: hidden;
-    width: 70%;
+    width: 70% !important;
     margin: auto;
     justify-content: center;
 }

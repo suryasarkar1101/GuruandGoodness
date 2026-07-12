@@ -1,0 +1,24 @@
+import { randomReviews } from "../utils/randomReviews";
+
+const loadReviews = async (type, count, productId = null) => {
+    const response = await fetch("/data/customer-reviews.json");
+
+    if (!response.ok) {
+        throw new Error("Review data not found");
+    }
+    const reviews = await response.json();
+    let selectedReviews = [];
+    if (type === "home") {
+        selectedReviews = reviews.filter(
+            review => review.featured
+        );
+    }
+    if (type === "product") {
+        selectedReviews = reviews.filter(
+            review => review.productId === productId
+        );
+    }
+    return randomReviews(selectedReviews, count);
+};
+
+export default loadReviews;

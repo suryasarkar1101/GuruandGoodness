@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import mandala from "../../assets/images/backgrounds/mandala.png";
 import lotusWave from "../../assets/images/backgrounds/lotus_wave.png";
 
@@ -16,10 +17,13 @@ const MobileMenu = ({ isOpen, onClose }) => {
         {/* Menu Links */}
         <div className="mobile-menu-links">
           {mobileMenuLinks.map((link) => (
-            <a
+            <NavLink
               key={link.title}
-              href={link.href}
-              className="mobile-menu-link"
+              to={link.href}
+              end={link.href === "/"}
+              className={({ isActive }) =>
+                `mobile-menu-link ${isActive ? "active-link" : ""}`
+              }
               onClick={onClose}
             >
               <div className="menu-link-left">
@@ -28,7 +32,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
               </div>
 
               <i className="fa-solid fa-chevron-right menu-arrow"></i>
-            </a>
+            </NavLink>
           ))}
         </div>
 

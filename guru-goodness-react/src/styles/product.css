@@ -470,7 +470,7 @@
 .gg-significance-section {
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(90deg, rgba(18, 25, 8, .92) 0%, rgba(35, 35, 15, .75) 35%, rgba(0, 0, 0, .15) 70%, rgba(0, 0, 0, 0) 100%), url('../assets/spiritual-significance-bg.png');
+    background-image: linear-gradient(90deg, rgba(18, 25, 8, .92) 0%, rgba(35, 35, 15, .75) 35%, rgba(0, 0, 0, .15) 70%, rgba(0, 0, 0, 0) 100%), url('../assets/images/backgrounds/spiritual-significance-bg.png');
     background-size: cover;
     background-position: center;
 }

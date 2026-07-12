@@ -1,7 +1,7 @@
 .knowledge-section {
     position: relative;
     padding: 85px 7% 50px;
-    background: linear-gradient(90deg, rgba(251, 247, 240, .98) 0%, rgba(251, 247, 240, .96) 30%, rgba(251, 247, 240, .80) 42%, rgba(251, 247, 240, .25) 58%, rgba(251, 247, 240, 0) 68%), url("../assets/blog-hero-bg.png");
+    background: linear-gradient(90deg, rgba(251, 247, 240, .98) 0%, rgba(251, 247, 240, .96) 30%, rgba(251, 247, 240, .80) 42%, rgba(251, 247, 240, .25) 58%, rgba(251, 247, 240, 0) 68%), url("../assets/images/backgrounds/blog-hero-bg.png");
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -130,7 +130,7 @@
     position: relative;
     padding: 50px 80px;
     overflow: hidden;
-    background: url("../assets/cta-bg_blog.png");
+    background: url("../assets/images/backgrounds/cta-bg_blog.png");
     background-size: cover;
     background-position: center;
 }
@@ -398,7 +398,7 @@
     position: relative;
     height: 300px;
     overflow: hidden;
-    background: url("../assets/cta-bg.png") center center;
+    background: url("../assets/images/backgrounds/cta-bg.png") center center;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 30px 60px rgba(0, 0, 0, .08);
@@ -474,7 +474,7 @@
     position: relative;
     overflow: hidden;
     padding: 55px 7% 50px;
-    background-image: linear-gradient(90deg, rgba(253, 249, 243, .97) 0%, rgba(253, 249, 243, .93) 40%, rgba(253, 249, 243, .35) 58%, rgba(253, 249, 243, 0) 75%), url("../assets/blog-hero-bg.png");
+    background-image: linear-gradient(90deg, rgba(253, 249, 243, .97) 0%, rgba(253, 249, 243, .93) 40%, rgba(253, 249, 243, .35) 58%, rgba(253, 249, 243, 0) 75%), url("../assets/images/backgrounds/blog-hero-bg.png");
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -793,7 +793,7 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background: url("../assets/blog/article-banner.png") center center/cover no-repeat; */
+    /* background: url("../assets/images/backgrounds/blog/article-banner.png") center center/cover no-repeat; */
     min-height: 560px;
 }
 

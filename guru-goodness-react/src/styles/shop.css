@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     padding: 80px 8% 140px;
-    background-image: url('../assets/shop-hero-bg.png');
+    background-image: url('../assets/images/backgrounds/shop-hero-bg.png');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -84,7 +84,7 @@
     position: relative;
     height: 300px;
     overflow: hidden;
-    background: url("../assets/cta-bg.png") center center;
+    background: url("../assets/images/backgrounds/cta-bg.png") center center;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 30px 60px rgba(0, 0, 0, .08);
