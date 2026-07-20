@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import StarRating from "../StarRating/StarRating";
 import { WHATSAPP_URL } from "../../utils/constants";
+import { orderOnWhatsApp } from "../../utils/whatsapp"
 
 const ProductCard = ({ product, fullContent = true }) => {
     let cardClass = "";
@@ -28,7 +29,7 @@ const ProductCard = ({ product, fullContent = true }) => {
                 />
             </div>
 
-            <Link to={`/product/${product.slug}`}>
+            <Link to={`/shop/product/${product.slug}`}>
                 <div className="product-title">
                     {product.name}
                 </div>
@@ -49,16 +50,17 @@ const ProductCard = ({ product, fullContent = true }) => {
 
                 {fullContent && (
                     <div className="product-rating">
-                         <StarRating rating={product.rating} />
+                        <StarRating rating={product.rating} />
                     </div>
                 )}
             </Link>
 
             {fullContent && (
-                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="buy-btn">
+                <div className="buy-btn"
+                    onClick={() => orderOnWhatsApp(product, "1")}>
                     <i className="fa-brands fa-whatsapp"></i>
                     Chat to Buy
-                </a>
+                </div>
             )}
         </div>
     );

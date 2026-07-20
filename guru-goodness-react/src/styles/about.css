@@ -11,7 +11,6 @@
 .about-highlight-bg {
     position: absolute;
     inset: 0;
-    background: url("../assets/images/backgrounds/hero-about-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +68,7 @@
 }
 
 /* WHATSAPP */
-.whatsapp-btn {
+.whatsapp-about-btn {
     background: rgba(255, 255, 255, 0.72);
     border: 2px solid rgba(71, 167, 82, 0.28);
     color: #2d8b42;
@@ -481,7 +480,7 @@
 
 /* ICON */
 
-.feature-icon {
+.founder-feature-icon {
     background: #f7efe3;
     width: 70px;
     height: 70px;
@@ -495,7 +494,7 @@
     border: 1px solid rgba(223, 197, 151, 0.4);
 }
 
-.feature-icon img {
+.founder-feature-icon img {
     width: 110%;
 }
 
@@ -838,7 +837,7 @@
         background: transparent;
     }
 
-    .feature-icon {
+    .founder-feature-icon {
         width: 40px;
         height: 40px;
         min-width: 40px;

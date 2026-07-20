@@ -288,7 +288,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 15px 25px;
+    padding: 15px 20px;
     border-radius: 14px;
     font-weight: 700;
     text-decoration: none;
@@ -446,7 +446,7 @@
     font-size: 34px;
 }
 
-.whatsapp-card .contact-icon {
+.phone-card .contact-icon {
     background: #c01c1c;
 }
 
@@ -462,7 +462,7 @@
     background: #5f8e3a;
 }
 
-.whatsapp-card .contact-btn {
+.phone-card .contact-btn {
     background: #f6d8d8;
     color: #b11f1f;
 }
@@ -482,7 +482,7 @@
     color: #476c2d;
 }
 
-.whatsapp-card .contact-card-title {
+.phone-card .contact-card-title {
     color: #c01c1c;
 }
 

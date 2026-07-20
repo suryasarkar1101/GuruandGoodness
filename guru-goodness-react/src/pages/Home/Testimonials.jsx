@@ -5,9 +5,11 @@ import useAutoSlider from "../../hooks/useAutoSlider";
 import ReviewCard from "../../components/ReviewCard/ReviewCard";
 
 import dividerImg from "../../assets/images/divider_below.png";
+import Loading from "../../components/Loading/Loading";
 
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
+    const [loading, setLoading] = useState(true);
     const sliderRef = useRef(null);
     useAutoSlider(sliderRef, ".gg-card", {
         gap: 18,
@@ -16,15 +18,25 @@ const Testimonials = () => {
     });
     useEffect(() => {
         const getReviews = async () => {
+            const start = Date.now();
             try {
                 const data = await loadReviews("home", 4);
                 setReviews(data);
             } catch (error) {
                 console.error(error);
             }
+            const elapsed = Date.now() - start;
+            const remaining = Math.max(2000 - elapsed, 0);
+            setTimeout(() => {
+                setLoading(false);
+            }, remaining);
         };
         getReviews();
     }, []);
+
+    if (loading) {
+        return <Loading text="Preparing your experience" />;
+    }
 
     return (
         <section className="gg-testimonial-section">

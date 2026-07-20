@@ -114,9 +114,9 @@ const Footer = () => {
                     © 2026 Guru and Goodness. All Rights Reserved.
                 </div>
                 <div className="footer-bottom-links">
-                    <a href="/privacypolicy">Privacy Policy</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
                     <span>|</span>
-                    <a href="/terms">Terms & Conditions</a>
+                    <a href="/terms-and-conditions">Terms & Conditions</a>
                 </div>
                 <div>
                     Designed by Guru and Goodness

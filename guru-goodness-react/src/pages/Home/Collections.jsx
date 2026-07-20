@@ -71,7 +71,7 @@ const Collections = () => {
                             </div>
 
                             <Link
-                                to="/shop?category=spiritual"
+                                to="/shop/spiritual"
                                 className="modern-card-btn orange-btn"
                             >
                                 Explore{" "}
@@ -104,7 +104,7 @@ const Collections = () => {
                             </div>
 
                             <Link
-                                to="/shop?category=vastu"
+                                to="/shop/vastu"
                                 className="modern-card-btn gold-btn"
                             >
                                 Explore{" "}
@@ -137,7 +137,7 @@ const Collections = () => {
                             </div>
 
                             <Link
-                                to="/shop?category=crystals"
+                                to="/shop/crystals"
                                 className="modern-card-btn purple-btn"
                             >
                                 Explore{" "}
@@ -170,7 +170,7 @@ const Collections = () => {
                             </div>
 
                             <Link
-                                to="/shop?category=wellness"
+                                to="/shop/wellness"
                                 className="modern-card-btn green-btn"
                             >
                                 Explore{" "}

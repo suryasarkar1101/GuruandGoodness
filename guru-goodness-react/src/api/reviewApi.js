@@ -13,10 +13,17 @@ const loadReviews = async (type, count, productId = null) => {
             review => review.featured
         );
     }
-    if (type === "product") {
+    else if (type === "about") {
+        selectedReviews = [...reviews]
+            .sort(() => Math.random() - 0.5)
+            .slice(0, count);
+    }
+
+    else if (type === "product") {
         selectedReviews = reviews.filter(
             review => review.productId === productId
         );
+        console.log(selectedReviews);
     }
     return randomReviews(selectedReviews, count);
 };

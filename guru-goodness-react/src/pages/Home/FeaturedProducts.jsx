@@ -7,9 +7,11 @@ import footerDivider from "../../assets/images/footer/footer_divider2.png";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { getFeaturedProducts } from "../../api/productApi";
 import useAutoSlider from "../../hooks/useAutoSlider";
+import Loading from "../../components/Loading/Loading";
 
 const FeaturedProducts = () => {
     const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const sliderRef = useRef(null);
 
@@ -21,16 +23,25 @@ const FeaturedProducts = () => {
 
     useEffect(() => {
         const loadProducts = async () => {
+            const start = Date.now();
             try {
                 const data = await getFeaturedProducts(6);
                 setProducts(data);
             } catch (error) {
                 console.error("Failed to load featured products:", error);
             }
+            const elapsed = Date.now() - start;
+            const remaining = Math.max(2000 - elapsed, 0);
+            setTimeout(() => {
+                setLoading(false);
+            }, remaining);
         };
-
         loadProducts();
     }, []);
+
+    if (loading) {
+        return <Loading text="Preparing your experience" />;
+    }
 
     return (
         <section className="best-selling-section">

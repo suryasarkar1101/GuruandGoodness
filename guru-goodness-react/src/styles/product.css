@@ -114,7 +114,7 @@
     text-decoration: none;
 }
 
-.breadcrumb-my span:last-child {
+.breadcrumb-my a:last-child {
     color: #9f1616;
     font-weight: 600;
 }
@@ -161,7 +161,7 @@
     color: #666;
 }
 
-.gg-divider {
+.gg-divider-product {
     color: #d5c7b4;
     font-size: 14px;
 }
@@ -283,6 +283,13 @@
 
 .gg-qty button:hover {
     background: #f8f4ed;
+}
+
+.gg-qty span {
+    width: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 #qtyValue {
@@ -728,7 +735,7 @@
     font-weight: 500;
 }
 
-.gg-testimonial-section {
+.gg-testimonial-product-section {
     width: 100%;
     padding: 50px 90px;
     background: linear-gradient(180deg, #f9f1e4 0%, #f7eddc 100%);
@@ -737,7 +744,7 @@
 }
 
 /* GRID */
-.gg-testimonial-grid {
+.gg-testimonial-product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -757,7 +764,7 @@
     align-items: center;
 }
 
-.founder-image img {
+.founder-image-product img {
     width: 100px;
     height: 110px;
     border-radius: 12px;
@@ -937,11 +944,11 @@
     }
 
     .shop-products-section,
-    .gg-testimonial-section {
+    .gg-testimonial-product-section {
         padding: 20px 40px;
     }
 
-    .gg-testimonial-grid {
+    .gg-testimonial-product-grid {
         padding: 10px 20px;
         margin-bottom: 30px;
     }
@@ -1175,7 +1182,7 @@
     .gg-significance-content,
     .gg-product-specification-section,
     .shop-products-section,
-    .gg-testimonial-section {
+    .gg-testimonial-product-section {
         padding: 20px 20px;
     }
 
@@ -1207,7 +1214,7 @@
         max-width: 100% !important;
     }
 
-    .gg-testimonial-grid {
+    .gg-testimonial-product-grid {
         margin-bottom: 15px;
         grid-template-columns: 1fr;
     }

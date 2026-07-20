@@ -6,7 +6,7 @@
         "slug": "simple-habits-for-positive-lifestyle-happier-everyday-living",
         "categorySlug": "lifestyle-positivity",
         "category": "Lifestyle & Positivity",
-        "image": "assets/blog/positive-lifestyle-habits.png",
+        "image": "/assets/blog/positive-lifestyle-habits.png",
         "shortDescription": "Discover simple daily habits that can improve your mindset, bring more positivity, and create a balanced and joyful lifestyle.",
         "date": "2026-06-26T09:30:00",
         "readTime": "6 Min Read",
@@ -17,7 +17,7 @@
             "Mindful Living"
         ],
         "intro": "<p>A positive lifestyle is built through small everyday choices. The way we think, organize our surroundings, and spend our time can deeply influence our happiness and inner peace.</p><p>By practicing mindful habits and focusing on gratitude, balance, and self-care, we can create a more fulfilling and joyful life.</p>",
-        "content": "../data/articles/simple-positive-lifestyle-habits.html"
+        "content": "/data/articles/simple-positive-lifestyle-habits.html"
     },
     {
         "id": 5,
@@ -26,7 +26,7 @@
         "slug": "understanding-crystals-beginners-guide-natural-energy-balance",
         "categorySlug": "crystal-guides",
         "category": "Crystal Guides",
-        "image": "assets/blog/crystal-beginners-guide.png",
+        "image": "/assets/blog/crystal-beginners-guide.png",
         "shortDescription": "Learn how crystals are used for mindfulness, meditation, energy practices, and creating a balanced spiritual lifestyle.",
         "date": "2026-06-24T09:30:00",
         "readTime": "8 Min Read",
@@ -37,7 +37,7 @@
             "Spiritual Wellness"
         ],
         "intro": "<p>Crystals have been valued for centuries for their natural beauty and spiritual significance. Many people use crystals as part of meditation, mindfulness, and personal wellness practices.</p><p>Understanding different crystals and their meanings can help you choose pieces that connect with your personal journey and intentions.</p>",
-        "content": "../data/articles/understanding-crystals-beginners-guide.html"
+        "content": "/data/articles/understanding-crystals-beginners-guide.html"
     },
     {
         "id": 4,
@@ -46,7 +46,7 @@
         "slug": "benefits-of-choosing-organic-lifestyle-for-better-wellness",
         "categorySlug": "organic-wellness",
         "category": "Organic Wellness",
-        "image": "assets/blog/organic-wellness-lifestyle.png",
+        "image": "/assets/blog/organic-wellness-lifestyle.png",
         "shortDescription": "Explore how natural choices, mindful living, and organic practices can support a healthier body, peaceful mind, and balanced lifestyle.",
         "date": "2026-06-22T09:30:00",
         "readTime": "7 Min Read",
@@ -57,7 +57,7 @@
             "Healthy Lifestyle"
         ],
         "intro": "<p>Organic wellness is about creating a balanced connection between our body, mind, and the natural world. Choosing natural products and mindful habits can help us build a healthier and more peaceful lifestyle.</p><p>Small daily choices inspired by nature can bring positive changes to our overall well-being and inner harmony.</p>",
-        "content": "../data/articles/organic-wellness-lifestyle.html"
+        "content": "/data/articles/organic-wellness-lifestyle.html"
     },
     {
         "id": 3,
@@ -66,7 +66,7 @@
         "slug": "simple-vastu-tips-to-create-positive-peaceful-home",
         "categorySlug": "vastu-tips",
         "category": "Vastu Tips",
-        "image": "assets/blog/vastu-positive-home.png",
+        "image": "/assets/blog/vastu-positive-home.png",
         "shortDescription": "Discover simple Vastu practices that can help create harmony, balance, and positive energy in your living space.",
         "date": "2026-06-20T09:30:00",
         "readTime": "7 Min Read",
@@ -77,7 +77,7 @@
             "Positive Living"
         ],
         "intro": "<p>Our home is more than just a physical space—it is where we create memories, emotions, and energy. Vastu principles help us understand how our surroundings can influence our daily experiences.</p><p>By making small changes in the arrangement and environment of our home, we can invite more peace, balance, and positivity into our lives.</p>",
-        "content": "../data/articles/simple-vastu-tips-positive-home.html"
+        "content": "/data/articles/simple-vastu-tips-positive-home.html"
     },
     {
         "id": 2,
@@ -86,7 +86,7 @@
         "slug": "power-of-gratitude-simple-path-to-spiritual-happiness",
         "categorySlug": "spiritual-wisdom",
         "category": "Spiritual Wisdom",
-        "image": "assets/blog/gratitude-spiritual.png",
+        "image": "/assets/blog/gratitude-spiritual.png",
         "shortDescription": "Learn how practicing gratitude daily can transform your mindset, attract positivity, and create a deeper connection with your inner self.",
         "date": "2026-06-18T09:30:00",
         "readTime": "6 Min Read",
@@ -97,7 +97,7 @@
             "Spiritual Growth"
         ],
         "intro": "<p>Gratitude is one of the simplest yet most powerful spiritual practices. By appreciating the blessings around us, we shift our focus from what we lack to the abundance already present in our life.</p><p>A grateful heart creates peace, positivity, and a deeper connection with ourselves and the world around us.</p>",
-        "content": "../data/articles/power-of-gratitude.html"
+        "content": "/data/articles/power-of-gratitude.html"
     },
     {
         "id": 1,
@@ -106,7 +106,7 @@
         "slug": "daily-meditation-creates-lasting-inner-peace",
         "categorySlug": "spiritual-wisdom",
         "category": "Spiritual Wisdom",
-        "image": "assets/blog/meditation-banner.png",
+        "image": "/assets/blog/meditation-banner.png",
         "shortDescription": "Discover how a simple daily meditation practice can improve mindfulness, emotional balance, focus, and overall well-being.",
         "date": "2026-06-12T09:30:00",
         "readTime": "8 Min Read",
@@ -117,6 +117,6 @@
             "Mindfulness"
         ],
         "intro": "<p>Meditation is more than a practice—it's a way of reconnecting with your true self. In today's fast-paced world, taking a few moments each day to pause, breathe, and be present can create a profound shift in how you think, feel, and experience life.</p>\n<p>Whether you're seeking mental clarity, emotional balance, spiritual growth, or simply a moment of calm, meditation offers a path toward lasting inner peace.</p>",
-        "content": "../data/articles/daily-meditation.html"
+        "content": "/data/articles/daily-meditation.html"
     }
 ]

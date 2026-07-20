@@ -11,7 +11,10 @@ import heroBg from "../../assets/images/backgrounds/hero-home-bg.png";
 const Hero = () => {
     return (
         <section className="hero-section">
-            <div className="hero-bg" style={{ backgroundImage: `url(${heroBg})` }}></div>
+            <div className="hero-bg"
+                style={{
+                    background: `linear-gradient(90deg, rgba(255, 248, 235, 0.96) 0%, rgba(255, 248, 235, 0.88) 35%, rgba(255, 248, 235, 0.35) 55%, rgba(255, 248, 235, 0.05) 70%), url(${heroBg}) center center / cover no-repeat`,
+                }}></div>
             <div className="dark-overlay"></div>
 
             <div className="hero-content">
