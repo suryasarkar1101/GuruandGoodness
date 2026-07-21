@@ -1,16 +1,65 @@
-# React + Vite
+# Guru & Goodness — React (Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Small React site built with Vite. This repository contains the frontend for the Guru & Goodness website, a content-driven React app that uses local JSON/article files for product, blog and review data.
 
-Currently, two official plugins are available:
+**Quick links**
+- Code: repository root
+- App entry: [src/main.jsx](src/main.jsx#L1)
+- Routes: [src/routes/AppRoutes.jsx](src/routes/AppRoutes.jsx#L1)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Built with Vite + React (fast dev server and HMR)
+- Client-side routing via `react-router-dom`
+- Local JSON-backed content in the `data/` folder for easy editing
+- Reusable UI components in `src/components/`
 
-## React Compiler
+## Project structure (high level)
+- `src/` — React source files and components
+- `public/` — static assets and manifest
+- `data/` — JSON and HTML article files used by the app
+- `styles/` — CSS stylesheets
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Notable folders:
+- [data/](data) — contains `allProduct.json`, `blogs.json`, `customer-reviews.json`, and the `articles/` HTML files.
+- [src/components/](src/components) — UI components like `ArticleCard`, `ProductCard`, `ReviewCard`.
 
-## Expanding the Oxlint configuration
+## Prerequisites
+- Node.js (18+ recommended)
+- npm or yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Setup
+Install dependencies and start the dev server:
+
+```bash
+npm install
+npm run dev
+```
+
+Available npm scripts (from `package.json`):
+- `dev` — start Vite development server
+- `build` — build production assets
+- `preview` — locally preview the production build
+- `lint` — run `oxlint` checks
+
+## Data & Content
+- To edit products, blogs or reviews, update the files in [data/](data).
+- Article HTML files live in `data/articles/` and are rendered by the blog/article pages.
+
+## Development notes
+- Frontend entry: [src/main.jsx](src/main.jsx#L1)
+- Main layout: [src/components/Layout/MainLayout.jsx](src/components/Layout/MainLayout.jsx#L1)
+- Routes defined in: [src/routes/AppRoutes.jsx](src/routes/AppRoutes.jsx#L1)
+
+If you add new static assets, place them in `public/` or `src/assets/` and reference them from components.
+
+## Contributing
+- Create a branch for your change
+- Keep commits focused and atomic
+- Open a pull request describing the change
+
+## License
+This repository does not include a license file. Add one if you intend to make the project public.
+
+---
+
+If you'd like specific sections added or a different README style (short landing, or detailed developer guide), tell me which sections to expand and I'll update it.

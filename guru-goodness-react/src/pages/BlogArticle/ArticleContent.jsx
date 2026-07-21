@@ -1,13 +1,14 @@
 import divider from "../../assets/images/icons/lotus-divider.png";
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 
-import TableOfContents from "./TableOfContents";
-import ReadingProgress from "./ReadingProgress";
+const TableOfContents = lazy(() => import("./TableOfContents"));
+const ReadingProgress = lazy(() => import("./ReadingProgress"));
 import { getArticleContent } from "../../api/blogApi";
+import Loading from "../../components/Loading/Loading";
 
 const ArticleContent = ({ article }) => {
 
-    const [content, setContent] = useState("");
+    const [content, setContent] = useState(null);
 
     useEffect(() => {
         const loadContent = async () => {
@@ -22,7 +23,7 @@ const ArticleContent = ({ article }) => {
         if (article?.content) {
             loadContent();
         }
-    }, [article]);
+    }, [article?.content]);
 
     return (
         <section className="gg-read-content">
@@ -47,20 +48,26 @@ const ArticleContent = ({ article }) => {
                     <span></span>
                 </div>
 
-                <div
-                    id="article-body"
-                    dangerouslySetInnerHTML={{
-                        __html: content,
-                    }}
-                />
+                {content ? (
+                    <div
+                        id="article-body"
+                        dangerouslySetInnerHTML={{ __html: content }}
+                    />
+                ) : (
+                    <Loading text="Loading article..." />
+                )}
 
             </div>
 
             <aside className="gg-article-sidebar">
 
-                <TableOfContents content={content} />
+                <Suspense fallback={null}>
+                    <TableOfContents content={content} />
+                </Suspense>
 
-                <ReadingProgress slug={article.slug} />
+                <Suspense fallback={null}>
+                    <ReadingProgress slug={article.slug} />
+                </Suspense>
 
             </aside>
         </section>

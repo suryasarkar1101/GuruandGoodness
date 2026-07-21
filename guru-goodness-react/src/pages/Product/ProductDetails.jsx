@@ -1,15 +1,20 @@
 import { Helmet } from "react-helmet-async";
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import { useParams } from "react-router-dom";
 
 import useQuantity from "../../hooks/useQuantity";
 import useWishlist from "../../hooks/useWishlist";
+
+import loadReviews from "../../api/reviewApi";
+import { getProductBySlug, getRelatedProducts } from "../../api/productApi";
+
 import { orderOnWhatsApp } from "../../utils/whatsapp"
+
+const RelatedProducts = lazy(() => import("./RelatedProducts"));
+const ProductReviews = lazy(() => import("./ProductReviews"));
 
 import MainLayout from "../../components/Layout/MainLayout";
 import ComingSoon from "../../components/ComingSoon/ComingSoon";
-
-import { getProductBySlug, getRelatedProducts } from "../../api/productApi";
 
 import "../../styles/product.css";
 import Loading from "../../components/Loading/Loading";
@@ -18,10 +23,6 @@ import OrderCountdown from "./OrderCountdown";
 import ProductBenefits from "./ProductBenefits";
 import ProductSignificance from "./ProductSignificance";
 import ProductSpecification from "./ProductSpecification";
-import RelatedProducts from "./RelatedProducts";
-import ProductReviews from "./ProductReviews";
-import loadReviews from "../../api/reviewApi";
-
 const ProductDetails = () => {
 
     const { slug } = useParams();
@@ -43,21 +44,19 @@ const ProductDetails = () => {
 
     useEffect(() => {
         if (!product) return;
-        const loadRelatedProducts = async () => {
-            const data = await getRelatedProducts(product.categorySlug, product.slug);
-            setRelatedProducts(data);
-        };
-        loadRelatedProducts();
-    }, [product]);
 
-    useEffect(() => {
-        if (!product) return;
-        const getReviews = async () => {
-            const data = await loadReviews("product", 3, product.id);
-            setReviews(data);
+        const loadExtraData = async () => {
+            const [related, reviews] = await Promise.all([
+                getRelatedProducts(product.categorySlug, product.slug),
+                loadReviews("product", 3, product.id),
+            ]);
+
+            setRelatedProducts(related);
+            setReviews(reviews);
         };
-        getReviews();
-    }, [product]);
+
+        loadExtraData();
+    }, [product?.categorySlug, product?.slug]);
 
     const { quantity, increaseQuantity, decreaseQuantity, } = useQuantity();
     const { isWishlisted, toggleWishlist, } = useWishlist(product?.id);
@@ -99,8 +98,13 @@ const ProductDetails = () => {
             <ProductBenefits product={product} />
             <ProductSignificance product={product} />
             <ProductSpecification product={product} />
-            <RelatedProducts products={relatedProducts} />
-            <ProductReviews reviews={reviews} />
+            <Suspense fallback={null}>
+                <RelatedProducts products={relatedProducts} />
+            </Suspense>
+
+            <Suspense fallback={null}>
+                <ProductReviews reviews={reviews} />
+            </Suspense>
         </>
     );
 };

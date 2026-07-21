@@ -8,6 +8,7 @@ const TopicCard = ({ topicKey, topic }) => {
                     <img
                         src={topic.smallImage}
                         alt={topic.title}
+                        loading="lazy"
                     />
                 </div>
 
@@ -15,6 +16,7 @@ const TopicCard = ({ topicKey, topic }) => {
                     <img
                         src={topic.icon}
                         alt={topic.title}
+                        loading="lazy"
                     />
                 </div>
 

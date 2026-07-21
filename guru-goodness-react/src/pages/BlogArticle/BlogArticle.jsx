@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import "../../styles/blog.css";
 
 import { getBlogBySlug, getRelatedBlogs } from "../../api/blogApi";
@@ -11,7 +11,7 @@ import Loading from "../../components/Loading/Loading";
 import Hero from "./Hero";
 import ArticleContent from "./ArticleContent";
 import AuthorSection from "./AuthorSection";
-import RelatedArticles from "./RelatedArticles";
+const RelatedArticles = lazy(() => import("./RelatedArticles"));
 
 
 const BlogArticle = () => {
@@ -24,12 +24,12 @@ const BlogArticle = () => {
     useEffect(() => {
         const loadArticle = async () => {
             setLoading(true);
-            const blog = await getBlogBySlug(slug);            
-            if (blog) {
-                setArticle(blog);
-                const related = await getRelatedBlogs(slug);
-                setRelatedBlogs(related);
-            }
+            const [blog, related] = await Promise.all([
+                getBlogBySlug(slug),
+                getRelatedBlogs(slug),
+            ]);
+            setArticle(blog);
+            setRelatedBlogs(related);
             setLoading(false);
         };
 
@@ -63,7 +63,9 @@ const BlogArticle = () => {
             <Hero article={article} />
             <ArticleContent article={article} />
             <AuthorSection />
-            <RelatedArticles blogs={relatedBlogs} category={category} />
+            <Suspense fallback={null}>
+                <RelatedArticles blogs={relatedBlogs} category={category} />
+            </Suspense>
         </>
     );
 };

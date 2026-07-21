@@ -5,6 +5,7 @@ const ReviewCard = ({ review }) => {
         <img
           src={review.image}
           alt={review.name}
+          loading="lazy"
         />
 
         <div>

@@ -1,3 +1,4 @@
+import { WHATSAPP_URL } from "../../utils/constants";
 export const navLinks = [
   { title: "Home", href: "/" },
   { title: "About", href: "/about/" },
@@ -10,7 +11,7 @@ export const navLinks = [
 export const socialLinks = [
   {
     icon: "fa-brands fa-whatsapp",
-    href: "#",
+    href: WHATSAPP_URL,
     label: "WhatsApp",
   },
   {

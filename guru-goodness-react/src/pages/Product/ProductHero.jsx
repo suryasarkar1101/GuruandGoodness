@@ -46,12 +46,14 @@ const ProductHero = ({
                 src={mandalaHalf}
                 className="about-decor about-decor-left2"
                 alt=""
+                loading="lazy"
             />
 
             <img
                 src={mandalaLeaf}
                 className="about-decor about-decor-right"
                 alt=""
+                loading="lazy"
             />
 
             <div className="gg-product-container">
@@ -73,6 +75,7 @@ const ProductHero = ({
                                 <img
                                     src={image}
                                     alt={`${product.name} ${index + 1}`}
+                                    loading="lazy"
                                 />
                             </div>
 
@@ -85,6 +88,7 @@ const ProductHero = ({
                                 id="gg-main-image"
                                 src={selectedImage}
                                 alt={product.name}
+                                loading="lazy"
                             />
                         )}
                         <button className="gg-image-zoom">
@@ -163,6 +167,7 @@ const ProductHero = ({
                                 <img
                                     src={benefitIcons[index]}
                                     alt={benefit}
+                                    loading="lazy"
                                 />
                                 <span>{benefit}</span>
                             </div>
@@ -219,6 +224,7 @@ const ProductHero = ({
                             <img
                                 src={authenticIcon}
                                 alt=""
+                                loading="lazy"
                             />
                             <span>100% Authentic</span>
                         </div>
@@ -227,6 +233,7 @@ const ProductHero = ({
                             <img
                                 src={blessedIcon}
                                 alt=""
+                                loading="lazy"
                             />
                             <span>Energized & Blessed</span>
                         </div>
@@ -235,6 +242,7 @@ const ProductHero = ({
                             <img
                                 src={packageIcon}
                                 alt=""
+                                loading="lazy"
                             />
                             <span>Secure Packaging</span>
                         </div>

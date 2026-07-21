@@ -12,6 +12,7 @@ const ArticleCard = ({ blog }) => {
                 <img
                     src={blog.image}
                     alt={blog.title}
+                    loading="lazy"
                 />
             </div>
 
@@ -23,6 +24,7 @@ const ArticleCard = ({ blog }) => {
                         <img
                             src={topic.icon}
                             alt={blog.category}
+                            loading="lazy"
                         />
                         <span>{blog.category}</span>
                     </div>

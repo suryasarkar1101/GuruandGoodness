@@ -11,7 +11,7 @@ const RouteLoader = () => {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 800); // 500-800ms feels premium
+    }, 300); // 500-800ms feels premium
 
     return () => clearTimeout(timer);
   }, [location.pathname]);

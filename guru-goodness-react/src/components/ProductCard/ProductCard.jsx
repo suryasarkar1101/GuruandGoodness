@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import StarRating from "../StarRating/StarRating";
-import { WHATSAPP_URL } from "../../utils/constants";
 import { orderOnWhatsApp } from "../../utils/whatsapp"
+import { memo } from "react";
 
 const ProductCard = ({ product, fullContent = true }) => {
     let cardClass = "";
@@ -26,6 +26,7 @@ const ProductCard = ({ product, fullContent = true }) => {
                 <img
                     src={product.images[0]}
                     alt={product.name}
+                    loading="lazy"
                 />
             </div>
 
@@ -66,4 +67,4 @@ const ProductCard = ({ product, fullContent = true }) => {
     );
 };
 
-export default ProductCard;
+export default memo(ProductCard);
