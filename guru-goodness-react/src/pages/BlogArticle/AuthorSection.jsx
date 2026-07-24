@@ -30,7 +30,7 @@ const AuthorSection = () => {
                         <h2>About the Author</h2>
 
                         <p className="author-name">
-                            Guru and Goodness Editorial Team
+                            Guru & Goodness Editorial Team
                         </p>
 
                         <p className="author-text">

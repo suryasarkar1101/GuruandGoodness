@@ -94,7 +94,7 @@ const Shop = () => {
     return (
         <>
             <Helmet>
-                <title>{`${hero.brTitle} | Guru and Goodness`}</title>
+                <title>{`${hero.brTitle} | Guru & Goodness`}</title>
             </Helmet>
             <Hero hero={hero} />
             <CategoryCards currentCategory={category} />

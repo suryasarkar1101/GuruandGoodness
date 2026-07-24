@@ -35,7 +35,7 @@ const AboutBrand = () => {
       <div className="about-us-container">
         <div className="about-us-top">
           <div className="about-us-image">
-            <img src={aboutGuru} alt="About Guru and Goodness" />
+            <img src={aboutGuru} alt="About Guru & Goodness" />
           </div>
 
           <div className="about-us-content">
@@ -44,7 +44,7 @@ const AboutBrand = () => {
             </div>
 
             <div className="about-main-title">
-              <span>About</span> Guru and Goodness
+              <span>About</span> Guru & Goodness
             </div>
 
             <div className="hero-divider">
@@ -56,7 +56,7 @@ const AboutBrand = () => {
             </div>
 
             <div className="about-description">
-              Guru and Goodness was created
+              Guru & Goodness was created
               to bring spirituality, wellness,
               positivity, and mindful living
               into modern everyday life.

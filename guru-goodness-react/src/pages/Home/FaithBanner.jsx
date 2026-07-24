@@ -10,7 +10,7 @@ const FaithBanner = () => {
           <div className="gg-icon-circle">
             <img
               src={lotusLogo}
-              alt="Guru and Goodness"
+              alt="Guru & Goodness"
               className="gg-icon"
             />
           </div>
@@ -19,7 +19,7 @@ const FaithBanner = () => {
             <h2>Guided by Faith. Driven by Purpose.</h2>
 
             <p>
-              At Guru and Goodness, our mission is simple – to help you
+              At Guru & Goodness, our mission is simple – to help you
               live a balanced, blessed and meaningful life.
             </p>
           </div>

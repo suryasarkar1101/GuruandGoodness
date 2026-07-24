@@ -44,7 +44,7 @@ const BlogArticle = () => {
         return (
             <>
                 <Helmet>
-                    <title>Article Not Found | Guru and Goodness</title>
+                    <title>Article Not Found | Guru & Goodness</title>
                 </Helmet>
 
                 <ArticleNotFound />
@@ -57,7 +57,7 @@ const BlogArticle = () => {
     return (
         <>
             <Helmet>
-                <title>{`${article.title} | Guru and Goodness`}</title>
+                <title>{`${article.title} | Guru & Goodness`}</title>
             </Helmet>
 
             <Hero article={article} />

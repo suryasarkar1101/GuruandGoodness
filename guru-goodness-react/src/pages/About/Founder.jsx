@@ -44,7 +44,7 @@ const Founder = () => {
 
           <div className="founder-main-title">
             The Heart Behind
-            <span>Guru and Goodness</span>
+            <span>Guru & Goodness</span>
           </div>
 
           <div className="about-top-label-wrap">
@@ -68,7 +68,7 @@ const Founder = () => {
           </div>
 
           <div className="founder-description">
-            Guru and Goodness was created
+            Guru & Goodness was created
             from a deep passion for spirituality,
             mindful living, and positive energy.
             <br />

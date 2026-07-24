@@ -10,7 +10,7 @@ const Blog = () => {
     return (
         <>
             <Helmet>
-                <title>Blog | Guru and Goodness</title>
+                <title>Blog | Guru & Goodness</title>
             </Helmet>
 
             <Hero/>

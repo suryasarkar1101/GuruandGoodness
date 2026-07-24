@@ -30,7 +30,7 @@ const Hero = () => {
                     </div>
 
                     <div className="hero-description">
-                        At Guru and Goodness,
+                        At Guru & Goodness,
                         we bring together spirituality,
                         wellness, healing, and conscious living —
                         helping you create balance,

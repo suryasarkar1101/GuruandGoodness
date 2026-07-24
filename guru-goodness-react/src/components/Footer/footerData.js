@@ -1,3 +1,4 @@
+import { EMAIL, MOBILE, MAIN_TIME } from "../../utils/constants";
 export const quickLinks = [
   {
     title: "Home",
@@ -43,19 +44,19 @@ export const categories = [
 export const contactInfo = [
   {
     icon: "fa-brands fa-whatsapp",
-    text: "+91 98765 43210",
+    text: MOBILE,
   },
   {
     icon: "fa-regular fa-envelope",
-    text: "hello@guruandgoodness.com",
+    text: EMAIL,
   },
   {
     icon: "fa-solid fa-location-dot",
-    text: "Jaipur, Rajasthan, India",
+    text: "Belghariya, Kolkata, India",
   },
   {
     icon: "fa-regular fa-clock",
-    text: "Mon – Sat | 10:00 AM – 7:00 PM",
+    text: MAIN_TIME,
   },
 ];
 

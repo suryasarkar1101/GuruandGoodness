@@ -28,7 +28,7 @@ const About = () => {
     return (
         <>
             <Helmet>
-                <title>About Us | Guru and Goodness</title>
+                <title>About Us | Guru & Goodness</title>
             </Helmet>
             <Hero />
             <AboutBrand />

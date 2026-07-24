@@ -33,7 +33,7 @@ const AboutSection = () => {
               className="about-divider"
               alt="Divider"
             />
-            ABOUT GURU AND GOODNESS
+            ABOUT Guru & Goodness
             <img
               src={aboutDivider}
               className="about-divider"
@@ -56,7 +56,7 @@ const AboutSection = () => {
 
           <div className="about-description">
             <p>
-              Guru and Goodness is created to bring spirituality,
+              Guru & Goodness is created to bring spirituality,
               wellness, positivity, and mindful living into modern
               lifestyles.
             </p>

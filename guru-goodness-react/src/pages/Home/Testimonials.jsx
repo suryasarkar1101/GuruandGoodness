@@ -63,7 +63,7 @@ const Testimonials = () => {
 
                 <p>
                     Stories of positivity, healing, mindful living, and spiritual wellness
-                    from people who connected with Guru and Goodness.
+                    from people who connected with Guru & Goodness.
                 </p>
 
                 {/* Testimonials */}

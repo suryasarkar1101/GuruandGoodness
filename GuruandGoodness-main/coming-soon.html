@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-base="">
+
+<head>
+    <title>Guru and Goodness - Home Page</title>
+    <link rel="stylesheet" href="css/comingsoon.css">
+</head>
+
+<body>
+    <section class="coming-hero">
+
+        <div class="coming-overlay">
+
+            <img class="coming-logo" src="assets/logo.png" alt="Guru and Goodness">
+
+            <div class="coming-title">
+                A Beautiful Spiritual Experience
+                <span>is Coming Soon</span>
+            </div>
+
+            <p class="coming-description">
+                We're preparing something beautiful for your spiritual wellness journey.
+            </p>
+
+            <!-- Countdown -->
+
+            <div class="coming-countdown">
+
+                <div class="coming-time-card">
+                    <span id="days">24</span>
+                    <div class="coming-divider"></div>
+                    <p>Days</p>
+                </div>
+
+                <div class="coming-time-card">
+                    <span id="hours">08</span>
+                    <div class="coming-divider"></div>
+                    <p>Hours</p>
+                </div>
+
+                <div class="coming-time-card">
+                    <span id="minutes">36</span>
+                    <div class="coming-divider"></div>
+                    <p>Minutes</p>
+                </div>
+
+                <div class="coming-time-card">
+                    <span id="seconds">59</span>
+                    <div class="coming-divider"></div>
+                    <p>Seconds</p>
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="coming-buttons">
+
+                <a href="#" class="btn-primary">
+                    <i class="fa-regular fa-bell"></i>
+                    Notify Me
+                </a>
+
+                <a href="#" class="btn-outline">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Contact on WhatsApp
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <script>
+
+        const launchDate = new Date(2026, 7, 15, 20, 0, 0).getTime();
+        function updateCountdown() {
+
+            const now = new Date().getTime();
+
+            const distance = launchDate - now;
+
+            if (distance <= 0) {
+
+                document.getElementById("days").textContent = "00";
+                document.getElementById("hours").textContent = "00";
+                document.getElementById("minutes").textContent = "00";
+                document.getElementById("seconds").textContent = "00";
+
+                clearInterval(countdownInterval);
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+            const hours = Math.floor(
+                (distance % (1000 * 60 * 60 * 24)) /
+                (1000 * 60 * 60)
+            );
+
+            const minutes = Math.floor(
+                (distance % (1000 * 60 * 60)) /
+                (1000 * 60)
+            );
+
+            const seconds = Math.floor(
+                (distance % (1000 * 60)) /
+                1000
+            );
+
+            document.getElementById("days").textContent = String(days).padStart(2, "0");
+            document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+            document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+            document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+        }
+
+        // Run immediately
+        updateCountdown();
+
+        // Update every second
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+</body>
+
+</html>

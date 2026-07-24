@@ -12,7 +12,7 @@ const Contact = () => {
     return (
         <>
             <Helmet>
-                <title>Contact Us | Guru and Goodness</title>
+                <title>Contact Us | Guru & Goodness</title>
             </Helmet>
 
             <Hero />

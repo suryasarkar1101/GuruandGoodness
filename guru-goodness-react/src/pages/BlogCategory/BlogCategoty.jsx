@@ -47,7 +47,7 @@ const BlogCategory = () => {
     return (
         <>
             <Helmet>
-                <title>{`${category.title} | Guru and Goodness`}</title>
+                <title>{`${category.title} | Guru & Goodness`}</title>
             </Helmet>
 
             <Hero category={category} onExploreClick={scrollToArticles} />

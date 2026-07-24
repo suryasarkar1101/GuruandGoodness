@@ -5,7 +5,7 @@ const TermsConditions = () => {
     return (
         <>
             <Helmet>
-                <title>Terms & Conditions | Guru and Goodness</title>
+                <title>Terms & Conditions | Guru & Goodness</title>
             </Helmet>
             <section className="legal-page-section">
 
@@ -34,7 +34,7 @@ const TermsConditions = () => {
                             <h2>1. Introduction</h2>
 
                             <p>
-                                Welcome to Guru and Goodness. By accessing and using our
+                                Welcome to Guru & Goodness. By accessing and using our
                                 website, products, and services, you agree to comply with
                                 and be bound by these Terms & Conditions.
                             </p>
@@ -123,7 +123,7 @@ const TermsConditions = () => {
                             <p>
                                 All website content including text, graphics, logos,
                                 images, designs, and digital assets are the property of
-                                Guru and Goodness and may not be copied or reproduced
+                                Guru & Goodness and may not be copied or reproduced
                                 without permission.
                             </p>
 
@@ -145,7 +145,7 @@ const TermsConditions = () => {
                             <h2>9. Limitation of Liability</h2>
 
                             <p>
-                                Guru and Goodness shall not be liable for any indirect,
+                                Guru & Goodness shall not be liable for any indirect,
                                 incidental, or consequential damages arising from the use
                                 of our products, services, or website.
                             </p>

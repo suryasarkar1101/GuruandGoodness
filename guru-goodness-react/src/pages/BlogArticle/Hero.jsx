@@ -84,7 +84,7 @@ const Hero = ({ article }) => {
 
                     <div>
                         <div className="article-author-by">
-                            By Guru and Goodness Editorial Team
+                            By Guru & Goodness Editorial Team
                         </div>
 
                         <div className="author-meta">

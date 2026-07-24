@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     return (
         <>
             <Helmet>
-                <title>Privacy Policy | Guru and Goodness</title>
+                <title>Privacy Policy | Guru & Goodness</title>
             </Helmet>
 
             <section className="legal-page-section">
@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
                             <h2>1. Introduction</h2>
 
                             <p>
-                                At Guru and Goodness, we respect your privacy and are committed
+                                At Guru & Goodness, we respect your privacy and are committed
                                 to protecting your personal information. This Privacy Policy
                                 explains how we collect, use, and protect your information when
                                 you visit our website or use our services.
@@ -110,7 +110,7 @@ const PrivacyPolicy = () => {
 
                             <p>
                                 Payments are processed through secure third-party payment
-                                gateways. Guru and Goodness does not store your complete payment
+                                gateways. Guru & Goodness does not store your complete payment
                                 card or banking information.
                             </p>
 
@@ -179,7 +179,7 @@ const PrivacyPolicy = () => {
 
                             <p>
                                 If you have any questions regarding this Privacy Policy,
-                                please contact Guru and Goodness through our Contact page.
+                                please contact Guru & Goodness through our Contact page.
                             </p>
 
                         </div>

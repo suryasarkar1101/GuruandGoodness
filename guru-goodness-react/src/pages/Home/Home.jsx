@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Guru and Goodness - Home Page</title>
+        <title>Guru & Goodness | All that's good for you</title>
       </Helmet>
 
       <Hero />

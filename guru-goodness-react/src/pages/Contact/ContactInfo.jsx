@@ -39,7 +39,7 @@ const ContactInfo = () => {
                     </div>
 
                     <div className="connect-text">
-                        At Guru and Goodness, we believe in the power of
+                        At Guru & Goodness, we believe in the power of
                         personal connection. Our team is dedicated to
                         understanding your needs and guiding you towards
                         the best spiritual and wellness solutions.

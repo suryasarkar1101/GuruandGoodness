@@ -38,7 +38,7 @@ const Testimonials = () => {
     return (
         <section className="testimonial-section">
             <div className="testimonial-heading">
-                What People Feel with Guru and Goodness
+                What People Feel with Guru & Goodness
             </div>
 
             <div className="hero-divider">

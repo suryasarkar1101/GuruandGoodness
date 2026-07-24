@@ -12,7 +12,7 @@ const Consultancy = () => {
   return (
     <>
       <Helmet>
-        <title>Consultancy | Guru and Goodness</title>
+        <title>Consultancy | Guru & Goodness</title>
       </Helmet>
 
       <Hero />

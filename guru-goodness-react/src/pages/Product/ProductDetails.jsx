@@ -81,7 +81,7 @@ const ProductDetails = () => {
     return (
         <>
             <Helmet>
-                <title>{`${product.name} | Guru and Goodness`}</title>
+                <title>{`${product.name} | Guru & Goodness`}</title>
                 <meta name="description" content={product.shortDescription} />
             </Helmet>
 
