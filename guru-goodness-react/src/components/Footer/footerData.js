@@ -1,4 +1,4 @@
-import { EMAIL, MOBILE, MAIN_TIME } from "../../utils/constants";
+import { EMAIL, MOBILE, MAIN_TIME, Instagram_Link, Facebook_Link, YouTube_Link } from "../../utils/constants";
 export const quickLinks = [
   {
     title: "Home",
@@ -63,17 +63,17 @@ export const contactInfo = [
 export const socialLinks = [
   {
     icon: "fa-brands fa-instagram",
-    href: "#",
+    href: Instagram_Link,
     label: "Instagram",
   },
   {
     icon: "fa-brands fa-facebook-f",
-    href: "#",
+    href: Facebook_Link,
     label: "Facebook",
   },
   {
     icon: "fa-brands fa-youtube",
-    href: "#",
+    href: YouTube_Link,
     label: "YouTube",
   },
 ];
