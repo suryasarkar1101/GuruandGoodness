@@ -1,4 +1,4 @@
-import { WHATSAPP_URL } from "../../utils/constants";
+import { Facebook_Link, Instagram_Link, WHATSAPP_URL, YouTube_Link } from "../../utils/constants";
 export const navLinks = [
   { title: "Home", href: "/" },
   { title: "About", href: "/about/" },
@@ -16,17 +16,17 @@ export const socialLinks = [
   },
   {
     icon: "fa-brands fa-instagram",
-    href: "#",
+    href: Instagram_Link,
     label: "Instagram",
   },
   {
     icon: "fa-brands fa-facebook-f",
-    href: "#",
+    href: Facebook_Link,
     label: "Facebook",
   },
   {
     icon: "fa-brands fa-youtube",
-    href: "#",
+    href: YouTube_Link,
     label: "YouTube",
   },
 ];

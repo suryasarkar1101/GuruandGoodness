@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
                     <div className="footer-socials">
                         {socialLinks.map((social) => (
-                            <a key={social.label} href={social.href} aria-label={social.label}>
+                            <a key={social.label} href={social.href} aria-label={social.label} target="_blank">
                                 <i className={social.icon}></i>
                             </a>
                         ))}

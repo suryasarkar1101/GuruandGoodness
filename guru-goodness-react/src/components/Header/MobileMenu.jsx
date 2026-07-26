@@ -48,6 +48,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 key={social.label}
                 href={social.href}
                 aria-label={social.label}
+                target="_blank"
               >
                 <i className={social.icon}></i>
               </a>

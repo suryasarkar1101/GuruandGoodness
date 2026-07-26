@@ -21,7 +21,7 @@ const Header = () => {
 
                         {socialLinks.map((social, index) => (
                             <div key={social.label} className="social-item">
-                                <a href={social.href} aria-label={social.label}>
+                                <a href={social.href} aria-label={social.label} target="_blank">
                                     <i className={social.icon}></i>
                                 </a>
 
