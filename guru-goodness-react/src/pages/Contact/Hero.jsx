@@ -9,7 +9,7 @@ import { WHATSAPP_URL } from "../../utils/constants";
 const Hero = () => {
     return (
         <section className="contact-hero-section">
-            <div class="contact-hero-bg" style={{
+            <div className="contact-hero-bg" style={{
                 backgroundImage: `url(${contactHeroBg})`,
             }}></div>
             <div className="contact-highlight-overlay"></div>

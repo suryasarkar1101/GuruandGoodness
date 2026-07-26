@@ -31,7 +31,7 @@ const BusinessHours = () => {
                             </div>
 
                             <div className="hours-time">
-                                9:00 AM – 8:00 PM
+                                11:00 AM – 8:00 PM
                             </div>
                         </div>
 
@@ -42,7 +42,7 @@ const BusinessHours = () => {
                             </div>
 
                             <div className="hours-time">
-                                10:00 AM – 6:00 PM
+                                12:00 AM – 9:00 PM
                             </div>
                         </div>
 
@@ -53,7 +53,7 @@ const BusinessHours = () => {
                             </div>
 
                             <div className="hours-time">
-                                10:00 AM – 2:00 PM
+                                11:00 AM – 9:00 PM
                             </div>
                         </div>
                     </div>
