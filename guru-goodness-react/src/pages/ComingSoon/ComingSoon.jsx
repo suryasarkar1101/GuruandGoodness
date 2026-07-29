@@ -127,7 +127,7 @@ export default function ComingSoon({ config }) {
 
                         <a
                             href={WHATSAPP_URL}
-                            className="btn-outline"
+                            className="btn-outline-wp"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

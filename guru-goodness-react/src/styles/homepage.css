@@ -270,10 +270,11 @@
 }
 
 .modern-card-description {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.7;
     color: #62584d;
     margin-bottom: 28px;
+    font-weight: 600;
 }
 
 .modern-card-btn {
@@ -564,7 +565,8 @@
     text-align: center;
     color: #6b1d14;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 500;    
+    min-height: 40px;
 }
 
 /* DESCRIPTION */

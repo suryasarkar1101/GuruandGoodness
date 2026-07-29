@@ -157,6 +157,7 @@
     justify-content: center;
 }
 
+
 .gg-stat-item {
     padding: 18px 17px;
     display: flex;
@@ -269,7 +270,7 @@
     }
 
     .gg-stats {
-        width: 100%;
+        width: 100% !important;
         border-radius: 0px;
     }
 

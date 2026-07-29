@@ -15,6 +15,7 @@ const ReadingProgress = ({ slug }) => {
     const [progress, setProgress] = useState(0);
     const [lastRead, setLastRead] = useState("Today");
     const isResetting = useRef(false);
+    const maxProgress = useRef(0);
 
     useEffect(() => {
         if (!slug) return;
@@ -26,14 +27,19 @@ const ReadingProgress = ({ slug }) => {
         const handleScroll = () => {
             if (isResetting.current) return;
             const currentProgress = calculateProgress(content);
-            setProgress(currentProgress);
-            saveReadingProgress(slug, currentProgress);
-            setLastRead(getLastReadText(slug));
+            if (currentProgress > maxProgress.current) {
+                maxProgress.current = currentProgress;
+                setProgress(currentProgress);
+                saveReadingProgress(slug, currentProgress);
+                setLastRead(getLastReadText(slug));
+            }
         };
 
         setTimeout(() => {
             restoreReadingProgress(content, slug);
-            setProgress(getSavedProgress(slug));
+            const savedProgress = getSavedProgress(slug);
+            maxProgress.current = savedProgress;
+            setProgress(savedProgress);
             setLastRead(getLastReadText(slug));
         }, 500);
 
@@ -47,6 +53,7 @@ const ReadingProgress = ({ slug }) => {
     const handleReset = () => {
         isResetting.current = true;
         resetReadingProgress(slug);
+        maxProgress.current = 0;
         setProgress(0);
         setLastRead("Today");
         window.scrollTo({ top: 0, behavior: "smooth", });

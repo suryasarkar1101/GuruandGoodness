@@ -17,7 +17,7 @@ import leafIcon from "../../assets/images/icons/leaf_icon.png";
 import organicWellness from "../../assets/images/Organic_Wellness.png";
 
 import meditationIcon from "../../assets/images/icons/meditation.png";
-import consultancyServices from "../../assets/images/Consultancy_Services.png";
+import kidsCollection from "../../assets/images/kids.png";
 
 import genuineIcon from "../../assets/images/icons/Genuine.png";
 import spiritualLogo from "../../assets/images/icons/Spiritual_logo.png";
@@ -63,11 +63,7 @@ const Collections = () => {
                             </div>
 
                             <div className="modern-card-description">
-                                Rudraksha, incense, diyas,
-                                <br />
-                                mantras and sacred essentials
-                                <br />
-                                for blessings.
+                                Rudraksha, incense, diyas, mantras and sacred for blessings.
                             </div>
 
                             <Link
@@ -96,11 +92,7 @@ const Collections = () => {
                             </div>
 
                             <div className="modern-card-description">
-                                Bring harmony and balance
-                                <br />
-                                to your space with vastu
-                                <br />
-                                essentials.
+                                Bring harmony and balance to your space with vastu essentials.
                             </div>
 
                             <Link
@@ -129,11 +121,7 @@ const Collections = () => {
                             </div>
 
                             <div className="modern-card-description">
-                                Natural healing crystals
-                                <br />
-                                to restore balance and
-                                <br />
-                                uplift your spirit.
+                                Natural healing crystals to restore balance and uplift your spirit.
                             </div>
 
                             <Link
@@ -162,11 +150,7 @@ const Collections = () => {
                             </div>
 
                             <div className="modern-card-description">
-                                Ayurvedic herbs, teas
-                                <br />
-                                and wellness essentials
-                                <br />
-                                for healthy living.
+                                Ayurvedic herbs and wellness essentials for healthy living.
                             </div>
 
                             <Link
@@ -186,24 +170,20 @@ const Collections = () => {
                             <div className="modern-card-icon">
                                 <img src={meditationIcon} alt="" />
                             </div>
-                            <img src={consultancyServices} alt="" />
+                            <img src={kidsCollection} alt="" />
                         </div>
 
                         <div className="modern-card-content">
                             <div className="modern-card-title">
-                                Consultancy Services
+                                Kids Collection
                             </div>
 
                             <div className="modern-card-description">
-                                Personalized spiritual
-                                <br />
-                                guidance and wellness
-                                <br />
-                                consultations.
+                                Cute, caring, and positive products made for little hearts.
                             </div>
 
                             <Link
-                                to="/consultancy"
+                                to="/shop/kids"
                                 className="modern-card-btn blue-btn"
                             >
                                 Explore{" "}

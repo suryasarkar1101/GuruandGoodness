@@ -49,7 +49,7 @@ const CTA = () => {
                         </a>
 
                         <Link
-                            to="/shop"
+                            to="/shop/"
                             className="conte-cta-btn secondary"
                         >
                             Explore Products

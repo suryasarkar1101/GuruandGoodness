@@ -200,7 +200,7 @@
 }
 
 .gg-product-description {
-    width: 80%;
+    width: 90%;
     margin-top: 8px;
     color: #666;
     font-size: 17px;
@@ -692,6 +692,7 @@
     color: #6b1d14;
     margin-bottom: 10px;
     font-weight: 500;
+    min-height: 40px;
 }
 
 /* DESCRIPTION */

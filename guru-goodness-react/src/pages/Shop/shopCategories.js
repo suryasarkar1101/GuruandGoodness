@@ -3,6 +3,7 @@ import spiritualProduct from "../../assets/images/spiritual_product.png";
 import vastuProduct from "../../assets/images/vastu_product.png";
 import healingCrystal from "../../assets/images/healing_crystal.png";
 import organicProduct from "../../assets/images/organic_product.png";
+import kidsCollection from "../../assets/images/kids_full.png"
 
 export const shopCategories = [
     {
@@ -29,5 +30,10 @@ export const shopCategories = [
         slug: "wellness",
         title: "Organic Wellness",
         image: organicProduct,
+    },
+    {
+        slug: "kids",
+        title: "Kids Collection",
+        image: kidsCollection,
     },
 ];

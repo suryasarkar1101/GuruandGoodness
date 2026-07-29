@@ -20,7 +20,7 @@ const ComingSoon = ({
                 <div className="coming-soon-description">
                     {description}
                 </div>
-            </div>s
+            </div>
         </section>
     );
 };
