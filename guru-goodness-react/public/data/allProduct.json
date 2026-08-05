@@ -183,7 +183,7 @@
         "slug": "red-jasper-bracelet-8mm",
         "category": "Healing Crystals",
         "categorySlug": "crystals",
-        "featured": true,
+        "featured": false,
         "shortDescription": "A natural Red Jasper crystal bracelet for grounding, strength, balance, and everyday positivity.",
         "price": "₹399",
         "oldPrice": "₹999",
@@ -197,7 +197,6 @@
             "/assets/product/red-jasper-bracelet-8mm-2.png",
             "/assets/product/red-jasper-bracelet-8mm-3.png",
             "/assets/product/red-jasper-bracelet-8mm-4.png",
-            "/assets/product/red-jasper-bracelet-8mm-5.png",
             "/assets/product/red-jasper-bracelet-8mm-6.png",
             "/assets/product/red-jasper-bracelet-8mm-7.png"
         ],
@@ -272,12 +271,12 @@
         "slug": "rose-quartz-bracelet-8mm",
         "category": "Healing Crystals",
         "categorySlug": "crystals",
-        "featured": true,
+        "featured": false,
         "shortDescription": "A natural Rose Quartz crystal bracelet for love, harmony, emotional balance, and positive energy.",
         "price": "₹399",
         "oldPrice": "₹999",
         "discount": "60% OFF",
-        "badge": "Bestseller",
+        "badge": "POPULAR",
         "rating": 4.2,
         "reviews": "0 Reviews",
         "description": "The Rose Quartz Bracelet (8mm) is made from carefully selected natural Rose Quartz crystal beads with a smooth polished finish. Designed for comfort, it is perfect for everyday wear, meditation, yoga, and spiritual practices.\n\nTraditionally, Rose Quartz is associated with love, compassion, emotional balance, and positive energy. Each bracelet is quality checked to provide a meaningful addition to your spiritual and wellness journey.",
@@ -350,6 +349,1159 @@
             "Crystal Bracelet",
             "Love Energy",
             "Positive Energy"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 5,
+        "name": "Green Aventurine Bracelet (8mm)",
+        "slug": "green-aventurine-bracelet-8mm",
+        "category": "Healing Crystals",
+        "categorySlug": "crystals",
+        "featured": true,
+        "shortDescription": "A natural Green Aventurine crystal bracelet for prosperity, confidence, emotional balance, and everyday positivity.",
+        "price": "₹399",
+        "oldPrice": "₹999",
+        "discount": "60% OFF",
+        "badge": "NEW ARRIVALS",
+        "rating": 4.8,
+        "reviews": "0 Reviews",
+        "description": "The Green Aventurine Bracelet (8mm) is made from carefully selected natural Green Aventurine crystal beads with a smooth polished finish. Designed for everyday comfort, it is suitable for meditation, yoga, spiritual practices, and daily wear.\n\nTraditionally, Green Aventurine is associated with prosperity, confidence, emotional balance, and positive energy. Each bracelet is quality checked to become a meaningful part of your spiritual and wellness journey.",
+        "images": [
+            "/assets/product/green-aventurine-bracelet-8mm-1.png",
+            "/assets/product/green-aventurine-bracelet-8mm-2.png",
+            "/assets/product/green-aventurine-bracelet-8mm-3.png",
+            "/assets/product/green-aventurine-bracelet-8mm-4.png",
+            "/assets/product/green-aventurine-bracelet-8mm-5.png",
+            "/assets/product/green-aventurine-bracelet-8mm-6.png"
+        ],
+        "quickBenefits": [
+            "Prosperity",
+            "Confidence",
+            "Emotional Balance",
+            "Daily Wear"
+        ],
+        "benefitCards": [
+            {
+                "title": "Prosperity",
+                "description": "Traditionally associated with abundance, growth, and new opportunities."
+            },
+            {
+                "title": "Confidence",
+                "description": "Believed to encourage self-confidence and a positive outlook."
+            },
+            {
+                "title": "Emotional Balance",
+                "description": "Supports inner calm and emotional well-being."
+            },
+            {
+                "title": "Meditation Support",
+                "description": "Suitable for meditation, yoga, and spiritual practices."
+            },
+            {
+                "title": "Natural Crystal",
+                "description": "Made from carefully selected premium Green Aventurine beads."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Crystal Name",
+                "value": "Natural Green Aventurine Crystal"
+            },
+            {
+                "label": "Bead Size",
+                "value": "8mm Round Beads"
+            },
+            {
+                "label": "Bracelet Type",
+                "value": "Stretchable Elastic Bracelet"
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Wear, Meditation, Yoga, Spiritual Practices"
+            },
+            {
+                "label": "Quality",
+                "value": "Carefully selected premium polished crystal beads"
+            },
+            {
+                "label": "Certification",
+                "value": "Authenticity and quality checked product"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance of Green Aventurine Crystal",
+        "significanceDescription": "Green Aventurine is traditionally regarded as a crystal of prosperity, growth, and emotional balance. It is believed to encourage confidence, optimism, and a positive mindset while supporting overall well-being.",
+        "tags": [
+            "Green Aventurine",
+            "Healing Crystal",
+            "Crystal Bracelet",
+            "Prosperity",
+            "Positive Energy"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 6,
+        "name": "5 Mukhi Rudraksha (Nepal Origin)",
+        "slug": "5-mukhi-rudraksha-nepal-origin",
+        "category": "Spiritual Products",
+        "categorySlug": "spiritual",
+        "featured": false,
+        "shortDescription": "An authentic Nepal-origin 5 Mukhi Rudraksha with authenticity certificate for daily spiritual practice and meditation.",
+        "price": "₹666",
+        "oldPrice": "₹1199",
+        "discount": "44% OFF",
+        "badge": "POPULAR",
+        "rating": 4,
+        "reviews": "0 Reviews",
+        "description": "The 5 Mukhi Rudraksha (Nepal Origin) is a carefully selected natural bead known for its distinct five natural facets and premium quality. Sourced from Nepal, it is suitable for daily wear, meditation, mantra chanting, and spiritual practices.\n\nTraditionally, the 5 Mukhi Rudraksha is associated with peace, wisdom, inner balance, and spiritual growth. Each Rudraksha is quality checked and comes with an authenticity certificate, making it a meaningful addition to your spiritual journey.",
+        "images": [
+            "/assets/product/5-mukhi-rudraksha-nepal-origin-1.png",
+            "/assets/product/5-mukhi-rudraksha-nepal-origin-2.png",
+            "/assets/product/5-mukhi-rudraksha-nepal-origin-3.png",
+            "/assets/product/5-mukhi-rudraksha-nepal-origin-4.png",
+            "/assets/product/5-mukhi-rudraksha-nepal-origin-5.png",
+            "/assets/product/5-mukhi-rudraksha-nepal-origin-6.png"
+        ],
+        "quickBenefits": [
+            "Inner Peace",
+            "Spiritual Growth",
+            "Daily Meditation",
+            "Positive Energy"
+        ],
+        "benefitCards": [
+            {
+                "title": "Inner Peace",
+                "description": "Traditionally associated with calmness and mental peace."
+            },
+            {
+                "title": "Spiritual Growth",
+                "description": "Believed to support spiritual awareness and self-discipline."
+            },
+            {
+                "title": "Meditation",
+                "description": "Ideal for mantra chanting, meditation, and daily worship."
+            },
+            {
+                "title": "Authentic Nepal Origin",
+                "description": "Carefully selected natural Rudraksha sourced from Nepal."
+            },
+            {
+                "title": "Certified Quality",
+                "description": "Comes with an authenticity certificate for added confidence."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Product Type",
+                "value": "5 Mukhi Rudraksha"
+            },
+            {
+                "label": "Origin",
+                "value": "Nepal"
+            },
+            {
+                "label": "Mukhi",
+                "value": "5 Mukhi"
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Wear, Meditation, Japa, Spiritual Practices"
+            },
+            {
+                "label": "Quality",
+                "value": "Carefully selected natural Rudraksha bead"
+            },
+            {
+                "label": "Certification",
+                "value": "Includes Authenticity Certificate"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance of 5 Mukhi Rudraksha",
+        "significanceDescription": "The 5 Mukhi Rudraksha is traditionally revered as a symbol of peace, wisdom, and spiritual discipline. It is widely worn during meditation and daily prayers to support inner balance, mindfulness, and a positive spiritual lifestyle.",
+        "tags": [
+            "5 Mukhi Rudraksha",
+            "Nepal Rudraksha",
+            "Spiritual Products",
+            "Meditation",
+            "Authenticity Certificate"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 7,
+        "name": "7 Mukhi Rudraksha (Nepal Origin)",
+        "slug": "7-mukhi-rudraksha-nepal-origin",
+        "category": "Spiritual Products",
+        "categorySlug": "spiritual",
+        "featured": true,
+        "shortDescription": "An authentic Nepal-origin 7 Mukhi Rudraksha with authenticity certificate for meditation and spiritual well-being.",
+        "price": "₹666",
+        "oldPrice": "₹1199",
+        "discount": "44% OFF",
+        "badge": "POPULAR",
+        "rating": 4.5,
+        "reviews": "0 Reviews",
+        "description": "The 7 Mukhi Rudraksha (Nepal Origin) is a carefully selected natural bead with seven well-defined natural facets and a premium finish. Sourced from Nepal, it is ideal for daily wear, meditation, mantra chanting, and spiritual practices.\n\nTraditionally, the 7 Mukhi Rudraksha is associated with prosperity, stability, inner strength, and positive energy. Each Rudraksha is quality checked and comes with an authenticity certificate, making it a valuable companion for your spiritual journey.",
+        "images": [
+            "/assets/product/7-mukhi-rudraksha-nepal-origin-1.png",
+            "/assets/product/7-mukhi-rudraksha-nepal-origin-2.png",
+            "/assets/product/7-mukhi-rudraksha-nepal-origin-3.png",
+            "/assets/product/7-mukhi-rudraksha-nepal-origin-4.png",
+            "/assets/product/7-mukhi-rudraksha-nepal-origin-5.png"
+        ],
+        "quickBenefits": [
+            "Prosperity",
+            "Inner Strength",
+            "Daily Meditation",
+            "Positive Energy"
+        ],
+        "benefitCards": [
+            {
+                "title": "Prosperity",
+                "description": "Traditionally associated with abundance and overall well-being."
+            },
+            {
+                "title": "Inner Strength",
+                "description": "Believed to encourage confidence and emotional stability."
+            },
+            {
+                "title": "Meditation",
+                "description": "Ideal for mantra chanting, meditation, and daily worship."
+            },
+            {
+                "title": "Authentic Nepal Origin",
+                "description": "Carefully selected natural Rudraksha sourced from Nepal."
+            },
+            {
+                "title": "Certified Quality",
+                "description": "Comes with an authenticity certificate for added confidence."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Product Type",
+                "value": "7 Mukhi Rudraksha"
+            },
+            {
+                "label": "Origin",
+                "value": "Nepal"
+            },
+            {
+                "label": "Mukhi",
+                "value": "7 Mukhi"
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Wear, Meditation, Japa, Spiritual Practices"
+            },
+            {
+                "label": "Quality",
+                "value": "Carefully selected natural Rudraksha bead"
+            },
+            {
+                "label": "Certification",
+                "value": "Includes Authenticity Certificate"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance of 7 Mukhi Rudraksha",
+        "significanceDescription": "The 7 Mukhi Rudraksha is traditionally regarded as a symbol of prosperity, strength, and spiritual balance. It is believed to support inner stability, positive energy, and mindful living through regular spiritual practice.",
+        "tags": [
+            "7 Mukhi Rudraksha",
+            "Nepal Rudraksha",
+            "Spiritual Products",
+            "Meditation",
+            "Authenticity Certificate"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 8,
+        "name": "Green Jade Bracelet (8mm)",
+        "slug": "green-jade-bracelet-8mm",
+        "category": "Healing Crystals",
+        "categorySlug": "crystals",
+        "featured": false,
+        "shortDescription": "A natural Green Jade crystal bracelet for harmony, prosperity, emotional balance, and everyday positivity.",
+        "price": "₹399",
+        "oldPrice": "₹999",
+        "discount": "60% OFF",
+        "badge": "NEW ARRIVALS",
+        "rating": 4.6,
+        "reviews": "Reviews",
+        "description": "The Green Jade Bracelet (8mm) is made from carefully selected natural Green Jade crystal beads with a smooth polished finish. Designed for everyday comfort, it is suitable for meditation, yoga, spiritual practices, and daily wear.\n\nTraditionally, Green Jade is associated with harmony, prosperity, emotional balance, and positive energy. Each bracelet is quality checked to become a meaningful part of your spiritual and wellness journey.",
+        "images": [
+            "/assets/product/green-jade-bracelet-8mm-1.png",
+            "/assets/product/green-jade-bracelet-8mm-2.png",
+            "/assets/product/green-jade-bracelet-8mm-3.png",
+            "/assets/product/green-jade-bracelet-8mm-4.png",
+            "/assets/product/green-jade-bracelet-8mm-5.png",
+            "/assets/product/green-jade-bracelet-8mm-6.png"
+        ],
+        "quickBenefits": [
+            "Prosperity",
+            "Harmony",
+            "Emotional Balance",
+            "Daily Wear"
+        ],
+        "benefitCards": [
+            {
+                "title": "Prosperity",
+                "description": "Traditionally associated with abundance and good fortune."
+            },
+            {
+                "title": "Harmony",
+                "description": "Believed to promote peace, balance, and inner harmony."
+            },
+            {
+                "title": "Positive Energy",
+                "description": "Encourages optimism and emotional well-being."
+            },
+            {
+                "title": "Meditation Support",
+                "description": "Suitable for meditation, yoga, and spiritual practices."
+            },
+            {
+                "title": "Natural Crystal",
+                "description": "Made from carefully selected premium Green Jade beads."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Crystal Name",
+                "value": "Natural Green Jade Crystal"
+            },
+            {
+                "label": "Bead Size",
+                "value": "8mm Round Beads"
+            },
+            {
+                "label": "Bracelet Type",
+                "value": "Stretchable Elastic Bracelet"
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Wear, Meditation, Yoga, Spiritual Practices"
+            },
+            {
+                "label": "Quality",
+                "value": "Carefully selected premium polished crystal beads"
+            },
+            {
+                "label": "Certification",
+                "value": "Authenticity and quality checked product"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance of Green Jade Crystal",
+        "significanceDescription": "Green Jade is traditionally regarded as a crystal of prosperity, harmony, and emotional balance. It is believed to encourage peace, positivity, and a balanced approach to everyday life.",
+        "tags": [
+            "Green Jade",
+            "Healing Crystal",
+            "Crystal Bracelet",
+            "Prosperity",
+            "Harmony"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 9,
+        "name": "Incense Organic Cone (30 Pieces)",
+        "slug": "incense-organic-cone",
+        "category": "Organic Wellness",
+        "categorySlug": "wellness",
+        "featured": true,
+        "shortDescription": "Organic incense cones made from natural flowers and soothing fragrances for a pure spiritual experience.",
+        "price": "₹149",
+        "oldPrice": "₹299",
+        "discount": "50% OFF",
+        "badge": "POPULAR",
+        "rating": 4.7,
+        "reviews": "Reviews",
+        "description": "Incense Organic Cones are handcrafted using organic flowers and natural aromatic ingredients to create a refreshing and calming atmosphere. Each cone burns evenly with a pleasant natural fragrance, making it perfect for daily पूजा, meditation, yoga, and relaxation.\n\nEach box contains 30 premium incense cones made without harsh chemicals, helping you enjoy a clean, soothing, and spiritually uplifting experience.",
+        "images": [
+            "/assets/product/incense-organic-cone-1.png",
+            "/assets/product/incense-organic-cone-2.png",
+            "/assets/product/incense-organic-cone-3.png",
+            "/assets/product/incense-organic-cone-30-5.png",
+            "/assets/product/incense-organic-cone-6.png"
+        ],
+        "quickBenefits": [
+            "Natural Fragrance",
+            "Organic Flowers",
+            "Peaceful Ambience",
+            "Daily Puja"
+        ],
+        "benefitCards": [
+            {
+                "title": "Organic Ingredients",
+                "description": "Made from organic flowers and natural aromatic ingredients."
+            },
+            {
+                "title": "Natural Aroma",
+                "description": "Creates a pleasant and long-lasting natural fragrance."
+            },
+            {
+                "title": "Spiritual Atmosphere",
+                "description": "Ideal for puja, meditation, yoga, and mindfulness."
+            },
+            {
+                "title": "Clean Burning",
+                "description": "Designed to burn evenly with minimal residue."
+            },
+            {
+                "title": "30 Cones Per Box",
+                "description": "Each pack includes 30 premium organic incense cones."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Product Type",
+                "value": "Organic Incense Cones"
+            },
+            {
+                "label": "Quantity",
+                "value": "30 Cones"
+            },
+            {
+                "label": "Ingredients",
+                "value": "Organic Flowers and Natural Fragrance"
+            },
+            {
+                "label": "Fragrance",
+                "value": "Natural Floral Aroma"
+            },
+            {
+                "label": "Suitable For",
+                "value": "Daily Puja, Meditation, Yoga, Aromatherapy"
+            },
+            {
+                "label": "Burn Type",
+                "value": "Slow and Even Burning"
+            },
+            {
+                "label": "Origin",
+                "value": "Made in India"
+            },
+            {
+                "label": "Chemical Content",
+                "value": "Free from Harsh Chemicals"
+            }
+        ],
+        "significanceTitle": "Natural Fragrance for Everyday Positivity",
+        "significanceDescription": "Organic incense cones help create a calm, peaceful, and spiritually uplifting environment. Their natural floral fragrance enhances meditation, prayer, and relaxation while bringing freshness to your living space.",
+        "tags": [
+            "Organic Incense",
+            "Incense Cone",
+            "Natural Fragrance",
+            "Meditation",
+            "Puja Essentials"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 10,
+        "name": "Incense Organic Cone (15 Pieces)",
+        "slug": "incense-organic-cone-15-pieces",
+        "category": "Organic Wellness",
+        "categorySlug": "wellness",
+        "featured": false,
+        "shortDescription": "Organic incense cones made from natural flowers and soothing fragrances for a pure spiritual experience.",
+        "price": "₹99",
+        "oldPrice": "₹149",
+        "discount": "34% OFF",
+        "badge": "",
+        "rating": 4.5,
+        "reviews": "Reviews",
+        "description": "Incense Organic Cones are handcrafted using organic flowers and natural aromatic ingredients to create a refreshing and calming atmosphere. Each cone burns evenly with a pleasant natural fragrance, making it perfect for daily puja, meditation, yoga, and relaxation.\n\nEach box contains 15 premium incense cones made without harsh chemicals, helping you enjoy a clean, soothing, and spiritually uplifting experience.",
+        "images": [
+            "/assets/product/incense-organic-cone-15-1.png",
+            "/assets/product/incense-organic-cone-2.png",
+            "/assets/product/incense-organic-cone-3.png",
+            "/assets/product/incense-organic-cone-15-5.png"
+        ],
+        "quickBenefits": [
+            "Natural Fragrance",
+            "Organic Flowers",
+            "Peaceful Ambience",
+            "Daily Puja"
+        ],
+        "benefitCards": [
+            {
+                "title": "Organic Ingredients",
+                "description": "Made from organic flowers and natural aromatic ingredients."
+            },
+            {
+                "title": "Natural Aroma",
+                "description": "Creates a pleasant and long-lasting natural fragrance."
+            },
+            {
+                "title": "Spiritual Atmosphere",
+                "description": "Ideal for puja, meditation, yoga, and mindfulness."
+            },
+            {
+                "title": "Clean Burning",
+                "description": "Designed to burn evenly with minimal residue."
+            },
+            {
+                "title": "15 Cones Per Box",
+                "description": "Each pack includes 15 premium organic incense cones."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Product Type",
+                "value": "Organic Incense Cones"
+            },
+            {
+                "label": "Quantity",
+                "value": "30 Cones"
+            },
+            {
+                "label": "Ingredients",
+                "value": "Organic Flowers and Natural Fragrance"
+            },
+            {
+                "label": "Fragrance",
+                "value": "Natural Floral Aroma"
+            },
+            {
+                "label": "Suitable For",
+                "value": "Daily Puja, Meditation, Yoga, Aromatherapy"
+            },
+            {
+                "label": "Burn Type",
+                "value": "Slow and Even Burning"
+            },
+            {
+                "label": "Origin",
+                "value": "Made in India"
+            },
+            {
+                "label": "Chemical Content",
+                "value": "Free from Harsh Chemicals"
+            }
+        ],
+        "significanceTitle": "Natural Fragrance for Everyday Positivity",
+        "significanceDescription": "Organic incense cones help create a calm, peaceful, and spiritually uplifting environment. Their natural floral fragrance enhances meditation, prayer, and relaxation while bringing freshness to your living space.",
+        "tags": [
+            "Organic Incense",
+            "Incense Cone",
+            "Natural Fragrance",
+            "Meditation",
+            "Puja Essentials"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 11,
+        "name": "Howlite Bracelet (8mm)",
+        "slug": "howlite-bracelet-8mm",
+        "category": "Healing Crystals",
+        "categorySlug": "crystals",
+        "featured": false,
+        "shortDescription": "A natural Howlite crystal bracelet for calmness, patience, emotional balance, and mindful living.",
+        "price": "₹399",
+        "oldPrice": "₹999",
+        "discount": "60% OFF",
+        "badge": "NEW ARRIVALS",
+        "rating": 4.9,
+        "reviews": "Reviews",
+        "description": "The Howlite Bracelet (8mm) is crafted from carefully selected natural Howlite crystal beads with a smooth polished finish. Designed for everyday comfort, it is ideal for meditation, yoga, spiritual practices, and daily wear.\n\nTraditionally, Howlite is associated with calmness, patience, emotional balance, and mental clarity. Each bracelet is quality checked to become a meaningful addition to your spiritual and wellness journey.",
+        "images": [
+            "/assets/product/howlite-bracelet-8mm-1.png",
+            "/assets/product/howlite-bracelet-8mm-2.png",
+            "/assets/product/howlite-bracelet-8mm-3.png",
+            "/assets/product/howlite-bracelet-8mm-4.png",
+            "/assets/product/howlite-bracelet-8mm-5.png",
+            "/assets/product/howlite-bracelet-8mm-6.png"
+        ],
+        "quickBenefits": [
+            "Inner Calm",
+            "Patience",
+            "Mental Clarity",
+            "Daily Wear"
+        ],
+        "benefitCards": [
+            {
+                "title": "Calmness",
+                "description": "Traditionally associated with peace and emotional calm."
+            },
+            {
+                "title": "Patience",
+                "description": "Believed to encourage patience and thoughtful decision-making."
+            },
+            {
+                "title": "Mental Clarity",
+                "description": "Supports focus and a balanced state of mind."
+            },
+            {
+                "title": "Meditation Support",
+                "description": "Suitable for meditation, yoga, and spiritual practices."
+            },
+            {
+                "title": "Natural Crystal",
+                "description": "Made from carefully selected premium Howlite beads."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Crystal Name",
+                "value": "Natural Howlite Crystal"
+            },
+            {
+                "label": "Bead Size",
+                "value": "8mm Round Beads"
+            },
+            {
+                "label": "Bracelet Type",
+                "value": "Stretchable Elastic Bracelet"
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Wear, Meditation, Yoga, Spiritual Practices"
+            },
+            {
+                "label": "Quality",
+                "value": "Carefully selected premium polished crystal beads"
+            },
+            {
+                "label": "Certification",
+                "value": "Authenticity and quality checked product"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance of Howlite Crystal",
+        "significanceDescription": "Howlite is traditionally regarded as a crystal of calmness, patience, and awareness. It is believed to encourage emotional balance, reduce stress, and support a peaceful, mindful lifestyle.",
+        "tags": [
+            "Howlite",
+            "Healing Crystal",
+            "Crystal Bracelet",
+            "Calmness",
+            "Mental Clarity"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 12,
+        "name": "4 Mukhi Rudraksha (Nepal Origin)",
+        "slug": "4-mukhi-rudraksha-nepal-origin",
+        "category": "Spiritual Products",
+        "categorySlug": "spiritual",
+        "featured": false,
+        "shortDescription": "An authentic Nepal-origin 4 Mukhi Rudraksha with authenticity certificate for wisdom, learning, and spiritual growth.",
+        "price": "₹666",
+        "oldPrice": "₹1199",
+        "discount": "44% OFF",
+        "badge": "BEST SELLER",
+        "rating": 4.7,
+        "reviews": "Reviews",
+        "description": "The 4 Mukhi Rudraksha (Nepal Origin) is a carefully selected natural bead featuring four distinct natural facets and a premium finish. Sourced from Nepal, it is ideal for daily wear, meditation, mantra chanting, and spiritual practices.\n\nTraditionally, the 4 Mukhi Rudraksha is associated with wisdom, knowledge, creativity, and clear communication. Each Rudraksha is quality checked and comes with an authenticity certificate, making it a valuable addition to your spiritual journey.",
+        "images": [
+            "/assets/product/4-mukhi-rudraksha-nepal-origin-1.png",
+            "/assets/product/4-mukhi-rudraksha-nepal-origin-2.png",
+            "/assets/product/4-mukhi-rudraksha-nepal-origin-3.png",
+            "/assets/product/4-mukhi-rudraksha-nepal-origin-4.png",
+            "/assets/product/4-mukhi-rudraksha-nepal-origin-5.png",
+            "/assets/product/4-mukhi-rudraksha-nepal-origin-6.png"
+        ],
+        "quickBenefits": [
+            "Wisdom",
+            "Learning",
+            "Meditation",
+            "Positive Energy"
+        ],
+        "benefitCards": [
+            {
+                "title": "Wisdom",
+                "description": "Traditionally associated with knowledge and intellectual growth."
+            },
+            {
+                "title": "Creativity",
+                "description": "Believed to encourage creativity and clear thinking."
+            },
+            {
+                "title": "Meditation",
+                "description": "Ideal for mantra chanting, meditation, and daily worship."
+            },
+            {
+                "title": "Authentic Nepal Origin",
+                "description": "Carefully selected natural Rudraksha sourced from Nepal."
+            },
+            {
+                "title": "Certified Quality",
+                "description": "Comes with an authenticity certificate for added confidence."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Product Type",
+                "value": "4 Mukhi Rudraksha"
+            },
+            {
+                "label": "Origin",
+                "value": "Nepal"
+            },
+            {
+                "label": "Mukhi",
+                "value": "4 Mukhi"
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Wear, Meditation, Japa, Spiritual Practices"
+            },
+            {
+                "label": "Quality",
+                "value": "Carefully selected natural Rudraksha bead"
+            },
+            {
+                "label": "Certification",
+                "value": "Includes Authenticity Certificate"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance of 4 Mukhi Rudraksha",
+        "significanceDescription": "The 4 Mukhi Rudraksha is traditionally regarded as a symbol of wisdom, learning, and self-expression. It is believed to enhance knowledge, creativity, confidence, and spiritual awareness while supporting a focused and balanced mind.",
+        "tags": [
+            "4 Mukhi Rudraksha",
+            "Nepal Rudraksha",
+            "Spiritual Products",
+            "Wisdom",
+            "Authenticity Certificate"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 13,
+        "name": "3 Mukhi Rudraksha (Nepal Origin)",
+        "slug": "3-mukhi-rudraksha-nepal-origin",
+        "category": "Spiritual Products",
+        "categorySlug": "spiritual",
+        "featured": false,
+        "shortDescription": "An authentic Nepal-origin 3 Mukhi Rudraksha with authenticity certificate for confidence, positivity, and spiritual growth.",
+        "price": "₹666",
+        "oldPrice": "₹1199",
+        "discount": "44% OFF",
+        "badge": "NEW ARRIVALS",
+        "rating": 4.1,
+        "reviews": "0 Reviews",
+        "description": "The 3 Mukhi Rudraksha (Nepal Origin) is a carefully selected natural bead featuring three distinct natural facets and a premium finish. Sourced from Nepal, it is ideal for daily wear, meditation, mantra chanting, and spiritual practices.\n\nTraditionally, the 3 Mukhi Rudraksha is associated with confidence, inner strength, positivity, and personal growth. Each Rudraksha is quality checked and comes with an authenticity certificate, making it a valuable companion for your spiritual journey.",
+        "images": [
+            "/assets/product/3-mukhi-rudraksha-nepal-origin-1.png",
+            "/assets/product/3-mukhi-rudraksha-nepal-origin-2.png",
+            "/assets/product/3-mukhi-rudraksha-nepal-origin-3.png",
+            "/assets/product/3-mukhi-rudraksha-nepal-origin-4.png",
+            "/assets/product/3-mukhi-rudraksha-nepal-origin-5.png",
+            "/assets/product/3-mukhi-rudraksha-nepal-origin-6.png"
+        ],
+        "quickBenefits": [
+            "Confidence",
+            "Inner Strength",
+            "Meditation",
+            "Positive Energy"
+        ],
+        "benefitCards": [
+            {
+                "title": "Confidence",
+                "description": "Traditionally associated with courage and self-confidence."
+            },
+            {
+                "title": "Inner Strength",
+                "description": "Believed to encourage resilience and personal growth."
+            },
+            {
+                "title": "Meditation",
+                "description": "Ideal for mantra chanting, meditation, and daily worship."
+            },
+            {
+                "title": "Authentic Nepal Origin",
+                "description": "Carefully selected natural Rudraksha sourced from Nepal."
+            },
+            {
+                "title": "Certified Quality",
+                "description": "Comes with an authenticity certificate for added confidence."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Product Type",
+                "value": "3 Mukhi Rudraksha"
+            },
+            {
+                "label": "Origin",
+                "value": "Nepal"
+            },
+            {
+                "label": "Mukhi",
+                "value": "3 Mukhi"
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Wear, Meditation, Japa, Spiritual Practices"
+            },
+            {
+                "label": "Quality",
+                "value": "Carefully selected natural Rudraksha bead"
+            },
+            {
+                "label": "Certification",
+                "value": "Includes Authenticity Certificate"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance of 3 Mukhi Rudraksha",
+        "significanceDescription": "The 3 Mukhi Rudraksha is traditionally regarded as a symbol of confidence, positivity, and personal transformation. It is believed to encourage inner strength, emotional balance, and spiritual growth while supporting a focused and optimistic mindset.",
+        "tags": [
+            "3 Mukhi Rudraksha",
+            "Nepal Rudraksha",
+            "Spiritual Products",
+            "Meditation",
+            "Authenticity Certificate"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 14,
+        "name": "Pyrite Bracelet (8mm)",
+        "slug": "pyrite-bracelet-8mm",
+        "category": "Healing Crystals",
+        "categorySlug": "crystals",
+        "featured": false,
+        "shortDescription": "A natural Pyrite crystal bracelet for confidence, prosperity, protection, and everyday positivity.",
+        "price": "₹399",
+        "oldPrice": "₹999",
+        "discount": "60% OFF",
+        "badge": "NEW ARRIVALS",
+        "rating": 4.8,
+        "reviews": "Reviews",
+        "description": "The Pyrite Bracelet (8mm) is crafted from carefully selected natural Pyrite crystal beads with a smooth polished finish. Designed for everyday comfort, it is suitable for meditation, yoga, spiritual practices, and daily wear.\n\nTraditionally, Pyrite is associated with prosperity, confidence, protection, and positive energy. Each bracelet is quality checked to become a meaningful addition to your spiritual and wellness journey.",
+        "images": [
+            "/assets/product/pyrite-bracelet-8mm-1.png",
+            "/assets/product/pyrite-bracelet-8mm-2.png",
+            "/assets/product/pyrite-bracelet-8mm-3.png",
+            "/assets/product/pyrite-bracelet-8mm-4.png",
+            "/assets/product/pyrite-bracelet-8mm-5.png",
+            "/assets/product/pyrite-bracelet-8mm-6.png"
+        ],
+        "quickBenefits": [
+            "Prosperity",
+            "Confidence",
+            "Protection",
+            "Daily Wear"
+        ],
+        "benefitCards": [
+            {
+                "title": "Prosperity",
+                "description": "Traditionally associated with abundance and success."
+            },
+            {
+                "title": "Confidence",
+                "description": "Believed to encourage confidence and determination."
+            },
+            {
+                "title": "Protection",
+                "description": "Supports a positive and balanced mindset."
+            },
+            {
+                "title": "Meditation Support",
+                "description": "Suitable for meditation, yoga, and spiritual practices."
+            },
+            {
+                "title": "Natural Crystal",
+                "description": "Made from carefully selected premium Pyrite beads."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Crystal Name",
+                "value": "Natural Pyrite Crystal"
+            },
+            {
+                "label": "Bead Size",
+                "value": "8mm Round Beads"
+            },
+            {
+                "label": "Bracelet Type",
+                "value": "Stretchable Elastic Bracelet"
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Wear, Meditation, Yoga, Spiritual Practices"
+            },
+            {
+                "label": "Quality",
+                "value": "Carefully selected premium polished crystal beads"
+            },
+            {
+                "label": "Certification",
+                "value": "Authenticity and quality checked product"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance of Pyrite Crystal",
+        "significanceDescription": "Pyrite is traditionally regarded as a crystal of prosperity, confidence, and protection. It is believed to inspire determination, attract positive opportunities, and encourage a strong, optimistic mindset.",
+        "tags": [
+            "Pyrite",
+            "Healing Crystal",
+            "Crystal Bracelet",
+            "Prosperity",
+            "Protection"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 15,
+        "name": "Citrine Natural Bracelet (8mm)",
+        "slug": "citrine-natural-bracelet-8mm",
+        "category": "Healing Crystals",
+        "categorySlug": "crystals",
+        "featured": false,
+        "shortDescription": "A natural Citrine crystal bracelet for prosperity, confidence, abundance, and everyday positivity.",
+        "price": "₹499",
+        "oldPrice": "₹999",
+        "discount": "50% OFF",
+        "badge": "POPULAR",
+        "rating": 4.7,
+        "reviews": "Reviews",
+        "description": "The Citrine Natural Bracelet (8mm) is crafted from carefully selected natural Citrine crystal beads with a smooth polished finish. Designed for everyday comfort, it is ideal for meditation, yoga, spiritual practices, and daily wear.\n\nTraditionally, Citrine is associated with prosperity, abundance, confidence, and positive energy. Each bracelet is quality checked to become a meaningful addition to your spiritual and wellness journey.",
+        "images": [
+            "/assets/product/citrine-natural-bracelet-8mm-1.png",
+            "/assets/product/citrine-natural-bracelet-8mm-2.png",
+            "/assets/product/citrine-natural-bracelet-8mm-3.png",
+            "/assets/product/citrine-natural-bracelet-8mm-4.png",
+            "/assets/product/citrine-natural-bracelet-8mm-5.png",
+            "/assets/product/citrine-natural-bracelet-8mm-6.png"
+        ],
+        "quickBenefits": [
+            "Prosperity",
+            "Confidence",
+            "Abundance",
+            "Daily Wear"
+        ],
+        "benefitCards": [
+            {
+                "title": "Prosperity",
+                "description": "Traditionally associated with abundance and success."
+            },
+            {
+                "title": "Confidence",
+                "description": "Believed to encourage self-confidence and optimism."
+            },
+            {
+                "title": "Positive Energy",
+                "description": "Supports a cheerful and balanced mindset."
+            },
+            {
+                "title": "Meditation Support",
+                "description": "Suitable for meditation, yoga, and spiritual practices."
+            },
+            {
+                "title": "Natural Crystal",
+                "description": "Made from carefully selected premium Citrine beads."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Crystal Name",
+                "value": "Natural Citrine Crystal"
+            },
+            {
+                "label": "Bead Size",
+                "value": "8mm Round Beads"
+            },
+            {
+                "label": "Bracelet Type",
+                "value": "Stretchable Elastic Bracelet"
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Wear, Meditation, Yoga, Spiritual Practices"
+            },
+            {
+                "label": "Quality",
+                "value": "Carefully selected premium polished crystal beads"
+            },
+            {
+                "label": "Certification",
+                "value": "Authenticity and quality checked product"
+            }
+        ],
+        "significanceTitle": "Spiritual Significance of Citrine Crystal",
+        "significanceDescription": "Citrine is traditionally regarded as a crystal of prosperity, abundance, and confidence. It is believed to encourage optimism, attract positive opportunities, and inspire personal growth.",
+        "tags": [
+            "Citrine",
+            "Healing Crystal",
+            "Crystal Bracelet",
+            "Prosperity",
+            "Abundance"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 16,
+        "name": "Daivam Powder Dhup",
+        "slug": "daivam-powder-dhup",
+        "category": "Vastu Products",
+        "categorySlug": "vastu",
+        "featured": true,
+        "shortDescription": "A traditional Vastu powder dhup made from over 15 natural herbs and roots for daily spiritual rituals.",
+        "price": "₹499",
+        "oldPrice": "₹699",
+        "discount": "29% OFF",
+        "badge": "NEW ARRIVALS",
+        "rating": 4.9,
+        "reviews": "Reviews",
+        "description": "Daivam Vastu Powder Dhup is a traditional herbal incense prepared according to ancient Shastra. It is made using a blend of natural ingredients including Chandan, Arjun Powder, Guggul, Vetiver Root, Ashwagandha, Rose, Camphor, Brahma Kamal Powder, Haritaki, and other carefully selected herbs and roots. Ideal for daily puja, havan, meditation, and Vastu rituals.\n\nTraditionally, this herbal dhup is believed to help purify the surroundings, reduce negative energy, and support Vastu balance. Every 200g pack is carefully prepared using high-quality natural ingredients to provide a rich, long-lasting spiritual fragrance.",
+        "images": [
+            "/assets/product/daivam-powder-dhup-1.png",
+            "/assets/product/daivam-powder-dhup-2.png",
+            "/assets/product/daivam-powder-dhup-3.png",
+            "/assets/product/daivam-powder-dhup-5.png",
+            "/assets/product/daivam-powder-dhup-6.png"
+        ],
+        "quickBenefits": [
+            "Vastu Support",
+            "Natural Herbs",
+            "Negative Energy",
+            "Daily Puja"
+        ],
+        "benefitCards": [
+            {
+                "title": "Traditional Formula",
+                "description": "Prepared using more than 15 natural herbs and sacred ingredients."
+            },
+            {
+                "title": "Vastu Rituals",
+                "description": "Ideal for Vastu remedies, havan, and spiritual practices."
+            },
+            {
+                "title": "Natural Fragrance",
+                "description": "Releases a rich herbal aroma for a peaceful atmosphere."
+            },
+            {
+                "title": "Purifies Surroundings",
+                "description": "Traditionally used to help create a positive spiritual environment."
+            },
+            {
+                "title": "200g Pack",
+                "description": "Premium herbal dhup for regular household and temple use."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Product Type",
+                "value": "Herbal Vastu Powder Dhup"
+            },
+            {
+                "label": "Net Weight",
+                "value": "200g"
+            },
+            {
+                "label": "Ingredients",
+                "value": "Chandan, Arjun Powder, Guggul, Vetiver Root, Ashwagandha, Rose, Camphor, Brahma Kamal Powder, Haritaki, and other carefully selected natural herbs and roots."
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Puja, Havan, Vastu Remedies, Meditation"
+            },
+            {
+                "label": "Fragrance",
+                "value": "Natural Herbal Aroma"
+            },
+            {
+                "label": "Quality",
+                "value": "Prepared using carefully selected natural ingredients"
+            }
+        ],
+        "significanceTitle": "Traditional Vastu Purification",
+        "significanceDescription": "Prepared according to traditional Shastra, Daivam Powder Dhup is widely used during puja, havan, and Vastu rituals. It is traditionally believed to help purify the environment, reduce negative energy, and create a peaceful, spiritually uplifting atmosphere.",
+        "tags": [
+            "Vastu Powder Dhup",
+            "Herbal Dhup",
+            "Vastu Products",
+            "Natural Herbs",
+            "Puja Essentials"
+        ],
+        "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
+    },
+    {
+        "id": 17,
+        "name": "Daivam Powder Dhup (Trial Pack)",
+        "slug": "daivam-powder-dhup-trial-pack",
+        "category": "Vastu Products",
+        "categorySlug": "vastu",
+        "featured": false,
+        "shortDescription": "A trial pack of traditional Vastu Powder Dhup made from over 15 natural herbs and roots.",
+        "price": "₹99",
+        "oldPrice": "₹149",
+        "discount": "34% OFF",
+        "badge": "",
+        "rating": 4.4,
+        "reviews": "Reviews",
+        "description": "Daivam Vastu Powder Dhup is a traditional herbal incense prepared according to ancient Shastra. It is made using a blend of natural ingredients including Chandan, Arjun Powder, Guggul, Vetiver Root, Ashwagandha, Rose, Camphor, Brahma Kamal Powder, Haritaki, and other carefully selected herbs and roots. Ideal for daily puja, havan, meditation, and Vastu rituals.\n\nTraditionally, this herbal dhup is believed to help purify the surroundings, reduce negative energy, and support Vastu balance. Every 200g pack is carefully prepared using high-quality natural ingredients to provide a rich, long-lasting spiritual fragrance.",
+        "images": [
+            "/assets/product/daivam-powder-dhup-trial-pack-1.png",
+            "/assets/product/daivam-powder-dhup-2.png",
+            "/assets/product/daivam-powder-dhup-3.png",
+            "/assets/product/daivam-powder-dhup-trial-pack-5.png"
+        ],
+        "quickBenefits": [
+            "Vastu Support",
+            "Natural Herbs",
+            "Negative Energy",
+            "Trial Pack"
+        ],
+        "benefitCards": [
+            {
+                "title": "Traditional Formula",
+                "description": "Prepared using more than 15 natural herbs and sacred ingredients."
+            },
+            {
+                "title": "Vastu Rituals",
+                "description": "Suitable for Vastu remedies, puja, and havan."
+            },
+            {
+                "title": "Natural Fragrance",
+                "description": "Creates a soothing herbal aroma during rituals."
+            },
+            {
+                "title": "Purifies Surroundings",
+                "description": "Traditionally used to promote a peaceful spiritual atmosphere."
+            },
+            {
+                "title": "Trial Pack",
+                "description": "A convenient pack to experience the benefits before buying the full size."
+            }
+        ],
+        "specifications": [
+            {
+                "label": "Product Type",
+                "value": "Herbal Vastu Powder Dhup"
+            },
+            {
+                "label": "Net Weight",
+                "value": "200g"
+            },
+            {
+                "label": "Ingredients",
+                "value": "Chandan, Arjun Powder, Guggul, Vetiver Root, Ashwagandha, Rose, Camphor, Brahma Kamal Powder, Haritaki, and other carefully selected natural herbs and roots."
+            },
+            {
+                "label": "Usage",
+                "value": "Daily Puja, Havan, Vastu Remedies, Meditation"
+            },
+            {
+                "label": "Fragrance",
+                "value": "Natural Herbal Aroma"
+            },
+            {
+                "label": "Quality",
+                "value": "Prepared using carefully selected natural ingredients"
+            }
+        ],
+        "significanceTitle": "Traditional Vastu Purification",
+        "significanceDescription": "Prepared according to traditional Shastra, Daivam Powder Dhup is traditionally used to purify the surroundings, reduce negative energy, and create a peaceful spiritual environment.",
+        "tags": [
+            "Vastu Powder Dhup",
+            "Trial Pack",
+            "Herbal Dhup",
+            "Natural Herbs",
+            "Puja Essentials"
         ],
         "founderNote": "At Guru and Goodness, we ensure every product is authentic, pure, and thoughtfully selected to support your spiritual and wellness journey."
     }

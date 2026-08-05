@@ -98,6 +98,7 @@
     display: flex;
     gap: 15px;
     align-items: center;
+    width: 104%;
 }
 
 .breadcrumb-my {
@@ -157,7 +158,7 @@
 .gg-rating-score,
 .gg-review-count,
 .gg-sold-count {
-    font-size: 15px;
+    font-size: 18px;
     color: #666;
 }
 
@@ -564,7 +565,7 @@
 
 .gg-spec-item {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 150px 1fr;
     border-bottom: 1px solid #eee3d5;
     border-right: 1px solid #eee3d5;
 }
@@ -1070,6 +1071,13 @@
         display: none;
     }
 
+    .gg-spec-item:nth-last-child(-n+2) {
+        border-bottom: 1px solid #eee3d5;
+    }
+
+    .gg-spec-item:last-child {
+        border-bottom: none;
+    }
 }
 
 @media (max-width:480px) {

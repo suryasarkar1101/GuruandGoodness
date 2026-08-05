@@ -18,12 +18,42 @@ const getProducts = async () => {
 
 const getFeaturedProducts = async (limit = null) => {
   let products = await getProducts();
+
   products = products.filter((product) => product.featured);
+
+  // Same random order for the entire day
+  const today = new Date().toISOString().split("T")[0];
+
+  products = products
+    .map((product) => ({
+      ...product,
+      dailyRandom: seededRandom(`${today}-${product.id}`),
+    }))
+    .sort((a, b) => {
+      if (b.rating !== a.rating) {
+        return b.rating - a.rating;
+      }
+      return a.dailyRandom - b.dailyRandom;
+    })
+    .map(({ dailyRandom, ...product }) => product);
+
   if (limit) {
     products = products.slice(0, limit);
   }
+
   return products;
 };
+
+function seededRandom(seed) {
+  let hash = 0;
+
+  for (let i = 0; i < seed.length; i++) {
+    hash = (hash << 5) - hash + seed.charCodeAt(i);
+    hash |= 0;
+  }
+
+  return Math.abs(Math.sin(hash) * 10000) % 1;
+}
 
 const getProductBySlug = async (slug) => {
   const products = await getProducts();
