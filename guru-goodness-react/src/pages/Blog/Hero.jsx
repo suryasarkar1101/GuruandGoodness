@@ -10,7 +10,7 @@ import sunLogo from "../../assets/images/icons/sun_logo_bg.png";
 
 import heroBg from "../../assets/images/backgrounds/blog-hero-bg.png";
 
-const Hero = () => {
+const Hero = ({ onExploreClick }) => {
     return (
         <section
             className="knowledge-section"
@@ -64,6 +64,7 @@ const Hero = () => {
                         type="button"
                         id="exploreBtn"
                         className="herobtn-primary"
+                        onClick={onExploreClick}
                     >
                         Explore Articles
                         <i className="fa-solid fa-arrow-right"></i>

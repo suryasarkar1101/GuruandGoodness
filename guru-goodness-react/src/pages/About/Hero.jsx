@@ -15,10 +15,7 @@ const Hero = () => {
                 {/* LEFT CONTENT */}
                 <div className="about-highlight-content">
                     <div className="hero-title">
-                        Rooted in
-                        <span>Ancient Wisdom,</span>
-                        Designed for
-                        Modern Living
+                        Rooted in <span>Ancient Wisdom, </span> Designed for Modern Living
                     </div>
 
                     <div className="hero-divider">

@@ -26,8 +26,7 @@ const ContactInfo = () => {
                     </div>
 
                     <div className="hero-title">
-                        Meaningful Connections.
-                        <span>Guidance that Matters.</span>
+                        Meaningful Connections. <span>Guidance that Matters.</span>
                     </div>
 
                     <div className="hero-divider">

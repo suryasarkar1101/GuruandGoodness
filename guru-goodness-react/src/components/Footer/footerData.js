@@ -24,21 +24,25 @@ export const quickLinks = [
 
 export const categories = [
   {
-    title: "Spiritual Products",
-    href: "/shop/?category=spiritual",
+    title: "Dhup & Incense",
+    href: "/shop/incense",
   },
   {
-    title: "Vastu Products",
-    href: "/shop/?category=vastu",
+    title: "Rudraksha",
+    href: "/shop/rudraksha",
   },
   {
     title: "Healing Crystals",
-    href: "/shop/?category=crystals",
+    href: "/shop/crystals",
   },
   {
     title: "Organic Wellness",
-    href: "/shop/?category=wellness",
+    href: "/shop/wellness",
   },
+  {
+    title: "Kids Collection",
+    href: "/shop/kids",
+  }
 ];
 
 export const contactInfo = [

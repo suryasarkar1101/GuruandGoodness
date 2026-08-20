@@ -5,16 +5,16 @@ import useAutoSlider from "../../hooks/useAutoSlider";
 import dividerImg from "../../assets/images/divider_below.png";
 
 import omIcon from "../../assets/images/icons/om_icon.png";
-import spiritualProducts from "../../assets/images/Spiritual_Products.png";
+import spiritualProducts from "../../assets/images/insence_dhup.png";
 
 import starIcon from "../../assets/images/icons/star_icon.png";
-import vastuProducts from "../../assets/images/Vastu_Products.png";
+import vastuProducts from "../../assets/images/rudrakhs.png";
 
 import flowerIcon from "../../assets/images/icons/flower_icon.png";
-import healingCrystals from "../../assets/images/Healing_Crystals.png";
+import healingCrystals from "../../assets/images/heeling.png";
 
 import leafIcon from "../../assets/images/icons/leaf_icon.png";
-import organicWellness from "../../assets/images/Organic_Wellness.png";
+import organicWellness from "../../assets/images/organic.png";
 
 import meditationIcon from "../../assets/images/icons/meditation.png";
 import kidsCollection from "../../assets/images/kids.png";
@@ -52,14 +52,14 @@ const Collections = () => {
                     <div className="modern-card">
                         <div className="modern-card-image">
                             <div className="modern-card-icon">
-                                <img src={omIcon} alt="" />
+                                <img src={starIcon} alt="" />
                             </div>
                             <img src={spiritualProducts} alt="" />
                         </div>
 
                         <div className="modern-card-content">
                             <div className="modern-card-title">
-                                Spiritual Products
+                                Dhup & Incense
                             </div>
 
                             <div className="modern-card-description">
@@ -67,7 +67,7 @@ const Collections = () => {
                             </div>
 
                             <Link
-                                to="/shop/spiritual"
+                                to="/shop/incense"
                                 className="modern-card-btn orange-btn"
                             >
                                 Explore{" "}
@@ -81,14 +81,14 @@ const Collections = () => {
                     <div className="modern-card">
                         <div className="modern-card-image">
                             <div className="modern-card-icon">
-                                <img src={starIcon} alt="" />
+                                <img src={omIcon} alt="" />
                             </div>
                             <img src={vastuProducts} alt="" />
                         </div>
 
                         <div className="modern-card-content">
                             <div className="modern-card-title">
-                                Vastu Products
+                                Rudraksha
                             </div>
 
                             <div className="modern-card-description">
@@ -96,7 +96,7 @@ const Collections = () => {
                             </div>
 
                             <Link
-                                to="/shop/vastu"
+                                to="/shop/rudraksha"
                                 className="modern-card-btn gold-btn"
                             >
                                 Explore{" "}

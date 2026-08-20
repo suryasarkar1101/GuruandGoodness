@@ -23,7 +23,7 @@ const loadReviews = async (type, count, productId = null) => {
         selectedReviews = reviews.filter(
             review => review.productId === productId
         );
-        console.log(selectedReviews);
+        
     }
     return randomReviews(selectedReviews, count);
 };

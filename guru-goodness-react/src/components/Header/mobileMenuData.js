@@ -13,17 +13,7 @@ export const mobileMenuLinks = [
     title: "Shop",
     href: "/shop/",
     icon: "fa-solid fa-bag-shopping",
-  },
-  {
-    title: "Spiritual Products",
-    href: "/shop/?category=spiritual",
-    icon: "fa-solid fa-spa",
-  },
-  {
-    title: "Healing Crystals",
-    href: "/shop/?category=crystals",
-    icon: "fa-regular fa-gem",
-  },
+  },  
   {
     title: "Consultancy",
     href: "/consultancy/",

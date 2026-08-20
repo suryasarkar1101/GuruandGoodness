@@ -4,23 +4,23 @@ export const heroData = {
         title1: "Explore Products for a",
         title2: "Balanced Life",
         description:
-            "Discover a thoughtfully curated collection of spiritual products, Vastu essentials, healing crystals, and organic wellness items designed to support harmony, positivity, and everyday well-being.",
+            "Discover a thoughtfully curated collection of Rudraksha, Dhup & Incense, healing crystals, organic wellness products, and thoughtful essentials for everyday well-being.",
     },
 
-    spiritual: {
-        brTitle: "Spiritual Products",
-        title1: "Sacred Essentials for",
-        title2: "Spiritual Living",
+    incense: {
+        brTitle: "Dhup & Incense",
+        title1: "Sacred Fragrance for",
+        title2: "Peaceful Living",
         description:
-            "Explore spiritual products that inspire devotion, mindfulness, inner peace, and meaningful daily rituals.",
+            "Explore traditional incense, Cone Dhup, and Daivam Powder Dhup crafted with natural ingredients to create a peaceful and spiritually uplifting atmosphere.",
     },
 
-    vastu: {
-        brTitle: "Vastu Products",
-        title1: "Create Harmony with",
-        title2: "Vastu Products",
+    rudraksha: {
+        brTitle: "Rudraksha",
+        title1: "Sacred Rudraksha for",
+        title2: "Spiritual Growth",
         description:
-            "Bring balance, prosperity, and positive energy into your home and workspace with trusted Vastu solutions.",
+            "Discover different types of Rudraksha, carefully selected for spiritual practices, meditation, positivity, and a deeper connection with ancient traditions.",
     },
 
     crystals: {
@@ -37,5 +37,13 @@ export const heroData = {
         title2: "Everyday Living",
         description:
             "Shop organic wellness essentials crafted to nurture mind, body, and spirit through holistic living.",
+    },
+
+    kids: {
+        brTitle: "Kids Collection",
+        title1: "Little Essentials for",
+        title2: "Happy Hearts",
+        description:
+            "Discover thoughtful and joyful products specially selected for little ones, bringing positivity, care, and goodness into their everyday lives.",
     },
 };

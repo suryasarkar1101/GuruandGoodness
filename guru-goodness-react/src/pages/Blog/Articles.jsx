@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, forwardRef } from "react";
 import { Link } from "react-router-dom";
 
 import dividerBelow from "../../assets/images/divider_below.png";
@@ -7,7 +7,7 @@ import lotusDivider from "../../assets/images/icons/lotus-divider.png";
 import { getLatestBlogs } from "../../api/blogApi";
 import ArticleCard from "../../components/ArticleCard/ArticleCard";
 
-const Articles = () => {
+const Articles = ({ ref }) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -23,6 +23,7 @@ const Articles = () => {
         <section
             className="articles-section"
             id="articlesSection"
+            ref={ref}
         >
             <div className="articles-container">
 

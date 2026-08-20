@@ -1,8 +1,8 @@
 import allProduct from "../../assets/images/all_product.png";
-import spiritualProduct from "../../assets/images/spiritual_product.png";
-import vastuProduct from "../../assets/images/vastu_product.png";
-import healingCrystal from "../../assets/images/healing_crystal.png";
-import organicProduct from "../../assets/images/organic_product.png";
+import dhupProduct from "../../assets/images/insence_dhup.png";
+import rudrakshaProduct from "../../assets/images/rudrakhs.png";
+import healingCrystal from "../../assets/images/heeling.png";
+import organicProduct from "../../assets/images/organic.png";
 import kidsCollection from "../../assets/images/kids_full.png"
 
 export const shopCategories = [
@@ -12,14 +12,14 @@ export const shopCategories = [
         image: allProduct,
     },
     {
-        slug: "spiritual",
-        title: "Spiritual Products",
-        image: spiritualProduct,
+        slug: "incense",
+        title: "Dhup & Incense",
+        image: dhupProduct,
     },
     {
-        slug: "vastu",
-        title: "Vastu Products",
-        image: vastuProduct,
+        slug: "rudraksha",
+        title: "Rudraksha",
+        image: rudrakshaProduct,
     },
     {
         slug: "crystals",
