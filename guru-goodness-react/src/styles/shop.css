@@ -727,8 +727,10 @@
     }
 
     .shop-category-card {
-        padding: 8px 10px;
+        padding: 6px 7px;
         border-radius: 8px;
+        flex-direction: column;
+        gap: 5px;
     }
 
     .shop-category-nav {
@@ -737,7 +739,9 @@
     }
 
     .shop-category-card span {
-        font-size: 13px;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
     }
 
     .shop-category-card img {
