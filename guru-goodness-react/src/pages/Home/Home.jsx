@@ -7,6 +7,7 @@ import FaithBanner from "./FaithBanner";
 import FeaturedProducts from "./FeaturedProducts";
 import Hero from "./Hero";
 import Testimonials from "./Testimonials";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <FeaturedProducts />
       <FaithBanner />
       <Testimonials />
+      <OfferPopup/>
     </>
   );
 };

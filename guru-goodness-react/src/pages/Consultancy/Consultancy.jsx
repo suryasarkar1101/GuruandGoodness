@@ -7,6 +7,7 @@ import Services from "./Services";
 import Steps from "./Steps";
 import ConsultancyForm from "./ConsultancyForm";
 import CTA from "./CTA";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
 const Consultancy = () => {
   return (
@@ -20,6 +21,7 @@ const Consultancy = () => {
       <Steps />
       <ConsultancyForm />
       <CTA />
+      <OfferPopup/>
     </>
   );
 };

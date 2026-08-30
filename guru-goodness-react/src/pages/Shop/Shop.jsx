@@ -12,6 +12,7 @@ import FaithBanner from "../Home/FaithBanner";
 import CTA from "../About/CTA";
 import FilterBar from "./FilterBar";
 import ProductGrid from "./ProductGrid";
+import OfferPopup from "../../components/OfferPopup/OfferPopup";
 
 const Shop = () => {
     const { category = "all" } = useParams();
@@ -104,6 +105,7 @@ const Shop = () => {
             </section>
             <FaithBanner />
             <CTA />
+            <OfferPopup/>
         </>
     );
 };

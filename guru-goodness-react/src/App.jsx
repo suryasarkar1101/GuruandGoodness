@@ -1,8 +1,7 @@
-import LaunchGate from "./components/LaunchGate";
 import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return <LaunchGate/>;
+  return <AppRoutes />;
 }
 
 export default App;
